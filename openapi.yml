@@ -1,0 +1,410 @@
+openapi: 3.1.0
+info:
+  title: Chatbots and Conversational AI (API Commons)
+  version: 0.1.0-draft.20261111
+  description: 'The common Chatbots and Conversational AI interface, distilled from the harvested OpenAPI of 147
+    providers in the APIs.io catalog. Not a product: no one serves this API. It is the shape the market already
+    shares, measured, so that providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /bots:
+    get:
+      operationId: listBots
+      summary: List bots
+      tags:
+      - Bots
+      x-commons-tier: core
+      x-commons-share: 0.812
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/Bot'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createBot
+      summary: Create a bot
+      tags:
+      - Bots
+      x-commons-tier: core
+      x-commons-share: 0.75
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /bots/{bot_id}:
+    parameters:
+    - $ref: '#/components/parameters/bot_id'
+    delete:
+      operationId: deleteBot
+      summary: Delete a bot
+      tags:
+      - Bots
+      x-commons-tier: core
+      x-commons-share: 0.625
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    get:
+      operationId: getBot
+      summary: Get a bot
+      tags:
+      - Bots
+      x-commons-tier: core
+      x-commons-share: 0.562
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    patch:
+      operationId: updateBot
+      summary: Update a bot
+      tags:
+      - Bots
+      x-commons-tier: core
+      x-commons-share: 0.5
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /conversations:
+    get:
+      operationId: listConversations
+      summary: List conversations
+      tags:
+      - Conversations
+      x-commons-tier: core
+      x-commons-share: 0.71
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id002
+                  $ref: '#/components/schemas/Conversation'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createConversation
+      summary: Create a conversation
+      tags:
+      - Conversations
+      x-commons-tier: core
+      x-commons-share: 0.629
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /conversations/{conversation_id}:
+    parameters:
+    - $ref: '#/components/parameters/conversation_id'
+    get:
+      operationId: getConversation
+      summary: Get a conversation
+      tags:
+      - Conversations
+      x-commons-tier: core
+      x-commons-share: 0.629
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+    delete:
+      operationId: deleteConversation
+      summary: Delete a conversation
+      tags:
+      - Conversations
+      x-commons-tier: extended
+      x-commons-share: 0.258
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+    patch:
+      operationId: updateConversation
+      summary: Update a conversation
+      tags:
+      - Conversations
+      x-commons-tier: extended
+      x-commons-share: 0.258
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /conversation-messages:
+    get:
+      operationId: listConversationMessages
+      summary: List conversation messages
+      tags:
+      - Conversation Messages
+      x-commons-tier: core
+      x-commons-share: 0.9
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id003
+                  $ref: '#/components/schemas/ConversationMessage'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createConversationMessage
+      summary: Create a conversation message
+      tags:
+      - Conversation Messages
+      x-commons-tier: core
+      x-commons-share: 0.6
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /conversation-messages/{conversation_message_id}:
+    parameters:
+    - $ref: '#/components/parameters/conversation_message_id'
+    get:
+      operationId: getConversationMessage
+      summary: Get a conversation message
+      tags:
+      - Conversation Messages
+      x-commons-tier: extended
+      x-commons-share: 0.3
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+    delete:
+      operationId: deleteConversationMessage
+      summary: Delete a conversation message
+      tags:
+      - Conversation Messages
+      x-commons-tier: extended
+      x-commons-share: 0.267
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+    patch:
+      operationId: updateConversationMessage
+      summary: Update a conversation message
+      tags:
+      - Conversation Messages
+      x-commons-tier: extended
+      x-commons-share: 0.2
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /intents:
+    post:
+      operationId: createIntent
+      summary: Create an intent
+      tags:
+      - Intents
+      x-commons-tier: core
+      x-commons-share: 0.857
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: &id004
+                $ref: '#/components/schemas/Intent'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id004
+    get:
+      operationId: listIntents
+      summary: List intents
+      tags:
+      - Intents
+      x-commons-tier: core
+      x-commons-share: 0.714
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: *id004
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+  /intents/{intent_id}:
+    parameters:
+    - $ref: '#/components/parameters/intent_id'
+    get:
+      operationId: getIntent
+      summary: Get an intent
+      tags:
+      - Intents
+      x-commons-tier: core
+      x-commons-share: 0.714
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+    delete:
+      operationId: deleteIntent
+      summary: Delete an intent
+      tags:
+      - Intents
+      x-commons-tier: extended
+      x-commons-share: 0.429
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+    patch:
+      operationId: updateIntent
+      summary: Update an intent
+      tags:
+      - Intents
+      x-commons-tier: extended
+      x-commons-share: 0.429
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id004
+components:
+  schemas:
+    Bot:
+      $ref: ./schema/bot.json
+    Conversation:
+      $ref: ./schema/conversation.json
+    ConversationMessage:
+      $ref: ./schema/conversation_message.json
+    Intent:
+      $ref: ./schema/intent.json
+  parameters:
+    bot_id:
+      name: bot_id
+      in: path
+      required: true
+      schema:
+        type: string
+    conversation_id:
+      name: conversation_id
+      in: path
+      required: true
+      schema:
+        type: string
+    conversation_message_id:
+      name: conversation_message_id
+      in: path
+      required: true
+      schema:
+        type: string
+    intent_id:
+      name: intent_id
+      in: path
+      required: true
+      schema:
+        type: string

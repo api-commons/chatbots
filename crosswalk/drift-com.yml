@@ -1,0 +1,20 @@
+provider: drift-com
+apis_io: https://apis.io/providers/drift-com/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  conversation:
+    path_segment:
+    - conversations
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/drift-com-openapi.yml#GET /conversations/{id}
+  conversation_message:
+    path_segment:
+    - messages
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/drift-com-openapi.yml#GET /conversations/{id}/messages
+    - openapi/_original/drift-com-openapi.yml#POST /conversations/{id}/messages

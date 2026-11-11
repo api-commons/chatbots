@@ -1,0 +1,46 @@
+provider: asapp
+apis_io: https://apis.io/providers/asapp/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  conversation:
+    path_segment:
+    - conversations
+    properties:
+      id:
+      - id
+      - externalId
+      created_at: timestamp
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/asapp-conversations-openapi.yml#GET /conversation/v1/conversations
+    - openapi/_original/asapp-conversations-openapi.yml#GET /conversation/v1/conversations/{conversationId}
+    - openapi/_original/asapp-conversations-openapi.yml#POST /conversation/v1/conversations
+    - openapi/_original/asapp-openapi-openapi.yml#GET /conversation/v1/conversations
+    - openapi/_original/asapp-openapi-openapi.yml#GET /conversation/v1/conversations/{conversationId}
+  conversation_message:
+    path_segment:
+    - messages
+    properties:
+      id: id
+      content: text
+      created_at: timestamp
+      role: sender
+      message_id: messageId
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/asapp-conversations-openapi.yml#GET /conversation/v1/conversation/messages
+    - openapi/_original/asapp-conversations-openapi.yml#GET /conversation/v1/conversations/{conversationId}/messages
+    - openapi/_original/asapp-conversations-openapi.yml#GET /conversation/v1/conversations/{conversationId}/messages/{messageId}
+    - openapi/_original/asapp-conversations-openapi.yml#POST /conversation/v1/conversations/{conversationId}/messages
+    - openapi/_original/asapp-conversations-openapi.yml#POST /conversation/v1/conversations/{conversationId}/messages/batch
+  intent:
+    path_segment:
+    - intent
+    properties:
+      id: conversationId
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/asapp-autosummary-openapi.yml#GET /autosummary/v1/intent/{conversationId}
+    - openapi/_original/asapp-autosummary-openapi.yml#POST /autosummary/v1/intent
+    - openapi/_original/asapp-openapi-openapi.yml#GET /autosummary/v1/intent/{conversationId}

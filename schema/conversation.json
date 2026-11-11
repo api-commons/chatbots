@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/chatbots/main/schema/conversation.json",
+  "title": "Conversation",
+  "description": "The common conversation in Chatbots and Conversational AI, distilled from 57 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.684,
+      "x-commons-providers": 39,
+      "x-commons-spellings": [
+        "id",
+        "conversation_id",
+        "conversationId",
+        "_id",
+        "botId",
+        "externalId",
+        "chatID",
+        "uuid"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.421,
+      "x-commons-providers": 24,
+      "x-commons-spellings": [
+        "created_at",
+        "createdAt",
+        "timestamp",
+        "date_created",
+        "created",
+        "create_time"
+      ],
+      "format": "date-time"
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.404,
+      "x-commons-providers": 23,
+      "x-commons-spellings": [
+        "status",
+        "state"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.351,
+      "x-commons-providers": 20,
+      "x-commons-spellings": [
+        "name",
+        "title"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.298,
+      "x-commons-providers": 17,
+      "x-commons-spellings": [
+        "updated_at",
+        "updatedAt",
+        "updated",
+        "modifiedAt"
+      ],
+      "format": "date-time"
+    },
+    "user_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.281,
+      "x-commons-providers": 16,
+      "x-commons-spellings": [
+        "user_id",
+        "user",
+        "contact_id",
+        "end_user_id",
+        "CustomerId",
+        "customerId",
+        "userId",
+        "customer_id"
+      ]
+    },
+    "channel": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.211,
+      "x-commons-providers": 12,
+      "x-commons-spellings": [
+        "channel",
+        "source",
+        "platform"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "chatbots",
+    "concept": "conversation",
+    "providers": 57,
+    "generated": "2026-11-11",
+    "version": "0.1.0-draft.20261111",
+    "status": "draft"
+  }
+}

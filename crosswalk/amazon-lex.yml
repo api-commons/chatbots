@@ -1,0 +1,48 @@
+provider: amazon-lex
+apis_io: https://apis.io/providers/amazon-lex/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  bot:
+    path_segment:
+    - bots
+    properties:
+      id: botId
+      name: name
+      description: description
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/amazon-lex-models-v2-openapi.yml#DELETE /bots/{botId}
+    - openapi/_original/amazon-lex-models-v2-openapi.yml#GET /bots/{botId}
+    - openapi/_original/amazon-lex-models-v2-openapi.yml#POST /bots
+    - openapi/_original/amazon-lex-models-v2-openapi.yml#PUT /bots
+    - openapi/_original/amazon-lex-models-v2-openapi.yml#PUT /bots/{botId}
+  conversation:
+    path_segment:
+    - sessions
+    properties:
+      id: botId
+      name: name
+      channel: channel
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/amazon-lex-models-v2-openapi.yml#POST /bots/{botId}/analytics/sessions
+    - openapi/_original/amazon-lex-runtime-v2-openapi.yml#DELETE /bots/{botId}/botAliases/{botAliasId}/botLocales/{localeId}/sessions/{sessionId}
+    - openapi/_original/amazon-lex-runtime-v2-openapi.yml#GET /bots/{botId}/botAliases/{botAliasId}/botLocales/{localeId}/sessions/{sessionId}
+    - openapi/_original/amazon-lex-runtime-v2-openapi.yml#POST /bots/{botId}/botAliases/{botAliasId}/botLocales/{localeId}/sessions/{sessionId}
+  intent:
+    path_segment:
+    - intents
+    properties:
+      name: name
+      description: description
+      id:
+      - intentId
+      - botId
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/amazon-lex-models-v2-openapi.yml#DELETE /bots/{botId}/botversions/{botVersion}/botlocales/{localeId}/intents/{intentId}
+    - openapi/_original/amazon-lex-models-v2-openapi.yml#GET /bots/{botId}/botversions/{botVersion}/botlocales/{localeId}/intents/{intentId}
+    - openapi/_original/amazon-lex-models-v2-openapi.yml#POST /bots/{botId}/botversions/{botVersion}/botlocales/{localeId}/botrecommendations/{botRecommendationId}/intents
+    - openapi/_original/amazon-lex-models-v2-openapi.yml#POST /bots/{botId}/botversions/{botVersion}/botlocales/{localeId}/intents
+    - openapi/_original/amazon-lex-models-v2-openapi.yml#POST /builtins/locales/{localeId}/intents

@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/chatbots/main/schema/conversation_message.json",
+  "title": "Conversation Message",
+  "description": "The common conversation_message in Chatbots and Conversational AI, distilled from 23 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.87,
+      "x-commons-providers": 20,
+      "x-commons-spellings": [
+        "id",
+        "conversation_id",
+        "conversationId",
+        "chatID",
+        "externalId",
+        "conversationMessageId",
+        "bot_id"
+      ]
+    },
+    "content": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.783,
+      "x-commons-providers": 18,
+      "x-commons-spellings": [
+        "content",
+        "text",
+        "body"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.783,
+      "x-commons-providers": 18,
+      "x-commons-spellings": [
+        "created_at",
+        "timestamp",
+        "createdAt",
+        "dateCreated",
+        "createTime"
+      ],
+      "format": "date-time"
+    },
+    "role": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.696,
+      "x-commons-providers": 16,
+      "x-commons-spellings": [
+        "type",
+        "sender",
+        "from",
+        "role",
+        "author",
+        "sender_type"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.348,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "status",
+        "state"
+      ]
+    },
+    "attachments": {
+      "type": "array",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.304,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "attachments"
+      ]
+    },
+    "message_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.261,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "message_id",
+        "messageId",
+        "messageID"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.217,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "name",
+        "title"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.217,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "updated_at",
+        "updatedAt"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "chatbots",
+    "concept": "conversation_message",
+    "providers": 23,
+    "generated": "2026-11-11",
+    "version": "0.1.0-draft.20261111",
+    "status": "draft"
+  }
+}

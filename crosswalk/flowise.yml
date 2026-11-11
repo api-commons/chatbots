@@ -1,0 +1,18 @@
+provider: flowise
+apis_io: https://apis.io/providers/flowise/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  bot:
+    path_segment:
+    - assistants
+    properties:
+      id: id
+      created_at: createdDate
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/flowise-openapi.yml#DELETE /assistants/{id}
+    - openapi/_original/flowise-openapi.yml#GET /assistants
+    - openapi/_original/flowise-openapi.yml#GET /assistants/{id}
+    - openapi/_original/flowise-openapi.yml#POST /assistants
+    - openapi/_original/flowise-openapi.yml#PUT /assistants/{id}

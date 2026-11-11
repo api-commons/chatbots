@@ -1,0 +1,582 @@
+context: chatbots
+name: Chatbots and Conversational AI
+generated: '2026-11-11'
+version: 0.1.0-draft.20261111
+status: draft
+cohort:
+  tags:
+  - Chatbots
+  - Chatbot
+  - Conversational AI
+  - Chat
+  - Virtual Assistants
+  - Live Chat
+  providers_with_harvested_openapi: 147
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded: {}
+duplicates: {}
+shared_specs: {}
+concepts:
+  bot:
+    segments_seen:
+      bots: 9
+      assistants: 5
+      bot: 2
+      chatbot: 1
+    providers_exposing: 16
+    providers_with_readable_schema: 14
+    operations:
+    - operation: GET collection
+      providers: 13
+      share: 0.812
+      tier: core
+    - operation: POST collection
+      providers: 12
+      share: 0.75
+      tier: core
+    - operation: DELETE item
+      providers: 10
+      share: 0.625
+      tier: core
+    - operation: GET item
+      providers: 9
+      share: 0.562
+      tier: core
+    - operation: UPDATE item
+      providers: 8
+      share: 0.5
+      tier: core
+    - operation: POST item
+      providers: 2
+      share: 0.125
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 2
+      share: 0.125
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 11
+      share: 0.786
+      type: string
+      spellings:
+      - id
+      - botId
+      - conversation_id
+      - bot_id
+    - name: name
+      tier: core
+      providers: 9
+      share: 0.643
+      type: string
+      spellings:
+      - name
+    - name: description
+      tier: extended
+      providers: 6
+      share: 0.429
+      type: string
+      spellings:
+      - description
+    - name: created_at
+      tier: extended
+      providers: 5
+      share: 0.357
+      type: string
+      spellings:
+      - created_at
+      - createdDate
+      - dateCreated
+    - name: status
+      tier: extended
+      providers: 5
+      share: 0.357
+      type: string
+      spellings:
+      - status
+      - state
+    - name: variables
+      tier: extended
+      providers: 3
+      share: 0.214
+      type: array
+      spellings:
+      - variables
+    long_tail_count: 156
+    long_tail_sample:
+    - details
+    - error
+    - scope
+    - type
+    - access_token
+    - agent
+    - allow_custom_name
+    - api_token
+    - application
+    - audio_base64
+    - avatar
+    - avatar_key
+    - bible_verses
+    - bible_version
+    - bio
+    - bot_bio
+    - bot_members
+    - bot_name
+    - bot_status
+    - bot_tags
+    - bot_type
+    - calls
+    - channel
+    - channel_data
+    - channel_participation
+    - channels
+    - channels_active
+    - church_name
+    - church_url
+    - commands_active
+    - commands_menu
+    - commands_menu_name
+    - copilot
+    - created_by
+    - creation_date_time
+    - creator
+    - credential
+    - credentials
+    - data_privacy
+    - date_modified
+  conversation:
+    segments_seen:
+      conversations: 40
+      chat: 9
+      conversation: 7
+      threads: 7
+      chats: 6
+      sessions: 3
+    providers_exposing: 62
+    providers_with_readable_schema: 57
+    operations:
+    - operation: GET collection
+      providers: 44
+      share: 0.71
+      tier: core
+    - operation: GET item
+      providers: 39
+      share: 0.629
+      tier: core
+    - operation: POST collection
+      providers: 39
+      share: 0.629
+      tier: core
+    - operation: DELETE item
+      providers: 16
+      share: 0.258
+      tier: extended
+    - operation: UPDATE item
+      providers: 16
+      share: 0.258
+      tier: extended
+    - operation: POST item
+      providers: 3
+      share: 0.048
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 2
+      share: 0.032
+      tier: long-tail
+    - operation: DELETE collection
+      providers: 1
+      share: 0.016
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 39
+      share: 0.684
+      type: string
+      spellings:
+      - id
+      - conversation_id
+      - conversationId
+      - _id
+      - botId
+      - externalId
+      - chatID
+      - uuid
+    - name: created_at
+      tier: extended
+      providers: 24
+      share: 0.421
+      type: string
+      spellings:
+      - created_at
+      - createdAt
+      - timestamp
+      - date_created
+      - created
+      - create_time
+    - name: status
+      tier: extended
+      providers: 23
+      share: 0.404
+      type: string
+      spellings:
+      - status
+      - state
+    - name: name
+      tier: extended
+      providers: 20
+      share: 0.351
+      type: string
+      spellings:
+      - name
+      - title
+    - name: updated_at
+      tier: extended
+      providers: 17
+      share: 0.298
+      type: string
+      spellings:
+      - updated_at
+      - updatedAt
+      - updated
+      - modifiedAt
+    - name: user_id
+      tier: extended
+      providers: 16
+      share: 0.281
+      type: string
+      spellings:
+      - user_id
+      - user
+      - contact_id
+      - end_user_id
+      - CustomerId
+      - customerId
+      - userId
+      - customer_id
+    - name: channel
+      tier: extended
+      providers: 12
+      share: 0.211
+      type: string
+      spellings:
+      - channel
+      - source
+      - platform
+    long_tail_count: 611
+    long_tail_sample:
+    - type
+    - metadata
+    - agent_id
+    - tags
+    - messages
+    - participants
+    - session_id
+    - agent_name
+    - contact
+    - created_by
+    - direction
+    - priority
+    - text
+    - unread_count
+    - account_id
+    - custom
+    - custom_attributes
+    - deleted_at
+    - draft
+    - duration
+    - initial_message
+    - input
+    - language
+    - last_message
+    - model
+    - page_size
+    - participant_count
+    - phone_number
+    - read
+    - response
+    - role
+    - started_at
+    - stream
+    - summary
+    - transcript
+    - action
+    - active_participant_count
+    - agent
+    - analysis
+    - assignee
+  conversation_message:
+    segments_seen:
+      messages: 30
+      message: 2
+    providers_exposing: 30
+    providers_with_readable_schema: 23
+    operations:
+    - operation: GET collection
+      providers: 27
+      share: 0.9
+      tier: core
+    - operation: POST collection
+      providers: 18
+      share: 0.6
+      tier: core
+    - operation: GET item
+      providers: 9
+      share: 0.3
+      tier: extended
+    - operation: DELETE item
+      providers: 8
+      share: 0.267
+      tier: extended
+    - operation: UPDATE item
+      providers: 6
+      share: 0.2
+      tier: extended
+    - operation: POST item
+      providers: 3
+      share: 0.1
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.033
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 20
+      share: 0.87
+      type: string
+      spellings:
+      - id
+      - conversation_id
+      - conversationId
+      - chatID
+      - externalId
+      - conversationMessageId
+      - bot_id
+    - name: content
+      tier: core
+      providers: 18
+      share: 0.783
+      type: string
+      spellings:
+      - content
+      - text
+      - body
+    - name: created_at
+      tier: core
+      providers: 18
+      share: 0.783
+      type: string
+      spellings:
+      - created_at
+      - timestamp
+      - createdAt
+      - dateCreated
+      - createTime
+    - name: role
+      tier: core
+      providers: 16
+      share: 0.696
+      type: string
+      spellings:
+      - type
+      - sender
+      - from
+      - role
+      - author
+      - sender_type
+    - name: status
+      tier: extended
+      providers: 8
+      share: 0.348
+      type: string
+      spellings:
+      - status
+      - state
+    - name: attachments
+      tier: extended
+      providers: 7
+      share: 0.304
+      type: array
+      spellings:
+      - attachments
+    - name: message_id
+      tier: extended
+      providers: 6
+      share: 0.261
+      type: string
+      spellings:
+      - message_id
+      - messageId
+      - messageID
+    - name: name
+      tier: extended
+      providers: 5
+      share: 0.217
+      type: string
+      spellings:
+      - name
+      - title
+    - name: updated_at
+      tier: extended
+      providers: 5
+      share: 0.217
+      type: string
+      spellings:
+      - updated_at
+      - updatedAt
+    long_tail_count: 242
+    long_tail_sample:
+    - sender_id
+    - attachment
+    - custom
+    - direction
+    - metadata
+    - reactions
+    - session_id
+    - user
+    - user_id
+    - account_id
+    - approved_at
+    - campaign_id
+    - cid
+    - command
+    - content_type
+    - conversation
+    - created_by_automod
+    - deleted_at
+    - deleted_for_me
+    - deleted_reply_count
+    - details
+    - draft
+    - duration
+    - edited_at
+    - force_moderation
+    - html
+    - i18n
+    - image_labels
+    - keep_channel_hidden
+    - latest_reactions
+    - member
+    - mentioned_channel
+    - mentioned_group_ids
+    - mentioned_here
+    - mentioned_roles
+    - mentioned_users
+    - mentions
+    - message_text_updated_at
+    - message_type
+    - mml
+  intent:
+    segments_seen:
+      intents: 6
+      intent: 1
+    providers_exposing: 7
+    providers_with_readable_schema: 7
+    operations:
+    - operation: POST collection
+      providers: 6
+      share: 0.857
+      tier: core
+    - operation: GET collection
+      providers: 5
+      share: 0.714
+      tier: core
+    - operation: GET item
+      providers: 5
+      share: 0.714
+      tier: core
+    - operation: DELETE item
+      providers: 3
+      share: 0.429
+      tier: extended
+    - operation: UPDATE item
+      providers: 3
+      share: 0.429
+      tier: extended
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.143
+      tier: long-tail
+    properties:
+    - name: name
+      tier: core
+      providers: 5
+      share: 0.714
+      type: string
+      spellings:
+      - name
+      - displayName
+    - name: description
+      tier: core
+      providers: 4
+      share: 0.571
+      type: string
+      spellings:
+      - description
+    - name: id
+      tier: core
+      providers: 4
+      share: 0.571
+      type: string
+      spellings:
+      - id
+      - intentId
+      - botId
+      - conversationId
+    - name: training_phrases
+      tier: core
+      providers: 4
+      share: 0.571
+      type: array
+      spellings:
+      - trainingPhrases
+      - phrases
+      - utterances
+    long_tail_count: 63
+    long_tail_sample:
+    - is_fallback
+    - output_contexts
+    - parameters
+    - priority
+    - action
+    - analytic_volume_percent
+    - assistant_id
+    - bot_version
+    - built_in_intent_summaries
+    - confidence
+    - created_at
+    - creation_date_time
+    - default_response_platforms
+    - dialog_code_hook
+    - dtmf_pattern
+    - end
+    - end_interaction
+    - entity
+    - entity_evaluation
+    - events
+    - flow_id
+    - followup_intent_info
+    - fulfillment_code_hook
+    - initial_response_setting
+    - input_context_names
+    - input_contexts
+    - intent_closing_setting
+    - intent_confirmation_setting
+    - intent_display_name
+    - intent_evaluation
+    - intent_name
+    - kendra_configuration
+    - labels
+    - last_updated_date_time
+    - live_agent_handoff
+    - locale_id
+    - max_results
+    - messages
+    - miner
+    - ml_disabled

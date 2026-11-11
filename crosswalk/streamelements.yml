@@ -1,0 +1,13 @@
+provider: streamelements
+apis_io: https://apis.io/providers/streamelements/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  bot:
+    path_segment:
+    - bot
+    properties:
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/streamelements-openapi-original.yml#GET /bot/{channel}

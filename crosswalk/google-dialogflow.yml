@@ -1,0 +1,44 @@
+provider: google-dialogflow
+apis_io: https://apis.io/providers/google-dialogflow/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  conversation:
+    path_segment:
+    - conversations
+    properties:
+      name: name
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/google-dialogflow-es-v2-openapi.yml#GET /v2/projects/{projectsId}/conversations
+    - openapi/_original/google-dialogflow-es-v2-openapi.yml#GET /v2/projects/{projectsId}/conversations/{conversationsId}
+    - openapi/_original/google-dialogflow-es-v2-openapi.yml#GET /v2/projects/{projectsId}/locations/{locationsId}/conversations
+    - openapi/_original/google-dialogflow-es-v2-openapi.yml#GET /v2/projects/{projectsId}/locations/{locationsId}/conversations/{conversationsId}
+    - openapi/_original/google-dialogflow-es-v2-openapi.yml#POST /v2/projects/{projectsId}/conversations
+  conversation_message:
+    path_segment:
+    - messages
+    properties:
+      content: content
+      created_at: createTime
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/google-dialogflow-es-v2-openapi.yml#GET /v2/projects/{projectsId}/conversations/{conversationsId}/messages
+    - openapi/_original/google-dialogflow-es-v2-openapi.yml#GET /v2/projects/{projectsId}/locations/{locationsId}/conversations/{conversationsId}/messages
+  intent:
+    path_segment:
+    - intents
+    properties:
+      name:
+      - name
+      - displayName
+      description: description
+      training_phrases: trainingPhrases
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/google-dialogflow-cx-v3-openapi.yml#DELETE /v3/projects/{projectsId}/locations/{locationsId}/agents/{agentsId}/intents/{intentsId}
+    - openapi/_original/google-dialogflow-cx-v3-openapi.yml#GET /v3/projects/{projectsId}/locations/{locationsId}/agents/{agentsId}/intents
+    - openapi/_original/google-dialogflow-cx-v3-openapi.yml#GET /v3/projects/{projectsId}/locations/{locationsId}/agents/{agentsId}/intents/{intentsId}
+    - openapi/_original/google-dialogflow-cx-v3-openapi.yml#PATCH /v3/projects/{projectsId}/locations/{locationsId}/agents/{agentsId}/intents/{intentsId}
+    - openapi/_original/google-dialogflow-cx-v3-openapi.yml#POST /v3/projects/{projectsId}/locations/{locationsId}/agents/{agentsId}/intents

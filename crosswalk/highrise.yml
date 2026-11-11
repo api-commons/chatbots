@@ -1,0 +1,17 @@
+provider: highrise
+apis_io: https://apis.io/providers/highrise/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  bot:
+    path_segment:
+    - bots
+    properties:
+      id: bot_id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/highrise-openapi.json#DELETE /api/user-rooms/{room_id}/bots/{bot_id}
+    - openapi/_original/highrise-openapi.json#GET /api/bots
+    - openapi/_original/highrise-openapi.json#POST /api/bots
+    - openapi/_original/highrise-openapi.json#POST /api/user-rooms/{room_id}/bots/{bot_id}
+    - openapi/_original/highrise-openapi.json#PUT /api/bots/{bot_id}

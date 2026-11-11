@@ -1,0 +1,32 @@
+provider: creed
+apis_io: https://apis.io/providers/creed/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  bot:
+    path_segment:
+    - chatbot
+    properties:
+      id: conversation_id
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/creed-openapi.json#POST /api/b2b/chatbot
+    - openapi/_original/creed-openapi.json#POST /api/chatbot
+    - openapi/_original/creed-openapi.json#POST /sanctum/api/chatbot
+  conversation:
+    path_segment:
+    - chats
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/creed-openapi.json#GET /api/chats
+    - openapi/_original/creed-openapi.json#GET /sanctum/api/chats
+    - openapi/_original/creed-openapi.json#POST /api/chats
+  conversation_message:
+    path_segment:
+    - messages
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/creed-openapi.json#GET /api/chats/{chat_id}/messages
+    - openapi/_original/creed-openapi.json#GET /sanctum/api/chats/{chat_id}/messages

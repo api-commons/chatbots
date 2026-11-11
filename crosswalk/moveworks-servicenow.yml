@@ -1,0 +1,12 @@
+provider: moveworks-servicenow
+apis_io: https://apis.io/providers/moveworks-servicenow/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  conversation:
+    path_segment:
+    - conversations
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/moveworks-servicenow-data-api-openapi.yml#GET /records/conversations

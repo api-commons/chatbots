@@ -1,0 +1,38 @@
+provider: synthflow
+apis_io: https://apis.io/providers/synthflow/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  bot:
+    path_segment:
+    - assistants
+    properties:
+      name: name
+      description: description
+      status: status
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/synthflow-openapi.json#DELETE /assistants/{model_id}
+    - openapi/_original/synthflow-openapi.json#GET /assistants/
+    - openapi/_original/synthflow-openapi.json#GET /assistants/{model_id}
+    - openapi/_original/synthflow-openapi.json#POST /assistants
+    - openapi/_original/synthflow-openapi.json#PUT /assistants/{model_id}
+  conversation:
+    path_segment:
+    - chat
+    properties:
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/synthflow-openapi.json#DELETE /chat/{chat_id}
+    - openapi/_original/synthflow-openapi.json#GET /chat
+    - openapi/_original/synthflow-openapi.json#GET /chat/{chat_id}
+    - openapi/_original/synthflow-openapi.json#POST /chat/{chat_id}
+  conversation_message:
+    path_segment:
+    - messages
+    properties:
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/synthflow-openapi.json#POST /chat/{chat_id}/messages

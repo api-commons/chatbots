@@ -1,0 +1,5632 @@
+{
+ "cohort_size": 147,
+ "unreadable": [],
+ "concepts": {
+  "bot": {
+   "amazon-lex": {
+    "segments": [
+     "bots"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT collection",
+     "PUT item"
+    ],
+    "properties": {
+     "botId": "string",
+     "botName": "string",
+     "description": "string",
+     "botStatus": "string",
+     "latestBotVersion": "string",
+     "lastUpdatedDateTime": "string",
+     "botType": "string",
+     "name": "string",
+     "values": "array",
+     "operator": "string",
+     "roleArn": "string",
+     "dataPrivacy": "object",
+     "idleSessionTTLInSeconds": "integer",
+     "botTags": "object",
+     "testBotAliasTags": "object",
+     "botMembers": "array",
+     "errorLogSettings": "object",
+     "creationDateTime": "string",
+     "failureReasons": "array"
+    },
+    "evidence": [
+     "openapi/_original/amazon-lex-models-v2-openapi.yml#DELETE /bots/{botId}",
+     "openapi/_original/amazon-lex-models-v2-openapi.yml#GET /bots/{botId}",
+     "openapi/_original/amazon-lex-models-v2-openapi.yml#POST /bots",
+     "openapi/_original/amazon-lex-models-v2-openapi.yml#PUT /bots",
+     "openapi/_original/amazon-lex-models-v2-openapi.yml#PUT /bots/{botId}",
+     "openapi/_original/amazon-lex-openapi.yml#DELETE /bots/{botId}",
+     "openapi/_original/amazon-lex-openapi.yml#GET /bots",
+     "openapi/_original/amazon-lex-openapi.yml#GET /bots/{botId}",
+     "openapi/_original/amazon-lex-openapi.yml#POST /bots",
+     "openapi/_original/amazon-lex-openapi.yml#PUT /bots/{botId}"
+    ]
+   },
+   "appsmax-rest-api-v1": {
+    "segments": [
+     "bots"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "data": "array",
+     "links": "object",
+     "meta": "object",
+     "id": "integer",
+     "public_id": "string",
+     "organization_id": "integer",
+     "driver": "string",
+     "name": "string",
+     "status": "string",
+     "telegram_username": "string",
+     "description": "string",
+     "short_description": "string",
+     "commands_menu_name": "string",
+     "interactive_menu_name": "string",
+     "interactive_menu_markup": "string",
+     "interactive_menu_columns": "integer",
+     "interactive_menu_show_back_button": "boolean",
+     "interactive_menu_show_home_button": "boolean",
+     "scenarios_active": "boolean",
+     "commands_active": "boolean",
+     "interactive_menu_active": "boolean",
+     "miniapps_active": "boolean",
+     "subscribers_active": "boolean",
+     "groups_active": "boolean",
+     "channels_active": "boolean",
+     "created_at": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/appsmax-rest-api-v1-openapi-original.json#GET /bots",
+     "openapi/_original/appsmax-rest-api-v1-openapi-original.json#GET /bots/{bot}"
+    ]
+   },
+   "botpress": {
+    "segments": [
+     "bots"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/botpress-openapi.yml#DELETE /admin/bots/{id}",
+     "openapi/_original/botpress-openapi.yml#GET /admin/bots",
+     "openapi/_original/botpress-openapi.yml#POST /admin/bots",
+     "openapi/_original/botpress-openapi.yml#PUT /admin/bots/{id}"
+    ]
+   },
+   "creed": {
+    "segments": [
+     "chatbot"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "reply": null,
+     "conversation_id": "string",
+     "bible_verses": "array",
+     "sources": null,
+     "error": null,
+     "audio_base64": null,
+     "message_id": null,
+     "reply_id": null,
+     "message": "string",
+     "sendAudio": null,
+     "newUser": null,
+     "promptKey": null,
+     "image_ids": null,
+     "retriedFromStream": null,
+     "thoughts": null,
+     "church_name": null,
+     "church_url": null,
+     "bible_version": null
+    },
+    "evidence": [
+     "openapi/_original/creed-openapi.json#POST /api/b2b/chatbot",
+     "openapi/_original/creed-openapi.json#POST /api/chatbot",
+     "openapi/_original/creed-openapi.json#POST /sanctum/api/chatbot"
+    ]
+   },
+   "crescendo": {
+    "segments": [
+     "bots"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "jsonrpc": "string",
+     "id": [
+      "string",
+      "number",
+      "null"
+     ],
+     "result": [
+      "object",
+      "null"
+     ],
+     "error": [
+      "object",
+      "null"
+     ],
+     "method": "string",
+     "params": [
+      "object",
+      "null"
+     ]
+    },
+    "evidence": [
+     "openapi/_original/crescendo-platform-openapi-original.json#POST /api/v1/mcp/tenants/{tenantId}/bots"
+    ]
+   },
+   "discord": {
+    "segments": [
+     "bot"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "url": "string",
+     "session_start_limit": "object",
+     "shards": "integer",
+     "external_user_id": "string",
+     "token_type": "string",
+     "access_token": "string",
+     "expires_in": "integer",
+     "scope": "string",
+     "id_token": "string",
+     "refresh_token": [
+      "string",
+      "null"
+     ],
+     "scopes": [
+      "array",
+      "null"
+     ],
+     "expires_at_s": [
+      "integer",
+      "null"
+     ],
+     "provisional_user_id": null,
+     "preferred_global_name": [
+      "string",
+      "null"
+     ]
+    },
+    "evidence": [
+     "openapi/_original/discord-openapi.json#GET /gateway/bot",
+     "openapi/_original/discord-openapi.json#POST /partner-sdk/provisional-accounts/unmerge/bot",
+     "openapi/_original/discord-openapi.json#POST /partner-sdk/token/bot"
+    ]
+   },
+   "eqbuilder-dev": {
+    "segments": [
+     "bots"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/eqbuilder-dev-openapi.json#DELETE /api/admin/bots/{bot_id}",
+     "openapi/_original/eqbuilder-dev-openapi.json#GET /api/bots"
+    ]
+   },
+   "flowise": {
+    "segments": [
+     "assistants"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "details": "object",
+     "credential": "string",
+     "iconSrc": "string",
+     "createdDate": "string",
+     "updatedDate": "string"
+    },
+    "evidence": [
+     "openapi/_original/flowise-openapi.yml#DELETE /assistants/{id}",
+     "openapi/_original/flowise-openapi.yml#GET /assistants",
+     "openapi/_original/flowise-openapi.yml#GET /assistants/{id}",
+     "openapi/_original/flowise-openapi.yml#POST /assistants",
+     "openapi/_original/flowise-openapi.yml#PUT /assistants/{id}"
+    ]
+   },
+   "genesys": {
+    "segments": [
+     "bots",
+     "assistants"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "dateCreated": "string",
+     "dateModified": "string",
+     "createdBy": "object",
+     "modifiedBy": "object",
+     "googleDialogflowConfig": "object",
+     "transcriptionConfig": "object",
+     "knowledgeSuggestionConfig": "object",
+     "state": "string",
+     "copilot": "object",
+     "selfUri": "string",
+     "variationParent": "object",
+     "version": "string",
+     "supportedLanguages": "array",
+     "intents": "array",
+     "entities": "array",
+     "pageSize": "integer",
+     "pageNumber": "integer",
+     "total": "integer",
+     "firstUri": "string",
+     "nextUri": "string",
+     "previousUri": "string",
+     "lastUri": "string",
+     "pageCount": "integer",
+     "integrationId": "string",
+     "nuanceOrganization": "object",
+     "application": "object",
+     "nuanceEnvironment": "object",
+     "geography": "object",
+     "credentials": "array",
+     "variables": "array",
+     "transferNodes": "array",
+     "locales": "array",
+     "channels": "array"
+    },
+    "evidence": [
+     "openapi/_original/genesys-platform-api-openapi-original.json#DELETE /api/v2/assistants/{assistantId}",
+     "openapi/_original/genesys-platform-api-openapi-original.json#GET /api/v2/assistants",
+     "openapi/_original/genesys-platform-api-openapi-original.json#GET /api/v2/assistants/{assistantId}",
+     "openapi/_original/genesys-platform-api-openapi-original.json#GET /api/v2/integrations/botconnector/{integrationId}/bots",
+     "openapi/_original/genesys-platform-api-openapi-original.json#GET /api/v2/integrations/botconnector/{integrationId}/bots/{botId}",
+     "openapi/_original/genesys-platform-api-openapi-original.json#GET /api/v2/integrations/speech/lex/bots",
+     "openapi/_original/genesys-platform-api-openapi-original.json#GET /api/v2/integrations/speech/lexv2/bots",
+     "openapi/_original/genesys-platform-api-openapi-original.json#GET /api/v2/integrations/speech/nuance/{nuanceIntegrationId}/bots",
+     "openapi/_original/genesys-platform-api-openapi-original.json#GET /api/v2/integrations/speech/nuance/{nuanceIntegrationId}/bots/{botId}",
+     "openapi/_original/genesys-platform-api-openapi-original.json#PATCH /api/v2/assistants/{assistantId}",
+     "openapi/_original/genesys-platform-api-openapi-original.json#POST /api/v2/assistants",
+     "openapi/_original/genesys-platform-api-openapi-original.json#PUT /api/v2/integrations/botconnector/{integrationId}/bots"
+    ]
+   },
+   "highrise": {
+    "segments": [
+     "bots"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST collection",
+     "POST item",
+     "PUT item"
+    ],
+    "properties": {
+     "bot_id": "string",
+     "username": "string",
+     "bot_bio": "string",
+     "api_token": "string",
+     "avatar_key": null,
+     "icon_key": null,
+     "bio": null
+    },
+    "evidence": [
+     "openapi/_original/highrise-openapi.json#DELETE /api/user-rooms/{room_id}/bots/{bot_id}",
+     "openapi/_original/highrise-openapi.json#GET /api/bots",
+     "openapi/_original/highrise-openapi.json#POST /api/bots",
+     "openapi/_original/highrise-openapi.json#POST /api/user-rooms/{room_id}/bots/{bot_id}",
+     "openapi/_original/highrise-openapi.json#PUT /api/bots/{bot_id}"
+    ]
+   },
+   "openai": {
+    "segments": [
+     "assistants"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "id": "string",
+     "object": "string",
+     "created_at": "integer",
+     "name": "string",
+     "description": "string",
+     "model": "string",
+     "instructions": "string",
+     "tools": "array",
+     "file_ids": "array",
+     "metadata": "object",
+     "deleted": "boolean",
+     "tool_resources": null,
+     "temperature": null,
+     "top_p": null,
+     "response_format": null,
+     "reasoning_effort": null
+    },
+    "evidence": [
+     "openapi/_original/assistants-openapi-original.yml#DELETE /assistants/{assistant_id}",
+     "openapi/_original/assistants-openapi-original.yml#GET /assistants",
+     "openapi/_original/assistants-openapi-original.yml#GET /assistants/{assistant_id}",
+     "openapi/_original/assistants-openapi-original.yml#POST /assistants",
+     "openapi/_original/assistants-openapi-original.yml#POST /assistants/{assistant_id}",
+     "openapi/_original/openai-openapi-master-2026-09-23.yml#DELETE /assistants/{assistant_id}",
+     "openapi/_original/openai-openapi-master-2026-09-23.yml#GET /assistants",
+     "openapi/_original/openai-openapi-master-2026-09-23.yml#GET /assistants/{assistant_id}",
+     "openapi/_original/openai-openapi-master-2026-09-23.yml#POST /assistants",
+     "openapi/_original/openai-openapi-master-2026-09-23.yml#POST /assistants/{assistant_id}",
+     "openapi/_original/openai-openapi-master-2026-10-12.yml#DELETE /assistants/{assistant_id}",
+     "openapi/_original/openai-openapi-master-2026-10-12.yml#GET /assistants"
+    ]
+   },
+   "outrival": {
+    "segments": [
+     "assistants"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "data": "array",
+     "meta": "object",
+     "id": "string",
+     "name": "string",
+     "description": "string",
+     "template": "boolean",
+     "variables": "object"
+    },
+    "evidence": [
+     "openapi/_original/outrival-v1-openapi-original.json#DELETE /rest/v1/assistants/{id}",
+     "openapi/_original/outrival-v1-openapi-original.json#GET /rest/v1/assistants",
+     "openapi/_original/outrival-v1-openapi-original.json#GET /rest/v1/assistants/{id}",
+     "openapi/_original/outrival-v1-openapi-original.json#PATCH /rest/v1/assistants/{id}",
+     "openapi/_original/outrival-v1-openapi-original.json#POST /rest/v1/assistants"
+    ]
+   },
+   "sendpulse": {
+    "segments": [
+     "bots"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "channel_data": "object",
+     "inbox": "object",
+     "status": "integer",
+     "created_at": "string",
+     "name": "string",
+     "avatar": [
+      "string",
+      "null"
+     ],
+     "variables": "array",
+     "settings": "object",
+     "widget": "object",
+     "commands_menu": "object"
+    },
+    "evidence": [
+     "openapi/_original/sendpulse-chatbots-openapi.yml#GET /bots",
+     "openapi/_original/sendpulse-facebook-openapi.yml#GET /bots",
+     "openapi/_original/sendpulse-instagram-openapi.yml#GET /bots",
+     "openapi/_original/sendpulse-live-chat-openapi.yml#GET /bots",
+     "openapi/_original/sendpulse-telegram-openapi.yml#GET /bots",
+     "openapi/_original/sendpulse-tiktok-openapi.yml#GET /bots",
+     "openapi/_original/sendpulse-viber-chatbot-openapi.yml#GET /bots",
+     "openapi/_original/sendpulse-whatsapp-openapi.yml#GET /bots"
+    ]
+   },
+   "streamelements": {
+    "segments": [
+     "bot"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "enabled": "boolean",
+     "name": "string",
+     "joined": "boolean",
+     "muted": "boolean",
+     "mod": "boolean",
+     "allowCustomName": "boolean",
+     "language": "string",
+     "channel": "string",
+     "logs": "array"
+    },
+    "evidence": [
+     "openapi/_original/streamelements-openapi-original.yml#GET /bot/{channel}"
+    ]
+   },
+   "synthflow": {
+    "segments": [
+     "assistants"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "status": "string",
+     "response": "object",
+     "details": "object",
+     "end_call_reasons": "array",
+     "description": "string",
+     "phone_number": "string",
+     "external_webhook_url": "string",
+     "is_recording": "boolean",
+     "max_duration": "object",
+     "voicemail_message": "object",
+     "type": "string",
+     "name": "string",
+     "agent": "object",
+     "inbound_call_webhook_url": "string"
+    },
+    "evidence": [
+     "openapi/_original/synthflow-openapi.json#DELETE /assistants/{model_id}",
+     "openapi/_original/synthflow-openapi.json#GET /assistants/",
+     "openapi/_original/synthflow-openapi.json#GET /assistants/{model_id}",
+     "openapi/_original/synthflow-openapi.json#POST /assistants",
+     "openapi/_original/synthflow-openapi.json#PUT /assistants/{model_id}"
+    ]
+   },
+   "zoho-cliq": {
+    "segments": [
+     "bots"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "unique_name": "string",
+     "name": "string",
+     "id": "string",
+     "description": "string",
+     "scope": "string",
+     "channel_participation": "array",
+     "handlers": "array",
+     "creator": "object",
+     "execution_type": "string",
+     "status": "string",
+     "type": "string",
+     "default": "boolean",
+     "subscriber_count": "integer",
+     "calls": "string",
+     "team_ids": "array",
+     "status_messages": "array",
+     "execution_url": "string",
+     "image": "string",
+     "Response Code": "string"
+    },
+    "evidence": [
+     "openapi/_original/bots.yml#DELETE /bots/{BOT_ID}",
+     "openapi/_original/bots.yml#GET /bots",
+     "openapi/_original/bots.yml#GET /bots/{BOT_ID}",
+     "openapi/_original/bots.yml#PATCH /bots/{BOT_ID}",
+     "openapi/_original/bots.yml#POST /bots"
+    ]
+   }
+  },
+  "conversation": {
+   "ada": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "_id": "string",
+     "agent_id": "array",
+     "agent_handle_time": "number",
+     "agent_name": "array",
+     "automated_resolution_classification": "string",
+     "automated_resolution_classification_reason": "string",
+     "bot_handle_time": "number",
+     "browser": "string",
+     "browser_version": "string",
+     "chatter_id": "string",
+     "classifications": "array",
+     "csat": "object",
+     "date_created": "string",
+     "date_updated": "string",
+     "device": "string",
+     "end_user_id": [
+      "string",
+      "null"
+     ],
+     "generated_topic_id": "string",
+     "generated_topic_label": [
+      "string",
+      "null"
+     ],
+     "generated_topic_v2_id": [
+      "string",
+      "null"
+     ],
+     "generated_topic_v2_title": [
+      "string",
+      "null"
+     ],
+     "generated_topic_v2_desc": [
+      "string",
+      "null"
+     ],
+     "generated_topic_v2_parent_id": [
+      "string",
+      "null"
+     ],
+     "inquiry_summary": "string",
+     "is_engaged": "boolean",
+     "is_escalated": "boolean",
+     "is_test_user": "boolean",
+     "language": "string",
+     "last_agent_id": "string",
+     "last_agent_name": "string",
+     "metavariables": "object",
+     "oauth_channel": "string",
+     "platform": "string",
+     "record_last_updated": [
+      "string",
+      "null"
+     ],
+     "used_coaching": "array",
+     "used_articles": "array",
+     "used_playbooks": "array",
+     "variables": "object",
+     "id": "string",
+     "channel_id": "string",
+     "status": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "metadata": "object"
+    },
+    "evidence": [
+     "openapi/_original/ada-data-export-openapi.yml#GET /v2/export/conversations",
+     "openapi/_original/ada-data-export-v1-4-openapi.yml#GET /data_api/v1.4/conversations",
+     "openapi/_original/ada-knowledge-openapi.yml#GET /v2/conversations/{conversation_id}/",
+     "openapi/_original/ada-knowledge-openapi.yml#PATCH /v2/conversations/{conversation_id}/",
+     "openapi/_original/ada-knowledge-openapi.yml#POST /v2/conversations/"
+    ]
+   },
+   "amazon-lex": {
+    "segments": [
+     "sessions"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "botAliasId": "string",
+     "botVersion": "string",
+     "localeId": "string",
+     "channel": "string",
+     "sessionId": "string",
+     "conversationStartTime": "string",
+     "conversationEndTime": "string",
+     "conversationDurationSeconds": "integer",
+     "conversationEndState": "string",
+     "mode": "string",
+     "numberOfTurns": "integer",
+     "invokedIntentSamples": "array",
+     "originatingRequestId": "string",
+     "name": "string",
+     "operator": "string",
+     "values": "array",
+     "messages": "array",
+     "interpretations": "array",
+     "sessionState": "object",
+     "contentType": "string",
+     "requestAttributes": "string",
+     "audioStream": "string",
+     "content": "string",
+     "imageResponseCard": "object",
+     "botId": "string"
+    },
+    "evidence": [
+     "openapi/_original/amazon-lex-models-v2-openapi.yml#POST /bots/{botId}/analytics/sessions",
+     "openapi/_original/amazon-lex-runtime-v2-openapi.yml#DELETE /bots/{botId}/botAliases/{botAliasId}/botLocales/{localeId}/sessions/{sessionId}",
+     "openapi/_original/amazon-lex-runtime-v2-openapi.yml#GET /bots/{botId}/botAliases/{botAliasId}/botLocales/{localeId}/sessions/{sessionId}",
+     "openapi/_original/amazon-lex-runtime-v2-openapi.yml#POST /bots/{botId}/botAliases/{botAliasId}/botLocales/{localeId}/sessions/{sessionId}"
+    ]
+   },
+   "amigo": {
+    "segments": [
+     "conversations",
+     "conversation"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "user_id": "string",
+     "created_at": "string",
+     "is_finished": "boolean",
+     "is_analyzed": "boolean",
+     "completed_post_processings": "array",
+     "final_message": "string",
+     "service_id": "string",
+     "version_set_info": null,
+     "num_messages": "integer",
+     "tags": "object",
+     "type": "string",
+     "conversation_id": "string",
+     "service_version_set_name": "string",
+     "initial_message": null,
+     "initial_message_type": null,
+     "channel_kind": "string",
+     "status": "string",
+     "lifecycle": "string",
+     "entity_id": null,
+     "direction": null,
+     "turn_count": "integer",
+     "duration_seconds": null,
+     "updated_at": "string",
+     "call_sid": null,
+     "caller_id": null,
+     "phone_number": null,
+     "quality_score": null,
+     "has_recording": null,
+     "completion_reason": null,
+     "escalation_status": null,
+     "final_state": null,
+     "source": null,
+     "turns": "array",
+     "plan": null,
+     "voice": null,
+     "channel": "string",
+     "recipient": null,
+     "use_case_id": null,
+     "instruction": null,
+     "force_new": "boolean",
+     "imported": "integer",
+     "created": "integer",
+     "updated": "integer",
+     "source_conversation_id": "string",
+     "started_at": "string",
+     "ended_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/amigo-classic-openapi-original.json#GET /v1/{organization}/conversation/",
+     "openapi/_original/amigo-classic-openapi-original.json#POST /v1/{organization}/conversation/",
+     "openapi/_original/amigo-platform-openapi-original.json#DELETE /v1/{workspace_id}/conversations/{conversation_id}",
+     "openapi/_original/amigo-platform-openapi-original.json#GET /v1/{workspace_id}/conversations/{conversation_id}",
+     "openapi/_original/amigo-platform-openapi-original.json#POST /v1/{workspace_id}/conversations",
+     "openapi/_original/amigo-platform-openapi-original.json#POST /v1/{workspace_id}/world/migration/conversations"
+    ]
+   },
+   "asapp": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "externalId": "string",
+     "agent": "object",
+     "customer": "object",
+     "metadata": "object",
+     "timestamp": "string"
+    },
+    "evidence": [
+     "openapi/_original/asapp-conversations-openapi.yml#GET /conversation/v1/conversations",
+     "openapi/_original/asapp-conversations-openapi.yml#GET /conversation/v1/conversations/{conversationId}",
+     "openapi/_original/asapp-conversations-openapi.yml#POST /conversation/v1/conversations",
+     "openapi/_original/asapp-openapi-openapi.yml#GET /conversation/v1/conversations",
+     "openapi/_original/asapp-openapi-openapi.yml#GET /conversation/v1/conversations/{conversationId}",
+     "openapi/_original/asapp-openapi-openapi.yml#POST /conversation/v1/conversations"
+    ]
+   },
+   "beeper": {
+    "segments": [
+     "chats"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "localChatID": "string",
+     "accountID": "string",
+     "network": "string",
+     "title": "string",
+     "description": "string",
+     "imgURL": "string",
+     "type": "string",
+     "isReadOnly": "boolean",
+     "participants": "object",
+     "lastActivity": "string",
+     "unreadCount": "integer",
+     "unreadMentionsCount": "integer",
+     "lastReadMessageSortKey": "string",
+     "draft": "object",
+     "reminder": "object",
+     "snooze": "object",
+     "isArchived": "boolean",
+     "isMarkedUnread": "boolean",
+     "isMuted": "boolean",
+     "isPinned": "boolean",
+     "isLowPriority": "boolean",
+     "messageExpirySeconds": "integer",
+     "capabilities": "object",
+     "chatID": "string",
+     "senderID": "string",
+     "senderName": "string",
+     "timestamp": "string",
+     "sortKey": "string",
+     "text": "string",
+     "editedTimestamp": "string",
+     "isSender": "boolean",
+     "sendStatus": "object",
+     "isHidden": "boolean",
+     "isDeleted": "boolean",
+     "attachments": "array",
+     "isUnread": "boolean",
+     "linkedMessageID": "string",
+     "mentions": "array",
+     "links": "array",
+     "reactions": "array",
+     "seen": null,
+     "status": "string",
+     "messageText": "string",
+     "participantIDs": "array"
+    },
+    "evidence": [
+     "openapi/_original/beeper-desktop-api-openapi-original.yml#GET /v1/chats",
+     "openapi/_original/beeper-desktop-api-openapi-original.yml#GET /v1/chats/{chatID}",
+     "openapi/_original/beeper-desktop-api-openapi-original.yml#PATCH /v1/chats/{chatID}",
+     "openapi/_original/beeper-desktop-api-openapi-original.yml#POST /v1/chats"
+    ]
+   },
+   "beyond-presence": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "agent_id": "string",
+     "user_name": null,
+     "user_email": null,
+     "tags": "object",
+     "status": null
+    },
+    "evidence": [
+     "openapi/_original/beyond-presence-openapi.json#GET /v1/conversations",
+     "openapi/_original/beyond-presence-openapi.json#GET /v1/conversations/{id}"
+    ]
+   },
+   "bluejay": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "total": "integer",
+     "group_by": null,
+     "data": "array",
+     "breakdown": "array",
+     "groups_truncated": "boolean",
+     "metric_name": null,
+     "metric_type": null,
+     "not_applicable": null,
+     "average": null,
+     "page": null,
+     "page_size": null,
+     "unreadable_skipped": "integer",
+     "conversation": "object",
+     "transcript": "array",
+     "tool_calls": "array",
+     "metric_results": "array",
+     "error_code": null,
+     "error_message": null,
+     "added_count": "integer",
+     "skipped_count": "integer",
+     "added_conversation_ids": "array",
+     "message": null,
+     "lab_id": "string",
+     "conversations": "array"
+    },
+    "evidence": [
+     "openapi/_original/bluejay-openapi.json#DELETE /v1/metrics-lab/lab/{lab_id}/conversations",
+     "openapi/_original/bluejay-openapi.json#GET /v1/observability/conversations",
+     "openapi/_original/bluejay-openapi.json#GET /v1/observability/conversations/{conversation_id}",
+     "openapi/_original/bluejay-openapi.json#POST /v1/metrics-lab/lab/{lab_id}/conversations"
+    ]
+   },
+   "botpress": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/botpress-openapi.yml#DELETE /chat/conversations/{id}",
+     "openapi/_original/botpress-openapi.yml#GET /chat/conversations",
+     "openapi/_original/botpress-openapi.yml#GET /chat/conversations/{id}",
+     "openapi/_original/botpress-openapi.yml#POST /chat/conversations"
+    ]
+   },
+   "chat": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "title": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "participantIds": "array",
+     "participants": "array"
+    },
+    "evidence": [
+     "openapi/_original/chat-reference-openapi.yml#GET /conversations",
+     "openapi/_original/chat-reference-openapi.yml#GET /conversations/{conversationId}",
+     "openapi/_original/chat-reference-openapi.yml#POST /conversations"
+    ]
+   },
+   "chatbase": {
+    "segments": [
+     "chat"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "text": "string",
+     "conversationId": "string",
+     "messages": "array",
+     "chatbotId": "string",
+     "stream": "boolean",
+     "temperature": "number",
+     "model": "string"
+    },
+    "evidence": [
+     "openapi/_original/chatbase-openapi.yml#POST /chat"
+    ]
+   },
+   "chatwoot": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "uuid": "string",
+     "inbox_id": "integer",
+     "contact_last_seen_at": "integer",
+     "status": "string",
+     "agent_last_seen_at": "integer",
+     "messages": "array",
+     "contact": "object",
+     "custom_attributes": "object",
+     "account_id": "number",
+     "additional_attributes": "object",
+     "assignee_last_seen_at": "number",
+     "can_reply": "boolean",
+     "labels": "array",
+     "muted": "boolean",
+     "snoozed_until": "number",
+     "created_at": "number",
+     "updated_at": "number",
+     "timestamp": "number",
+     "first_reply_created_at": "number",
+     "unread_count": "number",
+     "last_non_activity_message": null,
+     "last_activity_at": "number",
+     "priority": "string",
+     "waiting_since": "number",
+     "sla_policy_id": "number",
+     "applied_sla": "object",
+     "sla_events": "array",
+     "meta": "object",
+     "source_id": "string",
+     "contact_id": "integer",
+     "assignee_id": "integer",
+     "team_id": "integer",
+     "message": "object",
+     "open": "number",
+     "unattended": "number",
+     "unassigned": "number",
+     "name": "string",
+     "email": "string",
+     "thumbnail": "string",
+     "availability": "string",
+     "metric": "object"
+    },
+    "evidence": [
+     "openapi/_original/chatwoot-application-api-openapi.yml#GET /api/v1/accounts/{account_id}/contacts/{id}/conversations",
+     "openapi/_original/chatwoot-application-api-openapi.yml#GET /api/v1/accounts/{account_id}/conversations",
+     "openapi/_original/chatwoot-application-api-openapi.yml#GET /api/v1/accounts/{account_id}/conversations/{conversation_id}",
+     "openapi/_original/chatwoot-application-api-openapi.yml#GET /api/v2/accounts/{account_id}/reports/conversations",
+     "openapi/_original/chatwoot-application-api-openapi.yml#GET /api/v2/accounts/{account_id}/reports/conversations/",
+     "openapi/_original/chatwoot-application-api-openapi.yml#GET /public/api/v1/inboxes/{inbox_identifier}/contacts/{contact_identifier}/conversations",
+     "openapi/_original/chatwoot-application-api-openapi.yml#GET /public/api/v1/inboxes/{inbox_identifier}/contacts/{contact_identifier}/conversations/{conversation_id}",
+     "openapi/_original/chatwoot-application-api-openapi.yml#PATCH /api/v1/accounts/{account_id}/conversations/{conversation_id}",
+     "openapi/_original/chatwoot-application-api-openapi.yml#POST /api/v1/accounts/{account_id}/conversations",
+     "openapi/_original/chatwoot-application-api-openapi.yml#POST /public/api/v1/inboxes/{inbox_identifier}/contacts/{contact_identifier}/conversations",
+     "openapi/_original/chatwoot-openapi.yml#GET /api/v1/accounts/{account_id}/contacts/{id}/conversations",
+     "openapi/_original/chatwoot-openapi.yml#GET /api/v1/accounts/{account_id}/conversations"
+    ]
+   },
+   "cometchat": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "conversationId": "string",
+     "conversationType": "string",
+     "lastMessage": "object",
+     "unreadMessageCount": "integer",
+     "updatedAt": "integer"
+    },
+    "evidence": [
+     "openapi/_original/cometchat-openapi.yml#GET /conversations",
+     "openapi/_original/cometchat-openapi.yml#GET /conversations/{conversationId}"
+    ]
+   },
+   "coval": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {
+     "name": "string",
+     "conversation_id": "string",
+     "status": "string",
+     "create_time": "string",
+     "external_conversation_id": "string",
+     "occurred_at": "string",
+     "has_audio": "boolean",
+     "agent_id": "string",
+     "persona_id": "string",
+     "source": "object",
+     "destination": "object",
+     "progress": null,
+     "metadata": "object",
+     "tags": "array",
+     "metric_ids": "array",
+     "metric_outputs": "array",
+     "error": "string",
+     "audio_url": "string",
+     "audio": "string"
+    },
+    "evidence": [
+     "openapi/_original/coval-conversations-openapi.yml#DELETE /conversations/{conversation_id}",
+     "openapi/_original/coval-conversations-openapi.yml#GET /conversations",
+     "openapi/_original/coval-conversations-openapi.yml#GET /conversations/{conversation_id}",
+     "openapi/_original/coval-conversations-openapi.yml#PATCH /conversations/{conversation_id}"
+    ]
+   },
+   "creed": {
+    "segments": [
+     "chats"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/creed-openapi.json#GET /api/chats",
+     "openapi/_original/creed-openapi.json#GET /sanctum/api/chats",
+     "openapi/_original/creed-openapi.json#POST /api/chats"
+    ]
+   },
+   "crescendo": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "ID": [
+      "string",
+      "null"
+     ],
+     "TenantID": [
+      "string",
+      "null"
+     ],
+     "BotID": [
+      "string",
+      "null"
+     ],
+     "BotName": [
+      "string",
+      "null"
+     ],
+     "Datetime": [
+      "integer",
+      "null"
+     ],
+     "EndDatetime": [
+      "integer",
+      "null"
+     ],
+     "DatetimeUTC": [
+      "string",
+      "null"
+     ],
+     "EndDatetimeUTC": [
+      "string",
+      "null"
+     ],
+     "Duration": "integer",
+     "Escalated": [
+      "boolean",
+      "null"
+     ],
+     "escalatedAt": [
+      "integer",
+      "null"
+     ],
+     "CSat": [
+      "number",
+      "null"
+     ],
+     "AgentName": [
+      "string",
+      "null"
+     ],
+     "AgentId": [
+      "string",
+      "integer",
+      "null"
+     ],
+     "AgentEmail": [
+      "string",
+      "null"
+     ],
+     "Category": [
+      "string",
+      "null"
+     ],
+     "Subcategory": [
+      "string",
+      "null"
+     ],
+     "Tertiary": [
+      "string",
+      "null"
+     ],
+     "RemoteIp": [
+      "string",
+      "null"
+     ],
+     "userAgent": [
+      "string",
+      "null"
+     ],
+     "Referrer": [
+      "string",
+      "null"
+     ],
+     "Media": null,
+     "Summary": [
+      "string",
+      "null"
+     ],
+     "Handoff Reason": [
+      "string",
+      "null"
+     ],
+     "ticketId": [
+      "string",
+      "integer",
+      "null"
+     ],
+     "ticketUrl": [
+      "string",
+      "null"
+     ],
+     "ticketKind": [
+      "string",
+      "null"
+     ],
+     "Input": [
+      "string",
+      "null"
+     ],
+     "Contact Name": [
+      "string",
+      "null"
+     ],
+     "Contact Email": [
+      "string",
+      "null"
+     ],
+     "Contact Phone": [
+      "string",
+      "null"
+     ],
+     "Direction": [
+      "string",
+      "null"
+     ],
+     "CustomerName": [
+      "string",
+      "null"
+     ],
+     "CustomerId": [
+      "string",
+      "integer",
+      "null"
+     ],
+     "CustomerEmail": [
+      "string",
+      "null"
+     ],
+     "Groups": null,
+     "Tags": null,
+     "CategoryExplanation": [
+      "string",
+      "null"
+     ],
+     "CategoriesId": [
+      "string",
+      "null"
+     ],
+     "CSatExplanation": [
+      "string",
+      "null"
+     ],
+     "Sentiment": [
+      "number",
+      "null"
+     ],
+     "SentimentExplanation": [
+      "string",
+      "null"
+     ],
+     "Problems": [
+      "array",
+      "null"
+     ],
+     "KPIs": [
+      "array",
+      "null"
+     ],
+     "SourceSystem": [
+      "string",
+      "null"
+     ],
+     "TicketId": [
+      "string",
+      "integer",
+      "null"
+     ],
+     "TicketUrl": [
+      "string",
+      "null"
+     ]
+    },
+    "evidence": [
+     "openapi/_original/crescendo-platform-openapi-original.json#GET /api/v1/reporting/tenants/{tenantId}/assistant/conversations",
+     "openapi/_original/crescendo-platform-openapi-original.json#GET /api/v1/reporting/tenants/{tenantId}/voc/conversations"
+    ]
+   },
+   "crisp": {
+    "segments": [
+     "conversation",
+     "conversations"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/crisp-openapi.yml#GET /website/{website_id}/conversation/{session_id}",
+     "openapi/_original/crisp-openapi.yml#GET /website/{website_id}/conversations/{page_number}",
+     "openapi/_original/crisp-openapi.yml#POST /website/{website_id}/conversation"
+    ]
+   },
+   "discord": {
+    "segments": [
+     "threads"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "integer",
+     "last_message_id": null,
+     "flags": "integer",
+     "last_pin_timestamp": [
+      "string",
+      "null"
+     ],
+     "guild_id": "string",
+     "name": "string",
+     "parent_id": null,
+     "rate_limit_per_user": "integer",
+     "bitrate": "integer",
+     "user_limit": "integer",
+     "rtc_region": [
+      "string",
+      "null"
+     ],
+     "video_quality_mode": "integer",
+     "permissions": "string",
+     "owner_id": "string",
+     "thread_metadata": "object",
+     "message_count": "integer",
+     "member_count": "integer",
+     "total_message_sent": "integer",
+     "applied_tags": "array",
+     "member": "object",
+     "auto_archive_duration": null,
+     "message": "object"
+    },
+    "evidence": [
+     "openapi/_original/discord-openapi.json#POST /channels/{channel_id}/messages/{message_id}/threads",
+     "openapi/_original/discord-openapi.json#POST /channels/{channel_id}/threads"
+    ]
+   },
+   "dixa": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "requesterId": "string",
+     "channel": "string",
+     "createdAt": "string",
+     "direction": "string",
+     "state": "string",
+     "stateUpdatedAt": "string",
+     "anonymizedAt": "string",
+     "link": null,
+     "customAttributes": "array",
+     "transportExpiresAt": "string",
+     "contactEndpointId": "string",
+     "queueId": "string",
+     "highlights": "object",
+     "innerHits": "array",
+     "query": "object",
+     "filters": "object"
+    },
+    "evidence": [
+     "openapi/_original/dixa-api.yaml#GET /beta/conversations/{conversationId}",
+     "openapi/_original/dixa-api.yaml#GET /beta/endusers/{userId}/conversations",
+     "openapi/_original/dixa-api.yaml#GET /beta/search/conversations",
+     "openapi/_original/dixa-api.yaml#POST /beta/conversations",
+     "openapi/_original/dixa-api.yaml#POST /beta/search/conversations"
+    ]
+   },
+   "drift-com": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/drift-com-openapi.yml#GET /conversations/{id}"
+    ]
+   },
+   "elevenlabs": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "conversation_id": "string",
+     "agent_id": "string",
+     "status": "string",
+     "started_at": "string",
+     "duration_seconds": "number",
+     "role": "string",
+     "message": "string",
+     "timestamp": "number",
+     "branch_id": null,
+     "version_id": null,
+     "agent_name": null,
+     "start_time_unix_secs": "integer",
+     "call_duration_secs": "integer",
+     "message_count": "integer",
+     "termination_reason": "string",
+     "call_successful": "string",
+     "call_success_score": null,
+     "transcript_summary": null,
+     "call_summary_title": null,
+     "main_language": null,
+     "conversation_initiation_source": null,
+     "tool_names": null,
+     "direction": null,
+     "rating": null,
+     "sentiment_analysis": null,
+     "data_collection_results": null,
+     "evaluation_criteria_results": null,
+     "tag_ids": "array",
+     "conversation_product": "string",
+     "user_id": null,
+     "metadata": "object",
+     "analysis": null,
+     "visited_agents": "array",
+     "conversation_initiation_client_data": "object",
+     "environment": "string",
+     "has_audio": "boolean",
+     "has_user_audio": "boolean",
+     "has_response_audio": "boolean",
+     "has_auxiliary_audio": "boolean",
+     "transcript": "array",
+     "otlp_traces": null
+    },
+    "evidence": [
+     "openapi/_original/elevenlabs-conversational-ai-openapi.yml#DELETE /v1/convai/conversations/{conversation_id}",
+     "openapi/_original/elevenlabs-conversational-ai-openapi.yml#GET /v1/convai/conversations",
+     "openapi/_original/elevenlabs-conversational-ai-openapi.yml#GET /v1/convai/conversations/{conversation_id}",
+     "openapi/_original/elevenlabs-openapi.json#DELETE /v1/convai/conversations/{conversation_id}",
+     "openapi/_original/elevenlabs-openapi.json#GET /v1/convai/conversations",
+     "openapi/_original/elevenlabs-openapi.json#GET /v1/convai/conversations/{conversation_id}"
+    ]
+   },
+   "forethought": {
+    "segments": [
+     "conversation"
+    ],
+    "operations": [
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "conversation_id": "string",
+     "response": "string",
+     "is_solved": "boolean",
+     "should_escalate": "boolean",
+     "workflow_id": "string",
+     "intent": "string",
+     "query": "string",
+     "context_variables": "object",
+     "channel": "string",
+     "user_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/forethought-solve-api-openapi.yml#POST /solve/api/v1/conversation",
+     "openapi/_original/forethought-solve-api-openapi.yml#PUT /solve/api/v1/conversation/{conversation_id}"
+    ]
+   },
+   "freshchat": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/freshchat-openapi.yml#GET /conversations/{conversation_id}",
+     "openapi/_original/freshchat-openapi.yml#GET /users/{user_id}/conversations",
+     "openapi/_original/freshchat-openapi.yml#POST /conversations",
+     "openapi/_original/freshchat-openapi.yml#PUT /conversations/{conversation_id}"
+    ]
+   },
+   "frontline": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "number",
+     "name": "string",
+     "channel": "string",
+     "is_closed": "boolean",
+     "contact_id": "string",
+     "summary": "string",
+     "contact": "object",
+     "created_at": "string",
+     "updated_at": "string",
+     "role": "string",
+     "type": "string",
+     "text": "string",
+     "audit_log_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/frontline-openapi-original.yml#GET /public/v1/agents/{agentId}/conversations",
+     "openapi/_original/frontline-openapi-original.yml#GET /public/v1/agents/{agentId}/conversations/{conversationId}"
+    ]
+   },
+   "genesys": {
+    "segments": [
+     "conversations",
+     "chats"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "eventId": "string",
+     "message": "string",
+     "retryable": "boolean",
+     "endTransferEvents": "array",
+     "phoneTransferEvents": "array",
+     "progressTransferEvents": "array",
+     "routingTransferEvents": "array",
+     "userTransferEvents": "array",
+     "communicationAnsweredEvents": "array",
+     "communicationDispositionAppliedEvents": "array",
+     "holdUpdatedEvents": "array",
+     "externalEstablishedEvents": "array",
+     "ivrEstablishedEvents": "array",
+     "phoneEstablishedEvents": "array",
+     "routingEstablishedEvents": "array",
+     "userEstablishedEvents": "array",
+     "audioUpdatedEvents": "array",
+     "communicationEndedEvents": "array",
+     "consultTransferEvents": "array",
+     "progressConsultTransferEvents": "array",
+     "endConsultTransferEvents": "array",
+     "emailBeginTransmittingEvents": "array",
+     "emailCommunicationEndedEvents": "array",
+     "emailExternalEstablishedEvents": "array",
+     "emailFlowEstablishedEvents": "array",
+     "emailRoutingEstablishedEvents": "array",
+     "emailUserEstablishedEvents": "array",
+     "emailCommunicationAnsweredEvents": "array",
+     "emailCommunicationDispositionAppliedEvents": "array",
+     "emailCommunicationSentMessageEvents": "array",
+     "emailHoldUpdatedEvents": "array",
+     "emailEndTransferEvents": "array",
+     "emailProgressTransferEvents": "array",
+     "emailRoutingTransferEvents": "array",
+     "emailUserTransferEvents": "array",
+     "externalContactId": "string",
+     "conversationId": "string",
+     "communicationId": "string",
+     "mediaType": "string",
+     "id": "string",
+     "name": "string",
+     "externalTag": "string",
+     "startTime": "string",
+     "endTime": "string",
+     "address": "string",
+     "participants": "array",
+     "conversationIds": "array",
+     "maxParticipants": "integer",
+     "recordingState": "string",
+     "state": "string",
+     "divisions": "array",
+     "recentTransfers": "array",
+     "securePause": "boolean",
+     "utilizationLabelId": "string",
+     "inactivityTimeout": "string",
+     "selfUri": "string",
+     "entities": "array",
+     "pageSize": "integer",
+     "pageNumber": "integer",
+     "total": "integer",
+     "firstUri": "string",
+     "nextUri": "string",
+     "previousUri": "string",
+     "lastUri": "string",
+     "pageCount": "integer",
+     "otherMediaUris": "array",
+     "queueId": "string",
+     "provider": "string",
+     "skillIds": "array",
+     "languageId": "string",
+     "priority": "integer",
+     "attributes": "object",
+     "customerName": "string",
+     "jwt": "string",
+     "eventStreamUri": "string",
+     "member": "object",
+     "organizationId": "string",
+     "deploymentId": "string",
+     "routingTarget": "object",
+     "memberInfo": "object",
+     "memberAuthToken": "string",
+     "journeyContext": "object",
+     "skills": "array",
+     "language": "object",
+     "label": "object",
+     "scoredAgents": "array",
+     "skillExpression": "string",
+     "skillExpressionId": "string",
+     "labelId": "string",
+     "requestScoredAgents": "array",
+     "conversation": "object",
+     "sentimentScore": "number",
+     "sentimentTrend": "number",
+     "sentimentTrendClass": "string",
+     "empathyScores": "array",
+     "participantMetrics": "object",
+     "startTimeMs": "integer",
+     "participantPurpose": "string",
+     "translatedText": "string",
+     "appointment": "object"
+    },
+    "evidence": [
+     "openapi/_original/genesys-platform-api-openapi-original.json#DELETE /api/v2/conversations/{conversationId}",
+     "openapi/_original/genesys-platform-api-openapi-original.json#GET /api/v2/conversations",
+     "openapi/_original/genesys-platform-api-openapi-original.json#GET /api/v2/conversations/chats",
+     "openapi/_original/genesys-platform-api-openapi-original.json#GET /api/v2/conversations/chats/{conversationId}",
+     "openapi/_original/genesys-platform-api-openapi-original.json#GET /api/v2/conversations/{conversationId}",
+     "openapi/_original/genesys-platform-api-openapi-original.json#GET /api/v2/speechandtextanalytics/conversations/{conversationId}",
+     "openapi/_original/genesys-platform-api-openapi-original.json#GET /api/v2/speechandtextanalytics/translations/languages/{languageId}/conversations/{conversationId}",
+     "openapi/_original/genesys-platform-api-openapi-original.json#GET /api/v2/telephony/sipmessages/conversations/{conversationId}",
+     "openapi/_original/genesys-platform-api-openapi-original.json#PATCH /api/v2/conversations/chats/{conversationId}",
+     "openapi/_original/genesys-platform-api-openapi-original.json#PATCH /api/v2/routing/conversations/{conversationId}",
+     "openapi/_original/genesys-platform-api-openapi-original.json#POST /api/v2/coaching/appointments/{appointmentId}/conversations",
+     "openapi/_original/genesys-platform-api-openapi-original.json#POST /api/v2/conversations/chats"
+    ]
+   },
+   "getstream": {
+    "segments": [
+     "threads"
+    ],
+    "operations": [
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "threads": "array",
+     "active_participant_count": "integer",
+     "channel": "object",
+     "channel_cid": "string",
+     "created_at": "string",
+     "created_by": "object",
+     "created_by_user_id": "string",
+     "custom": "object",
+     "deleted_at": "string",
+     "draft": "object",
+     "last_message_at": "string",
+     "latest_replies": "array",
+     "parent_message": "object",
+     "parent_message_id": "string",
+     "participant_count": "integer",
+     "read": "array",
+     "reply_count": "integer",
+     "thread_participants": "array",
+     "title": "string",
+     "updated_at": "string",
+     "filter": "object",
+     "limit": "integer",
+     "member_limit": "integer",
+     "next": "string",
+     "participant_limit": "integer",
+     "prev": "string",
+     "reply_limit": "integer",
+     "sort": "array",
+     "user": "object",
+     "user_id": "string",
+     "duration": "string",
+     "thread": [
+      "object",
+      "null"
+     ],
+     "set": "object",
+     "unset": "array"
+    },
+    "evidence": [
+     "openapi/_original/getstream-openapi.yml#GET /threads/{message_id}",
+     "openapi/_original/getstream-openapi.yml#PATCH /threads/{message_id}",
+     "openapi/_original/getstream-openapi.yml#POST /threads",
+     "openapi/_original/stream-io-product-chat-api-openapi.yml#GET /api/v2/chat/threads/{message_id}",
+     "openapi/_original/stream-io-product-chat-api-openapi.yml#GET /threads/{message_id}",
+     "openapi/_original/stream-io-product-chat-api-openapi.yml#PATCH /api/v2/chat/threads/{message_id}",
+     "openapi/_original/stream-io-product-chat-api-openapi.yml#PATCH /threads/{message_id}",
+     "openapi/_original/stream-io-product-chat-api-openapi.yml#POST /api/v2/chat/threads",
+     "openapi/_original/stream-io-product-chat-api-openapi.yml#POST /threads"
+    ]
+   },
+   "gladly": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {
+     "id": "string",
+     "customerId": "string",
+     "agentId": "string",
+     "inboxId": "string",
+     "customAttributes": "array",
+     "topicIds": "array",
+     "createdAt": "string",
+     "closedAt": "string",
+     "status": "string",
+     "assignee": "object"
+    },
+    "evidence": [
+     "openapi/_original/gladly-rest-api-openapi.yml#GET /api/v1/conversations/{conversationId}",
+     "openapi/_original/gladly-rest-api-openapi.yml#GET /api/v1/customers/{customerId}/conversations",
+     "openapi/_original/gladly-rest-api-openapi.yml#PATCH /api/v1/conversations/{conversationId}"
+    ]
+   },
+   "google-dialogflow": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "phoneNumber": "object",
+     "name": "string",
+     "initialGeneratorContexts": "object",
+     "initialConversationProfile": "object",
+     "endTime": "string",
+     "conversationStage": "string",
+     "ingestedContextReferences": "object",
+     "startTime": "string",
+     "lifecycleState": "string",
+     "telephonyConnectionInfo": "object",
+     "conversationProfile": "string"
+    },
+    "evidence": [
+     "openapi/_original/google-dialogflow-es-v2-openapi.yml#GET /v2/projects/{projectsId}/conversations",
+     "openapi/_original/google-dialogflow-es-v2-openapi.yml#GET /v2/projects/{projectsId}/conversations/{conversationsId}",
+     "openapi/_original/google-dialogflow-es-v2-openapi.yml#GET /v2/projects/{projectsId}/locations/{locationsId}/conversations",
+     "openapi/_original/google-dialogflow-es-v2-openapi.yml#GET /v2/projects/{projectsId}/locations/{locationsId}/conversations/{conversationsId}",
+     "openapi/_original/google-dialogflow-es-v2-openapi.yml#POST /v2/projects/{projectsId}/conversations",
+     "openapi/_original/google-dialogflow-es-v2-openapi.yml#POST /v2/projects/{projectsId}/locations/{locationsId}/conversations"
+    ]
+   },
+   "gridspace": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "DELETE item"
+    ],
+    "properties": {
+     "ok": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/gridspace-openapi.json#DELETE /v1/conversations/{call_id}"
+    ]
+   },
+   "happyrobot": {
+    "segments": [
+     "sessions"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "session_id": "string",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/happyrobot-public-api-openapi.json#POST /chat/sessions/"
+    ]
+   },
+   "hilos": {
+    "segments": [
+     "conversation"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "contact": "string",
+     "status": null,
+     "first_message": null,
+     "assigned": "array",
+     "tags": "array",
+     "created_on": "string",
+     "source": null,
+     "assigned_team": "integer",
+     "channel": "integer"
+    },
+    "evidence": [
+     "openapi/_original/hilos-openapi-original.yml#GET /api/inbox/conversation"
+    ]
+   },
+   "hiver": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {
+     "id": "number",
+     "assignee": "object",
+     "status": "string",
+     "tag_ids": "array",
+     "gmail_thread_id": "string",
+     "private_permalink": "string",
+     "public_permalink": "string",
+     "message_ids": "array",
+     "tags": "object"
+    },
+    "evidence": [
+     "openapi/_original/hiver-api-openapi.json#GET /inboxes/{inbox_id}/conversations",
+     "openapi/_original/hiver-api-openapi.json#GET /inboxes/{inbox_id}/conversations/{conversation_id}",
+     "openapi/_original/hiver-api-openapi.json#PATCH /inboxes/{inbox_id}/conversations/{conversation_id}"
+    ]
+   },
+   "hume-ai": {
+    "segments": [
+     "chats"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "chat_group_id": "string",
+     "config": "object",
+     "end_timestamp": [
+      "integer",
+      "null"
+     ],
+     "event_count": [
+      "integer",
+      "null"
+     ],
+     "id": "string",
+     "metadata": [
+      "string",
+      "null"
+     ],
+     "start_timestamp": "integer",
+     "status": "string",
+     "events_page": "array",
+     "page_number": "integer",
+     "page_size": "integer",
+     "pagination_direction": "string",
+     "total_pages": "integer"
+    },
+    "evidence": [
+     "openapi/_original/hume-ai-evi-openapi.yml#GET /v0/evi/chats",
+     "openapi/_original/hume-ai-evi-openapi.yml#GET /v0/evi/chats/{id}"
+    ]
+   },
+   "intercom": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "type": "string",
+     "id": "string",
+     "title": "string",
+     "created_at": "integer",
+     "updated_at": "integer",
+     "state": "string",
+     "open": "boolean",
+     "priority": "string",
+     "from": "object",
+     "body": "string"
+    },
+    "evidence": [
+     "openapi/_original/intercom-openapi.yml#GET /conversations",
+     "openapi/_original/intercom-openapi.yml#GET /conversations/{conversation_id}",
+     "openapi/_original/intercom-openapi.yml#POST /conversations"
+    ]
+   },
+   "khoros-ai": {
+    "segments": [
+     "conversations",
+     "conversation",
+     "threads"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "status": "string",
+     "data": "array"
+    },
+    "evidence": [
+     "openapi/_original/lithium-care-analytics-reports-openapi.json#POST /reports/report/conversation",
+     "openapi/_original/lithium-care-author-api-v2-openapi.json#GET /networks/{networktype}/handles/{networkhandle}/conversations",
+     "openapi/_original/lithium-care-author-api-v2-openapi.json#GET /networks/{networktype}/ids/{networkid}/conversations",
+     "openapi/_original/lithium-care-author-api-v2-openapi.json#GET /networks/{networktype}/instances/{networkinstance}/handles/{networkhandle}/conversations",
+     "openapi/_original/lithium-care-author-api-v2-openapi.json#GET /networks/{networktype}/instances/{networkinstance}/ids/{networkid}/conversations",
+     "openapi/_original/lithium-care-author-api-v2-openapi.json#GET /{lswUuid}/conversations",
+     "openapi/_original/lithium-conversations-api-openapi.yml#GET /{lswUuid}/conversations",
+     "openapi/_original/lithium-flow-flow-rest-api-openapi.json#GET /threads",
+     "openapi/_original/lithium-networks-api-openapi.yml#GET /networks/{networktype}/handles/{networkhandle}/conversations",
+     "openapi/_original/lithium-networks-api-openapi.yml#GET /networks/{networktype}/ids/{networkid}/conversations",
+     "openapi/_original/lithium-networks-api-openapi.yml#GET /networks/{networktype}/instances/{networkinstance}/handles/{networkhandle}/conversations",
+     "openapi/_original/lithium-networks-api-openapi.yml#GET /networks/{networktype}/instances/{networkinstance}/ids/{networkid}/conversations"
+    ]
+   },
+   "koreai": {
+    "segments": [
+     "chat"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "action": "object",
+     "outcome": "string",
+     "response": "string",
+     "sessionId": "string",
+     "attachmentIds": "array",
+     "message": "string",
+     "metadata": "object"
+    },
+    "evidence": [
+     "openapi/_original/koreai-abl-runtime-conversation-openapi.json#POST /api/v1/project/{projectSlug}/{env}/agent/{agentSlug}/chat"
+    ]
+   },
+   "kustomer": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "type": "string",
+     "id": "string",
+     "attributes": "object",
+     "customer": "string",
+     "name": "string",
+     "channel": "string",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/kustomer-openapi.yml#POST /v1/conversations"
+    ]
+   },
+   "lithium": {
+    "segments": [
+     "conversations",
+     "conversation",
+     "threads"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "status": "string",
+     "data": "array"
+    },
+    "evidence": [
+     "openapi/_original/lithium-care-analytics-reports-openapi.json#POST /reports/report/conversation",
+     "openapi/_original/lithium-care-author-api-v2-openapi.json#GET /networks/{networktype}/handles/{networkhandle}/conversations",
+     "openapi/_original/lithium-care-author-api-v2-openapi.json#GET /networks/{networktype}/ids/{networkid}/conversations",
+     "openapi/_original/lithium-care-author-api-v2-openapi.json#GET /networks/{networktype}/instances/{networkinstance}/handles/{networkhandle}/conversations",
+     "openapi/_original/lithium-care-author-api-v2-openapi.json#GET /networks/{networktype}/instances/{networkinstance}/ids/{networkid}/conversations",
+     "openapi/_original/lithium-care-author-api-v2-openapi.json#GET /{lswUuid}/conversations",
+     "openapi/_original/lithium-flow-flow-rest-api-openapi.json#GET /threads"
+    ]
+   },
+   "maven-agi": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "conversationMessageId": "object",
+     "userId": "object",
+     "text": "string",
+     "responseLength": "string"
+    },
+    "evidence": [
+     "openapi/_original/maven-agi-openapi.yml#DELETE /conversations/{conversationId}",
+     "openapi/_original/maven-agi-openapi.yml#GET /conversations/{conversationId}",
+     "openapi/_original/maven-agi-openapi.yml#PATCH /conversations/{conversationId}",
+     "openapi/_original/maven-agi-openapi.yml#POST /charts/conversations",
+     "openapi/_original/maven-agi-openapi.yml#POST /conversations",
+     "openapi/_original/maven-agi-openapi.yml#POST /tables/conversations"
+    ]
+   },
+   "microsoft-copilot": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "conversationId": "string",
+     "message": "object",
+     "prompt": "string",
+     "enableWebSearch": "boolean",
+     "fileReferences": "array"
+    },
+    "evidence": [
+     "openapi/_original/microsoft-copilot-openapi.yml#POST /copilot/conversations"
+    ]
+   },
+   "moonscale": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "transcript": "Transcript[]",
+     "summary": "object"
+    },
+    "evidence": [
+     "openapi/_original/moonscale-openapi-original.json#GET /api/v1/conversations/{conversationShortCode}"
+    ]
+   },
+   "moveworks": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "conversation_id": "string",
+     "title": "string",
+     "archived": "boolean",
+     "created_at": "string",
+     "updated_at": "string",
+     "id": "string",
+     "primary_domain": "string",
+     "route": "string",
+     "user_id": "string",
+     "last_updated_time": "string",
+     "created_time": "string",
+     "type": "string",
+     "detail": "object"
+    },
+    "evidence": [
+     "openapi/_original/moveworks-beta-conversations-api-openapi.yaml#GET /conversations",
+     "openapi/_original/moveworks-beta-conversations-api-openapi.yaml#GET /conversations/{conversation_id}",
+     "openapi/_original/moveworks-beta-conversations-api-openapi.yaml#PATCH /conversations/{conversation_id}",
+     "openapi/_original/moveworks-beta-conversations-api-openapi.yaml#POST /conversations",
+     "openapi/_original/moveworks-conversations-api-openapi.yaml#GET /conversations",
+     "openapi/_original/moveworks-conversations-api-openapi.yaml#GET /conversations/{conversation_id}",
+     "openapi/_original/moveworks-conversations-api-openapi.yaml#PATCH /conversations/{conversation_id}",
+     "openapi/_original/moveworks-conversations-api-openapi.yaml#POST /conversations",
+     "openapi/_original/moveworks-data-api-openapi.yaml#GET /conversations"
+    ]
+   },
+   "moveworks-servicenow": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "odata.context": "string",
+     "odata.nextlink": "string",
+     "value": "array"
+    },
+    "evidence": [
+     "openapi/_original/moveworks-servicenow-data-api-openapi.yml#GET /records/conversations"
+    ]
+   },
+   "nextiva": {
+    "segments": [
+     "conversation",
+     "conversations"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "count": "integer",
+     "total": "integer",
+     "objects": "array",
+     "_id": "string",
+     "conversationId": "string",
+     "conversationType": "string",
+     "createdAt": "integer",
+     "createdBy": "string",
+     "deletedAt": "integer",
+     "description": "string",
+     "id": "string",
+     "modifiedAt": "integer",
+     "modifiedBy": "string",
+     "name": "string",
+     "objectType": "string",
+     "parentEngagementId": "string",
+     "parentTicketId": "string",
+     "parentWorkitemId": "string",
+     "participants": "array",
+     "phoneNumber": "string",
+     "sharedInboxId": "string",
+     "sharedInboxName": "string",
+     "tenantId": "string",
+     "topicName": "string",
+     "totalCount": "integer",
+     "unreadCount": "integer"
+    },
+    "evidence": [
+     "openapi/_original/nextiva-conversation-openapi.yml#GET /analytics/api/tickets/{ticketId}/conversations",
+     "openapi/_original/nextiva-conversation-openapi.yml#GET /data/api/types/conversation"
+    ]
+   },
+   "ondemand": {
+    "segments": [
+     "sessions"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "companyId": "string",
+     "externalUserId": "string",
+     "pluginIds": "array",
+     "title": "string",
+     "createdBy": "string",
+     "createdAt": "string",
+     "updatedAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/ondemand-openapi.json#GET /chat/v1/sessions",
+     "openapi/_original/ondemand-openapi.json#GET /chat/v1/sessions/{sessionId}",
+     "openapi/_original/ondemand-openapi.json#POST /chat/v1/sessions"
+    ]
+   },
+   "openai": {
+    "segments": [
+     "threads",
+     "conversations"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "id": "string",
+     "object": "string",
+     "created_at": "integer",
+     "tool_resources": null,
+     "metadata": null,
+     "role": "string",
+     "content": null,
+     "attachments": null,
+     "deleted": "boolean",
+     "phase": null,
+     "type": "string",
+     "title": null,
+     "status": null,
+     "user": "string"
+    },
+    "evidence": [
+     "openapi/_original/openai-openapi-master-2026-09-23.yml#DELETE /chatkit/threads/{thread_id}",
+     "openapi/_original/openai-openapi-master-2026-09-23.yml#DELETE /conversations/{conversation_id}",
+     "openapi/_original/openai-openapi-master-2026-09-23.yml#DELETE /threads/{thread_id}",
+     "openapi/_original/openai-openapi-master-2026-09-23.yml#GET /chatkit/threads",
+     "openapi/_original/openai-openapi-master-2026-09-23.yml#GET /chatkit/threads/{thread_id}",
+     "openapi/_original/openai-openapi-master-2026-09-23.yml#GET /conversations/{conversation_id}",
+     "openapi/_original/openai-openapi-master-2026-09-23.yml#GET /threads/{thread_id}",
+     "openapi/_original/openai-openapi-master-2026-09-23.yml#POST /conversations",
+     "openapi/_original/openai-openapi-master-2026-09-23.yml#POST /conversations/{conversation_id}",
+     "openapi/_original/openai-openapi-master-2026-09-23.yml#POST /threads",
+     "openapi/_original/openai-openapi-master-2026-09-23.yml#POST /threads/{thread_id}",
+     "openapi/_original/openai-openapi-master-2026-10-12.yml#DELETE /chatkit/threads/{thread_id}"
+    ]
+   },
+   "outrival": {
+    "segments": [
+     "chat"
+    ],
+    "operations": [
+     "GET collection",
+     "PATCH collection"
+    ],
+    "properties": {
+     "initialMessage": "string",
+     "prompt": "string",
+     "resources": "string",
+     "provider": "string",
+     "model": "string",
+     "temperature": "number",
+     "maxTokensOutput": "number",
+     "chatMode": "boolean",
+     "quickRepliesEnabled": "boolean",
+     "isRagEnabled": "boolean",
+     "forceRag": "boolean",
+     "ragTriggerTopics": "string",
+     "preserveRagResult": "boolean",
+     "functions": "array"
+    },
+    "evidence": [
+     "openapi/_original/outrival-v1-openapi-original.json#GET /rest/v1/assistants/{assistantId}/chat",
+     "openapi/_original/outrival-v1-openapi-original.json#PATCH /rest/v1/assistants/{assistantId}/chat",
+     "openapi/_original/outrival-v2-openapi-original.json#GET /rest/v2/nodes/{nodeId}/chat",
+     "openapi/_original/outrival-v2-openapi-original.json#PATCH /rest/v2/nodes/{nodeId}/chat"
+    ]
+   },
+   "papercups": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "account_id": "string",
+     "customer_id": "string",
+     "assignee_id": "string",
+     "status": "string",
+     "priority": "string",
+     "source": "string",
+     "read": "boolean",
+     "inserted_at": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/papercups-openapi.yml#DELETE /conversations/{id}",
+     "openapi/_original/papercups-openapi.yml#GET /conversations",
+     "openapi/_original/papercups-openapi.yml#GET /conversations/{id}",
+     "openapi/_original/papercups-openapi.yml#POST /conversations",
+     "openapi/_original/papercups-openapi.yml#PUT /conversations/{id}"
+    ]
+   },
+   "paradox": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "oid": "string",
+     "label": "string",
+     "is_remote": "integer",
+     "deactivated": "integer",
+     "created_at": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/paradox-api-openapi.yml#GET /company/conversations"
+    ]
+   },
+   "phonic": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "agent": null,
+     "workspace": "string",
+     "project": "object",
+     "external_id": [
+      "string",
+      "null"
+     ],
+     "origin": "string",
+     "model": "string",
+     "generate_welcome_message": "boolean",
+     "is_welcome_message_interruptible": "boolean",
+     "welcome_message": [
+      "string",
+      "null"
+     ],
+     "template_variables": "object",
+     "system_prompt": [
+      "string",
+      "null"
+     ],
+     "input_format": "string",
+     "output_format": "string",
+     "background_noise_level": "number",
+     "background_noise": "string",
+     "live_transcript": [
+      "string",
+      "null"
+     ],
+     "post_call_transcript": [
+      "string",
+      "null"
+     ],
+     "duration_ms": "number",
+     "audio_url": [
+      "string",
+      "null"
+     ],
+     "started_at": [
+      "string",
+      "null"
+     ],
+     "ended_at": [
+      "string",
+      "null"
+     ],
+     "ended_by": "string",
+     "boosted_keywords": [
+      "array",
+      "null"
+     ],
+     "pronunciation_dictionary": "array",
+     "min_words_to_interrupt": "integer",
+     "default_language": "string",
+     "additional_languages": [
+      "array",
+      "null"
+     ],
+     "multilingual_mode": "string",
+     "push_to_talk": "boolean",
+     "languages": "array",
+     "generate_no_input_poke_text": [
+      "boolean",
+      "null"
+     ],
+     "no_input_poke_sec": [
+      "integer",
+      "null"
+     ],
+     "no_input_poke_text": [
+      "string",
+      "null"
+     ],
+     "no_input_end_conversation_sec": [
+      "integer",
+      "null"
+     ],
+     "websocket_timeout_sec": "number",
+     "vad_prebuffer_duration_ms": [
+      "integer",
+      "null"
+     ],
+     "vad_min_speech_duration_ms": [
+      "integer",
+      "null"
+     ],
+     "vad_min_silence_duration_ms": [
+      "integer",
+      "null"
+     ],
+     "vad_threshold": [
+      "number",
+      "null"
+     ],
+     "task_results": "object",
+     "items": "array",
+     "call_info": null,
+     "analysis": "object",
+     "is_redacted": "boolean",
+     "redacted_transcript": [
+      "string",
+      "null"
+     ],
+     "metadata": [
+      "object",
+      "null"
+     ],
+     "data_retention_policy": null,
+     "deletion_info": "object",
+     "enable_assistant_backchannel": "boolean",
+     "assistant_backchannel_aggressiveness": [
+      "number",
+      "null"
+     ],
+     "success": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/phonic-openapi-original.yaml#DELETE /conversations/{id}",
+     "openapi/_original/phonic-openapi-original.yaml#GET /conversations",
+     "openapi/_original/phonic-openapi-original.yaml#GET /conversations/{id}"
+    ]
+   },
+   "polycode-co-uk": {
+    "segments": [
+     "chat"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "graphId": "string",
+     "sessionUuid": "string",
+     "userMessage": "string",
+     "volatile": "boolean",
+     "visitorId": "string"
+    },
+    "evidence": [
+     "openapi/_original/polycode-co-uk-marginalia-openapi.json#POST /api/chat"
+    ]
+   },
+   "rainbow": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "peerId": "string",
+     "lastMessage": "object",
+     "unreadCount": "integer"
+    },
+    "evidence": [
+     "openapi/_original/rainbow-messaging-openapi.yml#GET /enduser/v1.0/conversations"
+    ]
+   },
+   "sarj-ai-developer-api": {
+    "segments": [
+     "chat"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "call_id": "string",
+     "participant_name": "string",
+     "participant_token": "string",
+     "room_name": "string",
+     "server_url": "string",
+     "app_settings": null,
+     "language": "string",
+     "scenario": "object"
+    },
+    "evidence": [
+     "openapi/_original/sarj-ai-developer-api-voice-platform-openapi.json#POST /v1/beta/calls/chat"
+    ]
+   },
+   "sendpulse": {
+    "segments": [
+     "chats"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "contact": "object",
+     "inbox_last_message": "object",
+     "inbox_unread": "integer"
+    },
+    "evidence": [
+     "openapi/_original/sendpulse-facebook-openapi.yml#GET /chats",
+     "openapi/_original/sendpulse-instagram-openapi.yml#GET /chats",
+     "openapi/_original/sendpulse-live-chat-openapi.yml#GET /chats",
+     "openapi/_original/sendpulse-telegram-openapi.yml#GET /chats",
+     "openapi/_original/sendpulse-tiktok-openapi.yml#GET /chats",
+     "openapi/_original/sendpulse-viber-chatbot-openapi.yml#GET /chats",
+     "openapi/_original/sendpulse-whatsapp-openapi.yml#GET /chats"
+    ]
+   },
+   "signalwire": {
+    "segments": [
+     "chat"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "status": "string",
+     "id": "string",
+     "initial_message": null,
+     "jsonrpc": "string",
+     "method": "string",
+     "params": "object"
+    },
+    "evidence": [
+     "openapi/_original/signalwire-rest-openapi.yaml#POST /api/ai/chat",
+     "openapi/_original/signalwire-rest-openapi.yml#POST /api/ai/chat"
+    ]
+   },
+   "stream-io": {
+    "segments": [
+     "threads"
+    ],
+    "operations": [
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "active_participant_count": "integer",
+     "channel": "object",
+     "channel_cid": "string",
+     "created_at": "string",
+     "created_by": "object",
+     "created_by_user_id": "string",
+     "custom": "object",
+     "deleted_at": "string",
+     "draft": "object",
+     "last_message_at": "string",
+     "latest_replies": "array",
+     "parent_message": "object",
+     "parent_message_id": "string",
+     "participant_count": "integer",
+     "read": "array",
+     "reply_count": "integer",
+     "thread_participants": "array",
+     "title": "string",
+     "updated_at": "string",
+     "filter": "object",
+     "limit": "integer",
+     "member_limit": "integer",
+     "next": "string",
+     "participant_limit": "integer",
+     "prev": "string",
+     "reply_limit": "integer",
+     "sort": "array",
+     "user": "object",
+     "user_id": "string",
+     "duration": "string",
+     "thread": "object",
+     "set": "object",
+     "unset": "array"
+    },
+    "evidence": [
+     "openapi/_original/stream-io-chat-openapi.yml#GET /threads/{message_id}",
+     "openapi/_original/stream-io-chat-openapi.yml#PATCH /threads/{message_id}",
+     "openapi/_original/stream-io-chat-openapi.yml#POST /threads",
+     "openapi/_original/stream-io-serverside-openapi.yml#GET /api/v2/chat/threads/{message_id}",
+     "openapi/_original/stream-io-serverside-openapi.yml#PATCH /api/v2/chat/threads/{message_id}",
+     "openapi/_original/stream-io-serverside-openapi.yml#POST /api/v2/chat/threads"
+    ]
+   },
+   "syllable": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "timestamp": "string",
+     "conversation_id": "string",
+     "agent_id": null,
+     "agent_name": null,
+     "agent_type": null,
+     "prompt_id": null,
+     "prompt_name": null,
+     "prompt_version": null,
+     "llm_provider": null,
+     "llm_model": null,
+     "llm_version": null,
+     "llm_temperature": null,
+     "llm_seed": null,
+     "is_legacy": null
+    },
+    "evidence": [
+     "openapi/_original/syllable-sdk-openapi-original.yml#GET /api/v1/conversations/"
+    ]
+   },
+   "synthflow": {
+    "segments": [
+     "chat"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST item"
+    ],
+    "properties": {
+     "status": "string",
+     "response": "object",
+     "model_id": "string",
+     "metadata": "object"
+    },
+    "evidence": [
+     "openapi/_original/synthflow-openapi.json#DELETE /chat/{chat_id}",
+     "openapi/_original/synthflow-openapi.json#GET /chat",
+     "openapi/_original/synthflow-openapi.json#GET /chat/{chat_id}",
+     "openapi/_original/synthflow-openapi.json#POST /chat/{chat_id}"
+    ]
+   },
+   "talkjs": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "subject": "string",
+     "photoUrl": "string",
+     "welcomeMessages": "array",
+     "custom": "object",
+     "topicId": "string",
+     "lastMessage": "object",
+     "participants": "object",
+     "createdAt": "integer",
+     "everyoneReadUntil": "integer",
+     "readUntil": null
+    },
+    "evidence": [
+     "openapi/_original/talkjs-openapi.yml#DELETE /conversations/{conversationId}",
+     "openapi/_original/talkjs-openapi.yml#GET /conversations",
+     "openapi/_original/talkjs-openapi.yml#GET /conversations/{conversationId}",
+     "openapi/_original/talkjs-openapi.yml#GET /users/{userId}/conversations",
+     "openapi/_original/talkjs-openapi.yml#PATCH /users/{userId}/conversations/{conversationId}",
+     "openapi/_original/talkjs-openapi.yml#PUT /conversations/{conversationId}"
+    ]
+   },
+   "tavus": {
+    "segments": [
+     "conversations"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "conversation_id": "string",
+     "conversation_name": "string",
+     "status": "string",
+     "conversation_url": "string",
+     "callback_url": "string",
+     "replica_id": "string",
+     "persona_id": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "meeting_token": "string",
+     "audio_only": "boolean",
+     "conversational_context": "string",
+     "custom_greeting": "string",
+     "memory_stores": "array",
+     "document_ids": "array",
+     "document_retrieval_strategy": "string",
+     "document_tags": "array",
+     "test_mode": "boolean",
+     "require_auth": "boolean",
+     "max_participants": "integer",
+     "properties": "object",
+     "events": "array"
+    },
+    "evidence": [
+     "openapi/_original/tavus-openapi.yml#DELETE /v2/conversations/{conversation_id}",
+     "openapi/_original/tavus-openapi.yml#GET /v2/conversations",
+     "openapi/_original/tavus-openapi.yml#GET /v2/conversations/{conversation_id}",
+     "openapi/_original/tavus-openapi.yml#POST /v2/conversations"
+    ]
+   },
+   "vapi": {
+    "segments": [
+     "chat"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "assistantId": "string",
+     "assistant": null,
+     "assistantOverrides": null,
+     "squadId": "string",
+     "squad": null,
+     "name": "string",
+     "sessionId": "string",
+     "input": null,
+     "stream": "boolean",
+     "previousChatId": "string",
+     "id": "string",
+     "orgId": "string",
+     "messages": "array",
+     "output": "array",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "costs": "array",
+     "cost": "number",
+     "transport": null
+    },
+    "evidence": [
+     "openapi/_original/vapi-openapi.yml#DELETE /chat/{id}",
+     "openapi/_original/vapi-openapi.yml#GET /chat",
+     "openapi/_original/vapi-openapi.yml#GET /chat/{id}",
+     "openapi/_original/vapi-openapi.yml#POST /chat"
+    ]
+   },
+   "vapi-ai": {
+    "segments": [
+     "chat"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "assistantId": "string",
+     "assistant": null,
+     "assistantOverrides": null,
+     "squadId": "string",
+     "squad": null,
+     "name": "string",
+     "sessionId": "string",
+     "input": null,
+     "stream": "boolean",
+     "previousChatId": "string",
+     "id": "string",
+     "orgId": "string",
+     "messages": "array",
+     "output": "array",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "costs": "array",
+     "cost": "number",
+     "transport": null
+    },
+    "evidence": [
+     "openapi/_original/vapi-chats-api-openapi.yml#DELETE /chat/{id}",
+     "openapi/_original/vapi-chats-api-openapi.yml#GET /chat",
+     "openapi/_original/vapi-chats-api-openapi.yml#GET /chat/{id}",
+     "openapi/_original/vapi-chats-api-openapi.yml#POST /chat"
+    ]
+   },
+   "zoho-cliq": {
+    "segments": [
+     "chats",
+     "threads"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT collection",
+     "PUT item"
+    ],
+    "properties": {
+     "name": "string",
+     "chat_id": "string",
+     "chat_type": "string",
+     "participant_count": "integer",
+     "created_time": "string",
+     "last_modified_time": "string",
+     "pinned": "boolean",
+     "removed": "boolean",
+     "creator": "object",
+     "last_message_info": "object",
+     "unread_time": "string",
+     "unread_message_count": "integer",
+     "previous_titles": "string",
+     "thread_message_id": "string",
+     "parent_chat_id": "string",
+     "user_id": "string",
+     "user_ids": "array",
+     "title": "string",
+     "type": "string",
+     "data": "object",
+     "operation": "string",
+     "read_status": "string",
+     "chats": "array",
+     "chat_ids": "array",
+     "history_status": "string",
+     "last_message_id": "string",
+     "message_id": "string",
+     "follower_count": "integer",
+     "is_follower": "boolean",
+     "thread_state": "string",
+     "parent_message_sender": "string",
+     "last_message_information": "object",
+     "action": "string"
+    },
+    "evidence": [
+     "openapi/_original/chats.yml#GET /chats",
+     "openapi/_original/chats.yml#GET /chats/{CHAT_ID}",
+     "openapi/_original/chats.yml#POST /chats",
+     "openapi/_original/chats.yml#PUT /chats",
+     "openapi/_original/chats.yml#PUT /chats/{CHAT_ID1}",
+     "openapi/_original/chats.yml#PUT /chats/{CHAT_ID2}",
+     "openapi/_original/chats.yml#PUT /chats/{CHAT_ID3}",
+     "openapi/_original/chats.yml#PUT /chats/{CHAT_ID}",
+     "openapi/_original/threads.yml#GET /threads/{THREAD_CHAT_ID}",
+     "openapi/_original/threads.yml#PUT /threads/{THREAD_CHAT_ID}"
+    ]
+   }
+  },
+  "conversation_message": {
+   "ada": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "type": "string",
+     "message_id": "string",
+     "created_at": "string",
+     "author": "object",
+     "content": null,
+     "id": "string",
+     "conversation_id": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/ada-knowledge-openapi.yml#GET /v2/conversations/{conversation_id}/messages/",
+     "openapi/_original/ada-knowledge-openapi.yml#POST /v2/conversations/{conversation_id}/messages/"
+    ]
+   },
+   "agmsg-world": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "message_id": "string",
+     "sender_id": "string",
+     "sender_username": "string",
+     "content": "string",
+     "content_type": "string",
+     "created_at": "number",
+     "reactions": "array",
+     "chat_id": "string",
+     "n": "integer",
+     "page": "integer",
+     "messages": "array",
+     "total": "integer"
+    },
+    "evidence": [
+     "openapi/_original/agmsg-world-openapi.json#POST /chat/group/messages",
+     "openapi/_original/agmsg-world-openapi.json#POST /chat/private/messages",
+     "openapi/_original/agmsg-world-openapi.yml#POST /chat/group/messages",
+     "openapi/_original/agmsg-world-openapi.yml#POST /chat/private/messages"
+    ]
+   },
+   "amigo": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "interaction_id": "string",
+     "created_at": "string",
+     "sender": "string",
+     "message": "string",
+     "format": "string",
+     "message_type": "string"
+    },
+    "evidence": [
+     "openapi/_original/amigo-classic-openapi-original.json#GET /v1/{organization}/conversation/{conversation_id}/messages/"
+    ]
+   },
+   "asapp": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "text": "string",
+     "sender": "object",
+     "messageId": "string",
+     "createdTimestamp": "string",
+     "clientTimestamp": "string",
+     "id": "string",
+     "timestamp": "string"
+    },
+    "evidence": [
+     "openapi/_original/asapp-conversations-openapi.yml#GET /conversation/v1/conversation/messages",
+     "openapi/_original/asapp-conversations-openapi.yml#GET /conversation/v1/conversations/{conversationId}/messages",
+     "openapi/_original/asapp-conversations-openapi.yml#GET /conversation/v1/conversations/{conversationId}/messages/{messageId}",
+     "openapi/_original/asapp-conversations-openapi.yml#POST /conversation/v1/conversations/{conversationId}/messages",
+     "openapi/_original/asapp-conversations-openapi.yml#POST /conversation/v1/conversations/{conversationId}/messages/batch",
+     "openapi/_original/asapp-openapi-openapi.yml#GET /conversation/v1/conversation/messages",
+     "openapi/_original/asapp-openapi-openapi.yml#GET /conversation/v1/conversations/{conversationId}/messages",
+     "openapi/_original/asapp-openapi-openapi.yml#GET /conversation/v1/conversations/{conversationId}/messages/{messageId}",
+     "openapi/_original/asapp-openapi-openapi.yml#POST /conversation/v1/conversations/{conversationId}/messages",
+     "openapi/_original/asapp-openapi-openapi.yml#POST /conversation/v1/conversations/{conversationId}/messages/batch"
+    ]
+   },
+   "beeper": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "chatID": "string",
+     "accountID": "string",
+     "senderID": "string",
+     "senderName": "string",
+     "timestamp": "string",
+     "sortKey": "string",
+     "type": "string",
+     "text": "string",
+     "editedTimestamp": "string",
+     "isSender": "boolean",
+     "sendStatus": "object",
+     "isHidden": "boolean",
+     "isDeleted": "boolean",
+     "attachments": "array",
+     "isUnread": "boolean",
+     "linkedMessageID": "string",
+     "mentions": "array",
+     "links": "array",
+     "reactions": "array",
+     "seen": null,
+     "pendingMessageID": "string",
+     "replyToMessageID": "string",
+     "attachment": null,
+     "success": "boolean",
+     "messageID": "string"
+    },
+    "evidence": [
+     "openapi/_original/beeper-desktop-api-openapi-original.yml#DELETE /v1/chats/{chatID}/messages/{messageID}",
+     "openapi/_original/beeper-desktop-api-openapi-original.yml#GET /v1/chats/{chatID}/messages",
+     "openapi/_original/beeper-desktop-api-openapi-original.yml#GET /v1/chats/{chatID}/messages/{messageID}",
+     "openapi/_original/beeper-desktop-api-openapi-original.yml#POST /v1/chats/{chatID}/messages",
+     "openapi/_original/beeper-desktop-api-openapi-original.yml#PUT /v1/chats/{chatID}/messages/{messageID}"
+    ]
+   },
+   "beyond-presence": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "message": "string",
+     "sent_at": "string",
+     "sender": "string"
+    },
+    "evidence": [
+     "openapi/_original/beyond-presence-openapi.json#GET /v1/conversations/{id}/messages"
+    ]
+   },
+   "botpress": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/botpress-openapi.yml#DELETE /chat/messages/{id}",
+     "openapi/_original/botpress-openapi.yml#GET /chat/messages",
+     "openapi/_original/botpress-openapi.yml#GET /chat/messages/{id}",
+     "openapi/_original/botpress-openapi.yml#POST /chat/messages",
+     "openapi/_original/botpress-openapi.yml#PUT /chat/messages"
+    ]
+   },
+   "brevo": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "text": "string",
+     "visitorId": "string",
+     "agentId": "string",
+     "agentName": "string",
+     "createdAt": "string",
+     "agentUserpic": "string",
+     "attachments": "array",
+     "bcc": "array",
+     "cc": "array",
+     "file": "object",
+     "forwardedToSourceStatus": "object",
+     "from": "object",
+     "html": "string",
+     "integrations": "object",
+     "isBot": "boolean",
+     "isMissed": "boolean",
+     "isMissedByVisitor": "boolean",
+     "isPushed": "boolean",
+     "isTrigger": "boolean",
+     "rawUnsafeHtml": "string",
+     "receivedFrom": "string",
+     "replyTo": "object",
+     "sourceMessageId": "string",
+     "subject": "string",
+     "to": "array",
+     "isSentViaJsApi": "boolean",
+     "messageType": "string",
+     "isForward": "boolean",
+     "source": "object",
+     "agentEmail": "string"
+    },
+    "evidence": [
+     "openapi/_original/brevo-conversations-openapi.yml#DELETE /conversations/messages/{messageId}",
+     "openapi/_original/brevo-conversations-openapi.yml#GET /conversations/messages/{messageId}",
+     "openapi/_original/brevo-conversations-openapi.yml#POST /conversations/messages",
+     "openapi/_original/brevo-conversations-openapi.yml#PUT /conversations/messages/{messageId}",
+     "openapi/_original/brevo-conversations-openapi_2.yml#DELETE /conversations/messages/{id}",
+     "openapi/_original/brevo-conversations-openapi_2.yml#GET /conversations/messages/{id}",
+     "openapi/_original/brevo-conversations-openapi_2.yml#POST /conversations/messages",
+     "openapi/_original/brevo-conversations-openapi_2.yml#PUT /conversations/messages/{id}"
+    ]
+   },
+   "chat": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "conversationId": "string",
+     "senderId": "string",
+     "content": "string",
+     "contentType": "string",
+     "sentAt": "string",
+     "editedAt": "string",
+     "metadata": "object"
+    },
+    "evidence": [
+     "openapi/_original/chat-reference-openapi.yml#GET /conversations/{conversationId}/messages",
+     "openapi/_original/chat-reference-openapi.yml#POST /conversations/{conversationId}/messages"
+    ]
+   },
+   "chatwoot": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "content": "string",
+     "message_type": "integer",
+     "content_type": "string",
+     "content_attributes": "object",
+     "created_at": "integer",
+     "conversation_id": "integer",
+     "attachments": "array",
+     "sender": "object",
+     "echo_id": "string",
+     "name": "string",
+     "title": "string",
+     "value": "string",
+     "csat_survey_response": "object",
+     "account_id": "number",
+     "inbox_id": "number",
+     "updated_at": "integer",
+     "private": "boolean",
+     "status": "string",
+     "source_id": "string",
+     "sender_type": "string",
+     "sender_id": "number",
+     "external_source_ids": "object",
+     "additional_attributes": "object",
+     "processed_message_content": "string",
+     "sentiment": "object",
+     "conversation": "object",
+     "attachment": "object",
+     "campaign_id": "integer",
+     "template_params": "object"
+    },
+    "evidence": [
+     "openapi/_original/chatwoot-application-api-openapi.yml#DELETE /api/v1/accounts/{account_id}/conversations/{conversation_id}/messages/{message_id}",
+     "openapi/_original/chatwoot-application-api-openapi.yml#GET /accounts/{account_id}/conversations/{conversation_id}/messages",
+     "openapi/_original/chatwoot-application-api-openapi.yml#GET /api/v1/accounts/{account_id}/conversations/{conversation_id}/messages",
+     "openapi/_original/chatwoot-application-api-openapi.yml#GET /public/api/v1/inboxes/{inbox_identifier}/contacts/{contact_identifier}/conversations/{conversation_id}/messages",
+     "openapi/_original/chatwoot-application-api-openapi.yml#PATCH /public/api/v1/inboxes/{inbox_identifier}/contacts/{contact_identifier}/conversations/{conversation_id}/messages/{message_id}",
+     "openapi/_original/chatwoot-application-api-openapi.yml#POST /api/v1/accounts/{account_id}/conversations/{conversation_id}/messages",
+     "openapi/_original/chatwoot-application-api-openapi.yml#POST /public/api/v1/inboxes/{inbox_identifier}/contacts/{contact_identifier}/conversations/{conversation_id}/messages",
+     "openapi/_original/chatwoot-openapi.yml#DELETE /api/v1/accounts/{account_id}/conversations/{conversation_id}/messages/{message_id}",
+     "openapi/_original/chatwoot-openapi.yml#GET /api/v1/accounts/{account_id}/conversations/{conversation_id}/messages",
+     "openapi/_original/chatwoot-openapi.yml#GET /public/api/v1/inboxes/{inbox_identifier}/contacts/{contact_identifier}/conversations/{conversation_id}/messages",
+     "openapi/_original/chatwoot-openapi.yml#POST /api/v1/accounts/{account_id}/conversations/{conversation_id}/messages",
+     "openapi/_original/chatwoot-openapi.yml#POST /public/api/v1/inboxes/{inbox_identifier}/contacts/{contact_identifier}/conversations/{conversation_id}/messages"
+    ]
+   },
+   "clickup": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "next_cursor": "string",
+     "assignee": "string",
+     "assigned_by": "string",
+     "content": "string",
+     "date": "number",
+     "date_assigned": "number",
+     "date_resolved": "number",
+     "date_updated": "number",
+     "group_assignee": "string",
+     "id": "string",
+     "parent_channel": "string",
+     "parent_message": "string",
+     "post_data": null,
+     "resolved": "boolean",
+     "resolved_by": "string",
+     "triaged_action": "number",
+     "triaged_object_id": "string",
+     "triaged_object_type": "number",
+     "type": "string",
+     "user_id": "string",
+     "links": null,
+     "replies_count": "number",
+     "reactions": "array",
+     "followers": "array",
+     "content_format": "string"
+    },
+    "evidence": [
+     "openapi/_original/clickup-public-api-v3-openapi.json#DELETE /api/v3/workspaces/{workspace_id}/chat/messages/{message_id}",
+     "openapi/_original/clickup-public-api-v3-openapi.json#GET /api/v3/workspaces/{workspace_id}/chat/channels/{channel_id}/messages",
+     "openapi/_original/clickup-public-api-v3-openapi.json#PATCH /api/v3/workspaces/{workspace_id}/chat/messages/{message_id}",
+     "openapi/_original/clickup-public-api-v3-openapi.json#POST /api/v3/workspaces/{workspace_id}/chat/channels/{channel_id}/messages",
+     "openapi/_original/clickup-public-api-v3-openapi_2.json#DELETE /api/v3/workspaces/{workspace_id}/chat/messages/{message_id}",
+     "openapi/_original/clickup-public-api-v3-openapi_2.json#GET /api/v3/workspaces/{workspace_id}/chat/channels/{channel_id}/messages",
+     "openapi/_original/clickup-public-api-v3-openapi_2.json#PATCH /api/v3/workspaces/{workspace_id}/chat/messages/{message_id}",
+     "openapi/_original/clickup-public-api-v3-openapi_2.json#POST /api/v3/workspaces/{workspace_id}/chat/channels/{channel_id}/messages"
+    ]
+   },
+   "creed": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/creed-openapi.json#GET /api/chats/{chat_id}/messages",
+     "openapi/_original/creed-openapi.json#GET /sanctum/api/chats/{chat_id}/messages"
+    ]
+   },
+   "crisp": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/crisp-openapi.yml#GET /website/{website_id}/conversation/{session_id}/messages"
+    ]
+   },
+   "culture-sbs": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "publicId": "string",
+     "username": "string",
+     "content": "string",
+     "createdAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/culture-sbs-openapi.json#GET /v1/chat/messages",
+     "openapi/_original/culture-sbs-openapi.json#POST /v1/chat/messages",
+     "openapi/_original/culture-sbs-openapi.yml#GET /v1/chat/messages",
+     "openapi/_original/culture-sbs-openapi.yml#POST /v1/chat/messages"
+    ]
+   },
+   "dixa": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "authorId": "string",
+     "externalId": "string",
+     "createdAt": "string",
+     "attributes": null,
+     "content": null,
+     "direction": "string",
+     "messageId": "string",
+     "attachments": "array",
+     "integrationEmail": "string"
+    },
+    "evidence": [
+     "openapi/_original/dixa-api.yaml#GET /beta/conversations/{conversationId}/messages",
+     "openapi/_original/dixa-api.yaml#POST /beta/conversations/{conversationId}/messages"
+    ]
+   },
+   "drift-com": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/drift-com-openapi.yml#GET /conversations/{id}/messages",
+     "openapi/_original/drift-com-openapi.yml#POST /conversations/{id}/messages"
+    ]
+   },
+   "freshchat": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/freshchat-openapi.yml#GET /conversations/{conversation_id}/messages",
+     "openapi/_original/freshchat-openapi.yml#POST /conversations/{conversation_id}/messages"
+    ]
+   },
+   "genesys": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "dateCreated": "string",
+     "dateModified": "string",
+     "toJid": "string",
+     "jid": "string",
+     "body": "string",
+     "mentions": "object",
+     "edited": "boolean",
+     "attachmentDeleted": "boolean",
+     "fileUri": "string",
+     "thread": "object",
+     "parentThread": "object",
+     "user": "object",
+     "toUser": "object",
+     "reactions": "array",
+     "message": "string",
+     "threadId": "string",
+     "name": "string",
+     "conversation": "object",
+     "sender": "object",
+     "bodyType": "string",
+     "timestamp": "string",
+     "selfUri": "string",
+     "to": "array",
+     "cc": "array",
+     "bcc": "array",
+     "from": "object",
+     "replyTo": "object",
+     "subject": "string",
+     "attachments": "array",
+     "textBody": "string",
+     "htmlBody": "string",
+     "time": "string",
+     "historyIncluded": "boolean",
+     "state": "string",
+     "draftType": "string",
+     "emailSizeBytes": "integer",
+     "maxEmailSizeBytes": "integer",
+     "entities": "array",
+     "pageSize": "integer",
+     "pageNumber": "integer",
+     "total": "integer",
+     "firstUri": "string",
+     "nextUri": "string",
+     "previousUri": "string",
+     "lastUri": "string",
+     "pageCount": "integer",
+     "queueId": "string",
+     "toAddress": "string",
+     "toAddressMessengerType": "string",
+     "useExistingConversation": "boolean",
+     "externalContactId": "string",
+     "useUserFromAddress": "boolean",
+     "participants": "array",
+     "otherMediaUris": "array",
+     "recentTransfers": "array",
+     "utilizationLabelId": "string",
+     "inactivityTimeout": "string",
+     "divisions": "array",
+     "externalTag": "string",
+     "startTime": "string",
+     "endTime": "string",
+     "address": "string",
+     "conversationIds": "array",
+     "maxParticipants": "integer",
+     "recordingState": "string",
+     "securePause": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/genesys-platform-api-openapi-original.json#DELETE /api/v2/chats/rooms/{roomJid}/messages/{messageId}",
+     "openapi/_original/genesys-platform-api-openapi-original.json#DELETE /api/v2/chats/users/{userId}/messages/{messageId}",
+     "openapi/_original/genesys-platform-api-openapi-original.json#GET /api/v2/chats/messages/{messageId}",
+     "openapi/_original/genesys-platform-api-openapi-original.json#GET /api/v2/chats/rooms/{roomJid}/messages",
+     "openapi/_original/genesys-platform-api-openapi-original.json#GET /api/v2/chats/rooms/{roomJid}/messages/{messageIds}",
+     "openapi/_original/genesys-platform-api-openapi-original.json#GET /api/v2/chats/threads/{threadId}/messages",
+     "openapi/_original/genesys-platform-api-openapi-original.json#GET /api/v2/chats/users/{userId}/messages",
+     "openapi/_original/genesys-platform-api-openapi-original.json#GET /api/v2/chats/users/{userId}/messages/{messageIds}",
+     "openapi/_original/genesys-platform-api-openapi-original.json#GET /api/v2/conversations/chats/{conversationId}/messages",
+     "openapi/_original/genesys-platform-api-openapi-original.json#GET /api/v2/conversations/chats/{conversationId}/messages/{messageId}",
+     "openapi/_original/genesys-platform-api-openapi-original.json#GET /api/v2/conversations/emails/{conversationId}/messages",
+     "openapi/_original/genesys-platform-api-openapi-original.json#GET /api/v2/conversations/emails/{conversationId}/messages/{messageId}"
+    ]
+   },
+   "getstream": {
+    "segments": [
+     "messages",
+     "message"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item",
+     "PUT item"
+    ],
+    "properties": {
+     "duration": "string",
+     "message": "object",
+     "pending_message_metadata": "object",
+     "force_moderation": "boolean",
+     "keep_channel_hidden": "boolean",
+     "pending": "boolean",
+     "skip_enrich_url": "boolean",
+     "skip_push": "boolean",
+     "attachments": "array",
+     "cid": "string",
+     "command": "string",
+     "created_at": "string",
+     "custom": "object",
+     "deleted_at": "string",
+     "deleted_for_me": "boolean",
+     "deleted_reply_count": "integer",
+     "draft": "object",
+     "html": "string",
+     "i18n": "object",
+     "id": "string",
+     "image_labels": "object",
+     "latest_reactions": "array",
+     "member": "object",
+     "mentioned_channel": "boolean",
+     "mentioned_group_ids": "array",
+     "mentioned_here": "boolean",
+     "mentioned_roles": "array",
+     "mentioned_users": "array",
+     "message_text_updated_at": "string",
+     "mml": "string",
+     "moderation": "object",
+     "own_reactions": "array",
+     "parent_id": "string",
+     "pin_expires": "string",
+     "pinned": "boolean",
+     "pinned_at": "string",
+     "pinned_by": "object",
+     "poll": "object",
+     "poll_id": "string",
+     "quoted_message": "object",
+     "quoted_message_id": "string",
+     "reaction_counts": "object",
+     "reaction_groups": "object",
+     "reaction_scores": "object",
+     "reminder": "object",
+     "reply_count": "integer",
+     "restricted_visibility": "array",
+     "shadowed": "boolean",
+     "shared_location": "object",
+     "show_in_channel": "boolean",
+     "silent": "boolean",
+     "text": "string",
+     "thread_participants": "array",
+     "type": "string",
+     "updated_at": "string",
+     "user": "object",
+     "set": "object",
+     "unset": "array",
+     "user_id": "string",
+     "approved_at": "string",
+     "created_by_automod": "boolean",
+     "details": "object",
+     "moderation_feedback": "object",
+     "moderation_result": "object",
+     "reason": "string",
+     "rejected_at": "string",
+     "reviewed_at": "string",
+     "reviewed_by": "object"
+    },
+    "evidence": [
+     "openapi/_original/stream-io-product-chat-api-openapi.yml#DELETE /api/v2/chat/messages/{id}",
+     "openapi/_original/stream-io-product-chat-api-openapi.yml#GET /api/v2/chat/channels/{type}/{id}/messages",
+     "openapi/_original/stream-io-product-chat-api-openapi.yml#GET /api/v2/chat/messages/{id}",
+     "openapi/_original/stream-io-product-chat-api-openapi.yml#GET /api/v2/chat/moderation/flags/message",
+     "openapi/_original/stream-io-product-chat-api-openapi.yml#POST /api/v2/chat/channels/{type}/{id}/message",
+     "openapi/_original/stream-io-product-chat-api-openapi.yml#POST /api/v2/chat/messages/{id}",
+     "openapi/_original/stream-io-product-chat-api-openapi.yml#PUT /api/v2/chat/messages/{id}"
+    ]
+   },
+   "google-dialogflow": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "createTime": "string",
+     "participant": "string",
+     "sendTime": "string",
+     "sentimentAnalysis": "object",
+     "name": "string",
+     "participantRole": "string",
+     "messageAnnotation": "object",
+     "content": "string",
+     "languageCode": "string"
+    },
+    "evidence": [
+     "openapi/_original/google-dialogflow-es-v2-openapi.yml#GET /v2/projects/{projectsId}/conversations/{conversationsId}/messages",
+     "openapi/_original/google-dialogflow-es-v2-openapi.yml#GET /v2/projects/{projectsId}/locations/{locationsId}/conversations/{conversationsId}/messages"
+    ]
+   },
+   "happyrobot": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "session_id": "string",
+     "role": "string",
+     "status": "string",
+     "content": "string",
+     "timestamp": "string",
+     "is_filler": "boolean",
+     "is_interrupted": "boolean",
+     "tool_calls": null,
+     "artifacts": null,
+     "turn_index": "integer",
+     "created_at": "string",
+     "type": "string",
+     "media_id": "string",
+     "s3_key": "string",
+     "mime_type": "string",
+     "presigned_url": "string",
+     "filename": "string",
+     "size_bytes": "number",
+     "artifact_text": "string"
+    },
+    "evidence": [
+     "openapi/_original/happyrobot-public-api-openapi.json#GET /sessions/{session_id}/messages",
+     "openapi/_original/happyrobot-public-api-openapi.json#POST /chat/sessions/{id}/messages"
+    ]
+   },
+   "khoros-ai": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/lithium-conversations-api-openapi.yml#GET /conversations/calendar/messages",
+     "openapi/_original/lithium-marketing-conversations-openapi.json#GET /conversations/calendar/messages"
+    ]
+   },
+   "lithium": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/lithium-marketing-conversations-openapi.json#GET /conversations/calendar/messages"
+    ]
+   },
+   "maven-agi": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "conversationMessageId": "object",
+     "userId": "object",
+     "text": "string",
+     "responseLength": "string"
+    },
+    "evidence": [
+     "openapi/_original/maven-agi-openapi.yml#POST /conversations/{conversationId}/messages"
+    ]
+   },
+   "moveworks": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "message_id": "string",
+     "conversation_id": "string",
+     "response_id": "string",
+     "actor": "string",
+     "content": null,
+     "citations": [
+      "array",
+      "null"
+     ],
+     "content_references": [
+      "array",
+      "null"
+     ],
+     "created_at": "string",
+     "feedback": null,
+     "actions": "array"
+    },
+    "evidence": [
+     "openapi/_original/moveworks-beta-conversations-api-openapi.yaml#GET /conversations/{conversation_id}/messages",
+     "openapi/_original/moveworks-beta-conversations-api-openapi.yaml#GET /conversations/{conversation_id}/responses/{response_id}/messages",
+     "openapi/_original/moveworks-conversations-api-openapi.yaml#GET /conversations/{conversation_id}/messages",
+     "openapi/_original/moveworks-conversations-api-openapi.yaml#GET /conversations/{conversation_id}/responses/{response_id}/messages"
+    ]
+   },
+   "ondemand": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "sessionId": "string",
+     "companyId": "string",
+     "externalUserId": "string",
+     "pluginIds": "array",
+     "endpointId": "string",
+     "responseMode": "string",
+     "status": "string",
+     "type": "string",
+     "media": "object",
+     "query": "string",
+     "answer": "string",
+     "createdBy": "string",
+     "createdAt": "string",
+     "updatedAt": "string"
+    },
+    "evidence": [
+     "openapi/_original/ondemand-openapi.json#GET /chat/v1/sessions/{sessionId}/messages",
+     "openapi/_original/ondemand-openapi.json#GET /chat/v1/sessions/{sessionId}/messages/{messageId}"
+    ]
+   },
+   "openai": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "content": null,
+     "refusal": null,
+     "tool_calls": "array",
+     "annotations": "array",
+     "role": "string",
+     "function_call": "object",
+     "audio": null,
+     "id": "string",
+     "content_parts": null,
+     "object": "string",
+     "created_at": "integer",
+     "thread_id": "string",
+     "status": "string",
+     "incomplete_details": null,
+     "completed_at": null,
+     "incomplete_at": null,
+     "assistant_id": null,
+     "run_id": null,
+     "attachments": null,
+     "metadata": null,
+     "deleted": "boolean",
+     "name": null,
+     "file_ids": "array"
+    },
+    "evidence": [
+     "openapi/_original/openai-openapi-master-2026-09-23.yml#DELETE /threads/{thread_id}/messages/{message_id}",
+     "openapi/_original/openai-openapi-master-2026-09-23.yml#GET /chat/completions/{completion_id}/messages",
+     "openapi/_original/openai-openapi-master-2026-09-23.yml#GET /threads/{thread_id}/messages",
+     "openapi/_original/openai-openapi-master-2026-09-23.yml#GET /threads/{thread_id}/messages/{message_id}",
+     "openapi/_original/openai-openapi-master-2026-09-23.yml#POST /threads/{thread_id}/messages",
+     "openapi/_original/openai-openapi-master-2026-09-23.yml#POST /threads/{thread_id}/messages/{message_id}",
+     "openapi/_original/openai-openapi-master-2026-10-12.yml#DELETE /threads/{thread_id}/messages/{message_id}",
+     "openapi/_original/openai-openapi-master-2026-10-12.yml#GET /chat/completions/{completion_id}/messages",
+     "openapi/_original/openai-openapi-master-2026-10-12.yml#GET /threads/{thread_id}/messages",
+     "openapi/_original/openai-openapi-master-2026-10-12.yml#GET /threads/{thread_id}/messages/{message_id}",
+     "openapi/_original/openai-openapi-master-2026-10-12.yml#POST /threads/{thread_id}/messages",
+     "openapi/_original/openai-openapi-master-2026-10-12.yml#POST /threads/{thread_id}/messages/{message_id}"
+    ]
+   },
+   "pypestream": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "PUT item"
+    ],
+    "properties": {
+     "content": "string",
+     "senderId": "string",
+     "side": "string"
+    },
+    "evidence": [
+     "openapi/_original/pypestream-contact-center-api-openapi.json#PUT /contactCenter/v1/conversations/{conversationId}/messages/{messageId}",
+     "openapi/_original/pypestream-middleware-api-openapi.json#PUT /contactCenter/v1/conversations/{conversationId}/messages/{messageId}"
+    ]
+   },
+   "rainbow": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "content": "string",
+     "from": "string",
+     "to": "string",
+     "type": "string",
+     "timestamp": "string",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/rainbow-messaging-openapi.yml#GET /enduser/v1.0/conversations/{conversationId}/messages"
+    ]
+   },
+   "rasa": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "conversation_id": "string",
+     "slots": "array",
+     "latest_message": "object",
+     "latest_event_time": "number",
+     "followup_action": "string",
+     "paused": "boolean",
+     "events": "array",
+     "latest_input_channel": "string",
+     "latest_action_name": "string",
+     "latest_action": "object",
+     "active_loop": "object",
+     "text": "string",
+     "sender": "string",
+     "parse_data": "object"
+    },
+    "evidence": [
+     "openapi/_original/rasa-http-api-openapi.yml#POST /conversations/{conversation_id}/messages"
+    ]
+   },
+   "sarj-ai-developer-api": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "session_id": "string",
+     "direction": "string",
+     "content": "string",
+     "metadata": "object",
+     "created_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/sarj-ai-developer-api-voice-platform-openapi.json#GET /api/messaging/sessions/{session_id}/messages"
+    ]
+   },
+   "sendpulse": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "id": "string",
+     "contact_id": "string",
+     "bot_id": "string",
+     "campaign_id": [
+      "string",
+      "null"
+     ],
+     "data": "object",
+     "direction": "integer",
+     "status": "integer",
+     "delivered_at": [
+      "string",
+      "null"
+     ],
+     "opened_at": [
+      "string",
+      "null"
+     ],
+     "redirected_at": [
+      "string",
+      "null"
+     ],
+     "created_at": "string",
+     "campaign": [
+      "object",
+      "null"
+     ],
+     "chain": [
+      "object",
+      "null"
+     ],
+     "reject_reason": [
+      "string",
+      "null"
+     ],
+     "type": "string",
+     "sent_by": [
+      "object",
+      "null"
+     ],
+     "channel": "string",
+     "is_paid": "boolean",
+     "price_cbp": [
+      "object",
+      "null"
+     ]
+    },
+    "evidence": [
+     "openapi/_original/sendpulse-facebook-openapi.yml#GET /chats/messages",
+     "openapi/_original/sendpulse-instagram-openapi.yml#GET /chats/messages",
+     "openapi/_original/sendpulse-live-chat-openapi.yml#GET /chats/messages",
+     "openapi/_original/sendpulse-telegram-openapi.yml#GET /chats/messages",
+     "openapi/_original/sendpulse-tiktok-openapi.yml#GET /chats/messages",
+     "openapi/_original/sendpulse-viber-chatbot-openapi.yml#GET /chats/messages",
+     "openapi/_original/sendpulse-whatsapp-openapi.yml#GET /chats/messages"
+    ]
+   },
+   "stream-io": {
+    "segments": [
+     "messages",
+     "message"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item",
+     "PUT item"
+    ],
+    "properties": {
+     "duration": "string",
+     "message": "object",
+     "pending_message_metadata": "object",
+     "force_moderation": "boolean",
+     "keep_channel_hidden": "boolean",
+     "pending": "boolean",
+     "skip_enrich_url": "boolean",
+     "skip_push": "boolean",
+     "attachments": "array",
+     "cid": "string",
+     "command": "string",
+     "created_at": "number",
+     "custom": "object",
+     "deleted_at": "number",
+     "deleted_for_me": "boolean",
+     "deleted_reply_count": "integer",
+     "draft": "object",
+     "html": "string",
+     "i18n": "object",
+     "id": "string",
+     "image_labels": "object",
+     "latest_reactions": "array",
+     "member": "object",
+     "mentioned_channel": "boolean",
+     "mentioned_group_ids": "array",
+     "mentioned_here": "boolean",
+     "mentioned_roles": "array",
+     "mentioned_users": "array",
+     "message_text_updated_at": "number",
+     "mml": "string",
+     "moderation": "object",
+     "own_reactions": "array",
+     "parent_id": "string",
+     "pin_expires": "number",
+     "pinned": "boolean",
+     "pinned_at": "number",
+     "pinned_by": "object",
+     "poll": "object",
+     "poll_id": "string",
+     "quoted_message": "object",
+     "quoted_message_id": "string",
+     "reaction_counts": "object",
+     "reaction_groups": "object",
+     "reaction_scores": "object",
+     "reminder": "object",
+     "reply_count": "integer",
+     "restricted_visibility": "array",
+     "shadowed": "boolean",
+     "shared_location": "object",
+     "show_in_channel": "boolean",
+     "silent": "boolean",
+     "text": "string",
+     "thread_participants": "array",
+     "type": "string",
+     "updated_at": "number",
+     "user": "object",
+     "set": "object",
+     "unset": "array",
+     "user_id": "string",
+     "approved_at": "number",
+     "created_by_automod": "boolean",
+     "details": "object",
+     "moderation_feedback": "object",
+     "moderation_result": "object",
+     "reason": "string",
+     "rejected_at": "number",
+     "reviewed_at": "number",
+     "reviewed_by": "object"
+    },
+    "evidence": [
+     "openapi/_original/stream-io-serverside-openapi.yml#DELETE /api/v2/chat/messages/{id}",
+     "openapi/_original/stream-io-serverside-openapi.yml#GET /api/v2/chat/channels/{type}/{id}/messages",
+     "openapi/_original/stream-io-serverside-openapi.yml#GET /api/v2/chat/messages/{id}",
+     "openapi/_original/stream-io-serverside-openapi.yml#GET /api/v2/chat/moderation/flags/message",
+     "openapi/_original/stream-io-serverside-openapi.yml#POST /api/v2/chat/channels/{type}/{id}/message",
+     "openapi/_original/stream-io-serverside-openapi.yml#POST /api/v2/chat/messages/{id}",
+     "openapi/_original/stream-io-serverside-openapi.yml#PUT /api/v2/chat/messages/{id}"
+    ]
+   },
+   "synthflow": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "status": "string",
+     "response": "object",
+     "message": "string"
+    },
+    "evidence": [
+     "openapi/_original/synthflow-openapi.json#POST /chat/{chat_id}/messages"
+    ]
+   },
+   "talkjs": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "conversationId": "string",
+     "senderId": "string",
+     "type": "string",
+     "origin": "string",
+     "text": "string",
+     "attachment": "object",
+     "location": "array",
+     "custom": "object",
+     "readBy": "array",
+     "referencedMessageId": "string",
+     "reactions": "object",
+     "createdAt": "integer",
+     "editedAt": "integer",
+     "content": "array",
+     "sender": "string",
+     "idempotencyKey": "string"
+    },
+    "evidence": [
+     "openapi/_original/talkjs-openapi.yml#DELETE /conversations/{conversationId}/messages/{messageId}",
+     "openapi/_original/talkjs-openapi.yml#GET /conversations/{conversationId}/messages",
+     "openapi/_original/talkjs-openapi.yml#GET /conversations/{conversationId}/messages/{messageId}",
+     "openapi/_original/talkjs-openapi.yml#POST /conversations/{conversationId}/messages",
+     "openapi/_original/talkjs-openapi.yml#POST /import/conversations/{conversationId}/messages",
+     "openapi/_original/talkjs-openapi.yml#PUT /conversations/{conversationId}/messages/{messageId}"
+    ]
+   },
+   "zoho-cliq": {
+    "segments": [
+     "messages"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "Response Code": "string",
+     "text": "string",
+     "buttons": "array",
+     "slides": "array",
+     "card": "object",
+     "bot": "object",
+     "styles": "object",
+     "user_ids": "string",
+     "reply_to": "string",
+     "notify_edit": "boolean",
+     "message_topic": "string",
+     "mark_as_read": "boolean",
+     "sync_message": "boolean",
+     "thread_chat_id": "string",
+     "thread_message_id": "string",
+     "post_in_parent": "boolean",
+     "thread_title": "string",
+     "Response_Code": "string",
+     "label": "string",
+     "hint": "string",
+     "type": "string",
+     "key": "string",
+     "action": "object",
+     "references": "object",
+     "id": "string",
+     "title": "string",
+     "data": null,
+     "headers": "array",
+     "rows": "array",
+     "message_id": "string"
+    },
+    "evidence": [
+     "openapi/_original/bots.yml#POST /bots/{BOT_UNIQUE_NAME}/messages",
+     "openapi/_original/buttons.yml#POST /chats/{CHAT_ID1}/messages",
+     "openapi/_original/buttons.yml#POST /chats/{CHAT_ID2}/messages",
+     "openapi/_original/buttons.yml#POST /chats/{CHAT_ID}/messages",
+     "openapi/_original/mentions.yml#POST /chats/{CHAT_ID1}/messages",
+     "openapi/_original/mentions.yml#POST /chats/{CHAT_ID2}/messages",
+     "openapi/_original/mentions.yml#POST /chats/{CHAT_ID3}/messages",
+     "openapi/_original/mentions.yml#POST /chats/{CHAT_ID4}/messages",
+     "openapi/_original/mentions.yml#POST /chats/{CHAT_ID5}/messages",
+     "openapi/_original/mentions.yml#POST /chats/{CHAT_ID}/messages",
+     "openapi/_original/messagecards.yml#POST /chats/{CHAT_ID}/messages",
+     "openapi/_original/messageformat.yml#POST /chats/{CHAT_ID1}/messages"
+    ]
+   }
+  },
+  "intent": {
+   "amazon-lex": {
+    "segments": [
+     "intents"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT collection",
+     "PUT item"
+    ],
+    "properties": {
+     "intentId": "string",
+     "intentName": "string",
+     "sampleUtterancesCount": "integer",
+     "nextToken": "string",
+     "maxResults": "integer",
+     "intentDisplayName": "string",
+     "description": "string",
+     "parentIntentSignature": "string",
+     "inputContexts": "array",
+     "outputContexts": "array",
+     "lastUpdatedDateTime": "string",
+     "name": "string",
+     "values": "array",
+     "operator": "string",
+     "sampleUtterances": "array",
+     "dialogCodeHook": "object",
+     "fulfillmentCodeHook": "object",
+     "intentConfirmationSetting": "object",
+     "intentClosingSetting": "object",
+     "kendraConfiguration": "object",
+     "botId": "string",
+     "botVersion": "string",
+     "localeId": "string",
+     "creationDateTime": "string",
+     "initialResponseSetting": "object",
+     "qnAIntentConfiguration": "object",
+     "qInConnectIntentConfiguration": "object",
+     "slotPriorities": "array",
+     "builtInIntentSummaries": "array",
+     "sortBy": "object"
+    },
+    "evidence": [
+     "openapi/_original/amazon-lex-models-v2-openapi.yml#DELETE /bots/{botId}/botversions/{botVersion}/botlocales/{localeId}/intents/{intentId}",
+     "openapi/_original/amazon-lex-models-v2-openapi.yml#GET /bots/{botId}/botversions/{botVersion}/botlocales/{localeId}/intents/{intentId}",
+     "openapi/_original/amazon-lex-models-v2-openapi.yml#POST /bots/{botId}/botversions/{botVersion}/botlocales/{localeId}/botrecommendations/{botRecommendationId}/intents",
+     "openapi/_original/amazon-lex-models-v2-openapi.yml#POST /bots/{botId}/botversions/{botVersion}/botlocales/{localeId}/intents",
+     "openapi/_original/amazon-lex-models-v2-openapi.yml#POST /builtins/locales/{localeId}/intents",
+     "openapi/_original/amazon-lex-models-v2-openapi.yml#PUT /bots/{botId}/botversions/{botVersion}/botlocales/{localeId}/intents",
+     "openapi/_original/amazon-lex-models-v2-openapi.yml#PUT /bots/{botId}/botversions/{botVersion}/botlocales/{localeId}/intents/{intentId}",
+     "openapi/_original/amazon-lex-openapi.yml#GET /bots/{botId}/botversions/{botVersion}/botlocales/{localeId}/intents",
+     "openapi/_original/amazon-lex-openapi.yml#POST /bots/{botId}/botversions/{botVersion}/botlocales/{localeId}/intents"
+    ]
+   },
+   "asapp": {
+    "segments": [
+     "intent"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "conversationId": "string",
+     "intent": "object"
+    },
+    "evidence": [
+     "openapi/_original/asapp-autosummary-openapi.yml#GET /autosummary/v1/intent/{conversationId}",
+     "openapi/_original/asapp-autosummary-openapi.yml#POST /autosummary/v1/intent",
+     "openapi/_original/asapp-openapi-openapi.yml#GET /autosummary/v1/intent/{conversationId}"
+    ]
+   },
+   "frontline": {
+    "segments": [
+     "intents"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "count": "number",
+     "pageSize": "number",
+     "pageNum": "number",
+     "totalPages": "number",
+     "cursor": "number",
+     "results": "array",
+     "paginationType": "string",
+     "nextCursor": null,
+     "id": "number",
+     "name": "string",
+     "description": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "status": "string",
+     "assistantId": "string",
+     "phrases": "array",
+     "flowId": "number"
+    },
+    "evidence": [
+     "openapi/_original/frontline-openapi-original.yml#DELETE /public/v1/agents/{agentId}/intents/{intentId}",
+     "openapi/_original/frontline-openapi-original.yml#GET /public/v1/agents/{agentId}/intents",
+     "openapi/_original/frontline-openapi-original.yml#GET /public/v1/agents/{agentId}/intents/{intentId}",
+     "openapi/_original/frontline-openapi-original.yml#POST /public/v1/agents/{agentId}/intents",
+     "openapi/_original/frontline-openapi-original.yml#PUT /public/v1/agents/{agentId}/intents/{intentId}"
+    ]
+   },
+   "genesys": {
+    "segments": [
+     "intents"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "miner": "object",
+     "utterances": "array",
+     "analyticVolumePercent": "number",
+     "selfUri": "string"
+    },
+    "evidence": [
+     "openapi/_original/genesys-platform-api-openapi-original.json#GET /api/v2/languageunderstanding/miners/{minerId}/intents",
+     "openapi/_original/genesys-platform-api-openapi-original.json#GET /api/v2/languageunderstanding/miners/{minerId}/intents/{intentId}"
+    ]
+   },
+   "google-cloud-dialogflow-cx": {
+    "segments": [
+     "intents"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "name": "string",
+     "displayName": "string",
+     "trainingPhrases": "array",
+     "parameters": "array",
+     "priority": "integer",
+     "isFallback": "boolean",
+     "description": "string"
+    },
+    "evidence": [
+     "openapi/_original/openapi.yml#GET /projects/{projectId}/locations/{location}/agents/{agentId}/intents",
+     "openapi/_original/openapi.yml#POST /projects/{projectId}/locations/{location}/agents/{agentId}/intents"
+    ]
+   },
+   "google-dialogflow": {
+    "segments": [
+     "intents"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "trainingPhrases": "array",
+     "name": "string",
+     "parameters": "array",
+     "description": "string",
+     "priority": "integer",
+     "labels": "object",
+     "displayName": "string",
+     "dtmfPattern": "string",
+     "isFallback": "boolean",
+     "outputContexts": "array",
+     "defaultResponsePlatforms": "array",
+     "inputContextNames": "array",
+     "rootFollowupIntentName": "string",
+     "action": "string",
+     "messages": "array",
+     "mlDisabled": "boolean",
+     "parentFollowupIntentName": "string",
+     "webhookState": "string",
+     "events": "array",
+     "endInteraction": "boolean",
+     "resetContexts": "boolean",
+     "followupIntentInfo": "array",
+     "liveAgentHandoff": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/google-dialogflow-cx-v3-openapi.yml#DELETE /v3/projects/{projectsId}/locations/{locationsId}/agents/{agentsId}/intents/{intentsId}",
+     "openapi/_original/google-dialogflow-cx-v3-openapi.yml#GET /v3/projects/{projectsId}/locations/{locationsId}/agents/{agentsId}/intents",
+     "openapi/_original/google-dialogflow-cx-v3-openapi.yml#GET /v3/projects/{projectsId}/locations/{locationsId}/agents/{agentsId}/intents/{intentsId}",
+     "openapi/_original/google-dialogflow-cx-v3-openapi.yml#PATCH /v3/projects/{projectsId}/locations/{locationsId}/agents/{agentsId}/intents/{intentsId}",
+     "openapi/_original/google-dialogflow-cx-v3-openapi.yml#POST /v3/projects/{projectsId}/locations/{locationsId}/agents/{agentsId}/intents",
+     "openapi/_original/google-dialogflow-es-v2-openapi.yml#DELETE /v2/projects/{projectsId}/agent/intents/{intentsId}",
+     "openapi/_original/google-dialogflow-es-v2-openapi.yml#DELETE /v2/projects/{projectsId}/locations/{locationsId}/agent/intents/{intentsId}",
+     "openapi/_original/google-dialogflow-es-v2-openapi.yml#GET /v2/projects/{projectsId}/agent/environments/{environmentsId}/intents",
+     "openapi/_original/google-dialogflow-es-v2-openapi.yml#GET /v2/projects/{projectsId}/agent/intents",
+     "openapi/_original/google-dialogflow-es-v2-openapi.yml#GET /v2/projects/{projectsId}/agent/intents/{intentsId}",
+     "openapi/_original/google-dialogflow-es-v2-openapi.yml#GET /v2/projects/{projectsId}/locations/{locationsId}/agent/environments/{environmentsId}/intents",
+     "openapi/_original/google-dialogflow-es-v2-openapi.yml#GET /v2/projects/{projectsId}/locations/{locationsId}/agent/intents"
+    ]
+   },
+   "rasa": {
+    "segments": [
+     "intents"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "intent_evaluation": "object",
+     "response_selection_evaluation": "object",
+     "entity_evaluation": "object",
+     "start": "integer",
+     "end": "integer",
+     "value": "string",
+     "entity": "string",
+     "confidence": "number"
+    },
+    "evidence": [
+     "openapi/_original/rasa-http-api-openapi.yml#POST /model/test/intents"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "ably",
+    "ada",
+    "agentcheck-care",
+    "agmsg-world",
+    "agnost-ai",
+    "amazon-lex",
+    "amigo",
+    "anam",
+    "anamai",
+    "anthropic-claude",
+    "appsmax-rest-api-v1",
+    "asapp",
+    "avoca",
+    "beeper",
+    "beyond-presence",
+    "bland-ai",
+    "bluejay",
+    "boom-ai",
+    "botanalytics",
+    "botpress",
+    "brevo",
+    "chat",
+    "chatbase",
+    "chatwoot",
+    "chatwork",
+    "circle-community",
+    "clickup",
+    "cometapi",
+    "cometchat",
+    "convai-com",
+    "coval",
+    "creed",
+    "crescendo",
+    "crisp",
+    "culture-sbs",
+    "dashbot",
+    "deepseek",
+    "discord",
+    "dixa",
+    "drift-com",
+    "elevenlabs",
+    "eqbuilder-dev",
+    "ex-human",
+    "fixie",
+    "flowise",
+    "forethought",
+    "freshchat",
+    "frontline",
+    "genesys",
+    "getstream",
+    "getvocal",
+    "gladly",
+    "gleap",
+    "google-assistant",
+    "google-chat",
+    "google-cloud-dialogflow-cx",
+    "google-dialogflow",
+    "gridspace",
+    "groove",
+    "happyrobot",
+    "hatch",
+    "highrise",
+    "hilos",
+    "hiver",
+    "hume-ai",
+    "icallagent-public-api",
+    "insightera",
+    "intercom",
+    "inworld",
+    "inworld-ai",
+    "kalpa-labs",
+    "karumi",
+    "keyframe-labs",
+    "khoros-ai",
+    "knock-app",
+    "koreai",
+    "kugelaudio",
+    "kustomer",
+    "line",
+    "lithium",
+    "livechat",
+    "livelike",
+    "lmnt",
+    "manychat",
+    "maven-agi",
+    "microsoft-copilot",
+    "mindlogic",
+    "moonscale",
+    "moveworks",
+    "moveworks-servicenow",
+    "netomi",
+    "neuphonic",
+    "nextiva",
+    "novu",
+    "observeai",
+    "olark",
+    "ondemand",
+    "openai",
+    "orkas",
+    "outrival",
+    "papercups",
+    "paradox",
+    "phonic",
+    "polycode-co-uk",
+    "pypestream",
+    "rainbow",
+    "rasa",
+    "regal-ai",
+    "replicant",
+    "replyrai",
+    "restream",
+    "retell-ai",
+    "rime-ai",
+    "rubiconnect",
+    "sarj-ai-developer-api",
+    "sendpulse",
+    "signalwire",
+    "sobot",
+    "speko",
+    "stream-io",
+    "streamelements",
+    "syllable",
+    "synapse",
+    "synthflow",
+    "tadeus-api",
+    "talkjs",
+    "talkpush",
+    "tavus",
+    "thoughtly",
+    "tidio",
+    "uberduck",
+    "vapi",
+    "vapi-ai",
+    "vbout",
+    "vessel",
+    "visioconference",
+    "vocode",
+    "voiceflow",
+    "wazo",
+    "zendesk",
+    "zenzap",
+    "zoho-cliq",
+    "zoom"
+   ],
+   "kebab-case": [
+    "ada",
+    "agentcheck-care",
+    "agnost-ai",
+    "amigo",
+    "anam",
+    "anamai",
+    "appsmax-rest-api-v1",
+    "asapp",
+    "avoca",
+    "beeper",
+    "beyond-presence",
+    "bluejay",
+    "boom-ai",
+    "botpress",
+    "brevo",
+    "chatbase",
+    "convai-com",
+    "coval",
+    "creed",
+    "culture-sbs",
+    "discord",
+    "dixa",
+    "elevenlabs",
+    "eqbuilder-dev",
+    "flowise",
+    "freshchat",
+    "frontline",
+    "getstream",
+    "gladly",
+    "gleap",
+    "gridspace",
+    "happyrobot",
+    "highrise",
+    "hilos",
+    "hiver",
+    "icallagent-public-api",
+    "insightera",
+    "karumi",
+    "keyframe-labs",
+    "knock-app",
+    "kugelaudio",
+    "livelike",
+    "maven-agi",
+    "moonscale",
+    "moveworks",
+    "moveworks-servicenow",
+    "netomi",
+    "nextiva",
+    "novu",
+    "observeai",
+    "outrival",
+    "paradox",
+    "phonic",
+    "polycode-co-uk",
+    "pypestream",
+    "replyrai",
+    "restream",
+    "retell-ai",
+    "sarj-ai-developer-api",
+    "sendpulse",
+    "signalwire",
+    "speko",
+    "stream-io",
+    "syllable",
+    "synthflow",
+    "tadeus-api",
+    "tavus",
+    "tidio",
+    "uberduck",
+    "vapi",
+    "vapi-ai",
+    "vessel",
+    "wazo",
+    "zoho-cliq"
+   ],
+   "snake_case": [
+    "ada",
+    "agmsg-world",
+    "amigo",
+    "anthropic-claude",
+    "avoca",
+    "chatwoot",
+    "chatwork",
+    "circle-community",
+    "clickup",
+    "cometchat",
+    "convai-com",
+    "drift-com",
+    "elevenlabs",
+    "ex-human",
+    "fixie",
+    "getstream",
+    "highrise",
+    "hume-ai",
+    "intercom",
+    "khoros-ai",
+    "knock-app",
+    "lithium",
+    "livechat",
+    "livelike",
+    "lmnt",
+    "maven-agi",
+    "mindlogic",
+    "netomi",
+    "ondemand",
+    "openai",
+    "paradox",
+    "phonic",
+    "pypestream",
+    "rasa",
+    "replyrai",
+    "sendpulse",
+    "signalwire",
+    "sobot",
+    "stream-io",
+    "syllable",
+    "synapse",
+    "synthflow",
+    "talkpush",
+    "visioconference",
+    "wazo",
+    "zendesk"
+   ],
+   "camelCase": [
+    "ably",
+    "agnost-ai",
+    "amazon-lex",
+    "brevo",
+    "clickup",
+    "convai-com",
+    "google-assistant",
+    "google-chat",
+    "google-dialogflow",
+    "khoros-ai",
+    "line",
+    "lithium",
+    "manychat",
+    "microsoft-copilot",
+    "netomi",
+    "nextiva",
+    "olark",
+    "ondemand",
+    "pypestream",
+    "regal-ai",
+    "replyrai",
+    "restream",
+    "sendpulse",
+    "sobot",
+    "telegram",
+    "vessel",
+    "wati"
+   ],
+   "other": [
+    "agentcheck-care",
+    "amigo",
+    "bluejay",
+    "coval",
+    "creed",
+    "culture-sbs",
+    "discord",
+    "eqbuilder-dev",
+    "getvocal",
+    "gladly",
+    "google-chat",
+    "google-cloud-dialogflow-cx",
+    "google-dialogflow",
+    "highrise",
+    "inworld",
+    "inworld-ai",
+    "khoros-ai",
+    "kugelaudio",
+    "lithium",
+    "livelike",
+    "openai",
+    "sarj-ai-developer-api",
+    "slack",
+    "sobot",
+    "zoho-cliq"
+   ],
+   "PascalCase": [
+    "amazon-lex",
+    "bluejay",
+    "drift-com",
+    "signalwire",
+    "vbout",
+    "wazo"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "ably",
+    "ada",
+    "agentcheck-care",
+    "agnost-ai",
+    "amigo",
+    "anam",
+    "anamai",
+    "appsmax-rest-api-v1",
+    "asapp",
+    "avoca",
+    "beyond-presence",
+    "bluejay",
+    "boom-ai",
+    "botpress",
+    "brevo",
+    "chatbase",
+    "chatwoot",
+    "circle-community",
+    "clickup",
+    "cometchat",
+    "creed",
+    "crescendo",
+    "discord",
+    "dixa",
+    "drift-com",
+    "elevenlabs",
+    "eqbuilder-dev",
+    "ex-human",
+    "flowise",
+    "frontline",
+    "getstream",
+    "gladly",
+    "google-chat",
+    "google-cloud-dialogflow-cx",
+    "groove",
+    "happyrobot",
+    "hilos",
+    "hume-ai",
+    "icallagent-public-api",
+    "inworld",
+    "khoros-ai",
+    "knock-app",
+    "koreai",
+    "lithium",
+    "livelike",
+    "lmnt",
+    "mindlogic",
+    "moveworks",
+    "nextiva",
+    "novu",
+    "ondemand",
+    "openai",
+    "outrival",
+    "papercups",
+    "paradox",
+    "phonic",
+    "pypestream",
+    "restream",
+    "rime-ai",
+    "sarj-ai-developer-api",
+    "sendpulse",
+    "signalwire",
+    "sobot",
+    "speko",
+    "stream-io",
+    "streamelements",
+    "synthflow",
+    "tadeus-api",
+    "talkjs",
+    "talkpush",
+    "thoughtly",
+    "vapi",
+    "vapi-ai",
+    "wazo",
+    "zendesk"
+   ],
+   "snake_case": [
+    "ably",
+    "ada",
+    "agentcheck-care",
+    "amigo",
+    "anthropic-claude",
+    "bland-ai",
+    "bluejay",
+    "brevo",
+    "chatwoot",
+    "chatwork",
+    "circle-community",
+    "clickup",
+    "convai-com",
+    "coval",
+    "creed",
+    "crisp",
+    "discord",
+    "elevenlabs",
+    "eqbuilder-dev",
+    "ex-human",
+    "fixie",
+    "forethought",
+    "freshchat",
+    "getstream",
+    "gridspace",
+    "happyrobot",
+    "highrise",
+    "hiver",
+    "hume-ai",
+    "intercom",
+    "kalpa-labs",
+    "karumi",
+    "keyframe-labs",
+    "khoros-ai",
+    "knock-app",
+    "kugelaudio",
+    "lithium",
+    "livelike",
+    "mindlogic",
+    "moveworks",
+    "neuphonic",
+    "observeai",
+    "openai",
+    "orkas",
+    "paradox",
+    "pypestream",
+    "rasa",
+    "replyrai",
+    "retell-ai",
+    "sarj-ai-developer-api",
+    "sendpulse",
+    "signalwire",
+    "stream-io",
+    "syllable",
+    "synthflow",
+    "talkpush",
+    "tavus",
+    "thoughtly",
+    "wazo",
+    "zendesk"
+   ],
+   "camelCase": [
+    "ably",
+    "amazon-lex",
+    "asapp",
+    "avoca",
+    "beeper",
+    "boom-ai",
+    "brevo",
+    "chat",
+    "chatbase",
+    "cometchat",
+    "crescendo",
+    "culture-sbs",
+    "dixa",
+    "flowise",
+    "frontline",
+    "genesys",
+    "gladly",
+    "gleap",
+    "google-assistant",
+    "google-cloud-dialogflow-cx",
+    "google-dialogflow",
+    "happyrobot",
+    "hiver",
+    "inworld-ai",
+    "khoros-ai",
+    "koreai",
+    "line",
+    "lithium",
+    "livelike",
+    "maven-agi",
+    "microsoft-copilot",
+    "moonscale",
+    "moveworks",
+    "netomi",
+    "nextiva",
+    "novu",
+    "ondemand",
+    "outrival",
+    "phonic",
+    "polycode-co-uk",
+    "pypestream",
+    "rainbow",
+    "regal-ai",
+    "replicant",
+    "sendpulse",
+    "signalwire",
+    "sobot",
+    "speko",
+    "streamelements",
+    "synapse",
+    "talkjs",
+    "tidio",
+    "vapi",
+    "vapi-ai",
+    "visioconference",
+    "voiceflow",
+    "wati",
+    "zenzap"
+   ],
+   "other": [
+    "clickup",
+    "khoros-ai",
+    "lithium",
+    "sarj-ai-developer-api",
+    "zoho-cliq"
+   ],
+   "PascalCase": [
+    "livelike",
+    "outrival",
+    "sendpulse",
+    "signalwire"
+   ],
+   "kebab-case": [
+    "khoros-ai",
+    "lithium",
+    "livelike"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "ably",
+    "ada",
+    "agentcheck-care",
+    "agnost-ai",
+    "amigo",
+    "anam",
+    "anamai",
+    "anthropic-claude",
+    "appsmax-rest-api-v1",
+    "asapp",
+    "avoca",
+    "beeper",
+    "beyond-presence",
+    "bland-ai",
+    "bluejay",
+    "boom-ai",
+    "brevo",
+    "chat",
+    "chatbase",
+    "chatwoot",
+    "chatwork",
+    "circle-community",
+    "clickup",
+    "cometchat",
+    "convai-com",
+    "coval",
+    "creed",
+    "crescendo",
+    "culture-sbs",
+    "discord",
+    "dixa",
+    "drift-com",
+    "elevenlabs",
+    "eqbuilder-dev",
+    "fixie",
+    "flowise",
+    "frontline",
+    "genesys",
+    "getstream",
+    "getvocal",
+    "gladly",
+    "gleap",
+    "google-dialogflow",
+    "gridspace",
+    "happyrobot",
+    "highrise",
+    "hilos",
+    "hiver",
+    "hume-ai",
+    "icallagent-public-api",
+    "insightera",
+    "intercom",
+    "inworld-ai",
+    "karumi",
+    "keyframe-labs",
+    "khoros-ai",
+    "knock-app",
+    "koreai",
+    "kugelaudio",
+    "line",
+    "lithium",
+    "livelike",
+    "lmnt",
+    "manychat",
+    "moveworks",
+    "netomi",
+    "neuphonic",
+    "nextiva",
+    "novu",
+    "observeai",
+    "ondemand",
+    "openai",
+    "outrival",
+    "papercups",
+    "paradox",
+    "phonic",
+    "polycode-co-uk",
+    "pypestream",
+    "rainbow",
+    "rasa",
+    "regal-ai",
+    "replyrai",
+    "restream",
+    "retell-ai",
+    "rime-ai",
+    "rubiconnect",
+    "sarj-ai-developer-api",
+    "sendpulse",
+    "signalwire",
+    "slack",
+    "sobot",
+    "speko",
+    "stream-io",
+    "streamelements",
+    "syllable",
+    "synapse",
+    "synthflow",
+    "talkjs",
+    "talkpush",
+    "tavus",
+    "thoughtly",
+    "tidio",
+    "uberduck",
+    "vapi",
+    "vapi-ai",
+    "vbout",
+    "vessel",
+    "vocode",
+    "wazo",
+    "zendesk",
+    "zenzap",
+    "zoho-cliq"
+   ],
+   "snake_case": [
+    "ada",
+    "agentcheck-care",
+    "agnost-ai",
+    "amigo",
+    "anthropic-claude",
+    "appsmax-rest-api-v1",
+    "avoca",
+    "beyond-presence",
+    "bland-ai",
+    "bluejay",
+    "boom-ai",
+    "brevo",
+    "chatwoot",
+    "chatwork",
+    "circle-community",
+    "clickup",
+    "convai-com",
+    "coval",
+    "creed",
+    "discord",
+    "drift-com",
+    "elevenlabs",
+    "eqbuilder-dev",
+    "ex-human",
+    "fixie",
+    "frontline",
+    "getstream",
+    "happyrobot",
+    "highrise",
+    "hilos",
+    "hume-ai",
+    "intercom",
+    "karumi",
+    "khoros-ai",
+    "knock-app",
+    "kugelaudio",
+    "line",
+    "lithium",
+    "livelike",
+    "lmnt",
+    "manychat",
+    "moveworks",
+    "netomi",
+    "neuphonic",
+    "openai",
+    "papercups",
+    "paradox",
+    "phonic",
+    "pypestream",
+    "rasa",
+    "replyrai",
+    "retell-ai",
+    "sarj-ai-developer-api",
+    "sendpulse",
+    "signalwire",
+    "slack",
+    "sobot",
+    "speko",
+    "stream-io",
+    "syllable",
+    "synapse",
+    "synthflow",
+    "talkpush",
+    "tavus",
+    "thoughtly",
+    "tidio",
+    "uberduck",
+    "vbout",
+    "vocode",
+    "wazo",
+    "zendesk",
+    "zoho-cliq"
+   ],
+   "camelCase": [
+    "ably",
+    "amazon-lex",
+    "anam",
+    "anamai",
+    "asapp",
+    "beeper",
+    "bluejay",
+    "boom-ai",
+    "brevo",
+    "chatbase",
+    "cometchat",
+    "dashbot",
+    "dixa",
+    "drift-com",
+    "fixie",
+    "flowise",
+    "frontline",
+    "genesys",
+    "gladly",
+    "gleap",
+    "google-chat",
+    "google-dialogflow",
+    "happyrobot",
+    "inworld-ai",
+    "khoros-ai",
+    "koreai",
+    "line",
+    "lithium",
+    "moveworks",
+    "netomi",
+    "nextiva",
+    "novu",
+    "observeai",
+    "ondemand",
+    "outrival",
+    "polycode-co-uk",
+    "pypestream",
+    "regal-ai",
+    "rubiconnect",
+    "sendpulse",
+    "sobot",
+    "speko",
+    "streamelements",
+    "talkjs",
+    "thoughtly",
+    "vapi",
+    "vapi-ai",
+    "vbout",
+    "vessel",
+    "wati",
+    "zenzap"
+   ],
+   "other": [
+    "amigo",
+    "appsmax-rest-api-v1",
+    "brevo",
+    "clickup",
+    "dixa",
+    "genesys",
+    "gleap",
+    "hilos",
+    "khoros-ai",
+    "knock-app",
+    "lithium",
+    "microsoft-copilot",
+    "moveworks",
+    "moveworks-servicenow",
+    "netomi",
+    "openai",
+    "signalwire",
+    "sobot",
+    "talkpush",
+    "vbout",
+    "zendesk",
+    "zoho-cliq"
+   ],
+   "PascalCase": [
+    "khoros-ai",
+    "lithium",
+    "signalwire",
+    "vbout",
+    "wazo"
+   ],
+   "kebab-case": [
+    "convai-com"
+   ]
+  },
+  "pagination_param": {
+   "limit": [
+    "ably",
+    "ada",
+    "amigo",
+    "anamai",
+    "anthropic-claude",
+    "asapp",
+    "avoca",
+    "beeper",
+    "beyond-presence",
+    "bland-ai",
+    "bluejay",
+    "boom-ai",
+    "brevo",
+    "chat",
+    "chatbase",
+    "clickup",
+    "coval",
+    "creed",
+    "crescendo",
+    "culture-sbs",
+    "discord",
+    "drift-com",
+    "elevenlabs",
+    "eqbuilder-dev",
+    "frontline",
+    "genesys",
+    "getstream",
+    "gleap",
+    "happyrobot",
+    "highrise",
+    "hume-ai",
+    "icallagent-public-api",
+    "karumi",
+    "keyframe-labs",
+    "khoros-ai",
+    "knock-app",
+    "kugelaudio",
+    "line",
+    "lithium",
+    "moveworks",
+    "nextiva",
+    "novu",
+    "ondemand",
+    "openai",
+    "outrival",
+    "paradox",
+    "phonic",
+    "polycode-co-uk",
+    "pypestream",
+    "rainbow",
+    "replyrai",
+    "restream",
+    "retell-ai",
+    "rime-ai",
+    "sarj-ai-developer-api",
+    "sendpulse",
+    "slack",
+    "speko",
+    "stream-io",
+    "streamelements",
+    "syllable",
+    "synapse",
+    "synthflow",
+    "talkjs",
+    "tavus",
+    "thoughtly",
+    "uberduck",
+    "vapi",
+    "vapi-ai",
+    "vbout",
+    "vessel",
+    "wazo",
+    "zenzap",
+    "zoho-cliq"
+   ],
+   "page": [
+    "anam",
+    "anamai",
+    "appsmax-rest-api-v1",
+    "bluejay",
+    "brevo",
+    "chatbase",
+    "chatwoot",
+    "circle-community",
+    "clickup",
+    "cometchat",
+    "elevenlabs",
+    "frontline",
+    "gleap",
+    "happyrobot",
+    "highrise",
+    "hilos",
+    "khoros-ai",
+    "line",
+    "lithium",
+    "livelike",
+    "novu",
+    "observeai",
+    "ondemand",
+    "openai",
+    "outrival",
+    "paradox",
+    "pypestream",
+    "signalwire",
+    "slack",
+    "streamelements",
+    "syllable",
+    "talkpush",
+    "tavus",
+    "thoughtly",
+    "vapi",
+    "vapi-ai",
+    "vbout",
+    "vocode",
+    "zendesk"
+   ],
+   "offset": [
+    "amigo",
+    "avoca",
+    "bluejay",
+    "brevo",
+    "creed",
+    "discord",
+    "elevenlabs",
+    "eqbuilder-dev",
+    "getstream",
+    "happyrobot",
+    "highrise",
+    "icallagent-public-api",
+    "karumi",
+    "khoros-ai",
+    "kugelaudio",
+    "lithium",
+    "moveworks",
+    "nextiva",
+    "novu",
+    "paradox",
+    "pypestream",
+    "rainbow",
+    "replyrai",
+    "restream",
+    "sendpulse",
+    "stream-io",
+    "streamelements",
+    "synthflow",
+    "uberduck",
+    "wazo",
+    "zenzap"
+   ],
+   "cursor": [
+    "ada",
+    "anamai",
+    "asapp",
+    "avoca",
+    "beeper",
+    "beyond-presence",
+    "boom-ai",
+    "chat",
+    "chatbase",
+    "clickup",
+    "coval",
+    "crescendo",
+    "elevenlabs",
+    "fixie",
+    "frontline",
+    "genesys",
+    "happyrobot",
+    "moveworks",
+    "nextiva",
+    "ondemand",
+    "sarj-ai-developer-api",
+    "slack",
+    "speko",
+    "synthflow",
+    "tidio",
+    "vessel",
+    "zenzap"
+   ],
+   "page_size": [
+    "ada",
+    "bluejay",
+    "coval",
+    "elevenlabs",
+    "fixie",
+    "frontline",
+    "genesys",
+    "google-chat",
+    "google-dialogflow",
+    "happyrobot",
+    "hilos",
+    "hume-ai",
+    "inworld-ai",
+    "khoros-ai",
+    "knock-app",
+    "lithium",
+    "livelike",
+    "moveworks",
+    "nextiva",
+    "pypestream",
+    "signalwire",
+    "sobot",
+    "synthflow",
+    "wati",
+    "zendesk"
+   ],
+   "after": [
+    "chatwoot",
+    "creed",
+    "culture-sbs",
+    "discord",
+    "genesys",
+    "keyframe-labs",
+    "khoros-ai",
+    "knock-app",
+    "lithium",
+    "novu",
+    "openai",
+    "phonic",
+    "pypestream",
+    "streamelements",
+    "zenzap"
+   ],
+   "before": [
+    "chatwoot",
+    "discord",
+    "genesys",
+    "gleap",
+    "knock-app",
+    "novu",
+    "openai",
+    "phonic",
+    "pypestream",
+    "rainbow",
+    "slack",
+    "streamelements",
+    "zenzap"
+   ],
+   "start": [
+    "ably",
+    "boom-ai",
+    "clickup",
+    "fixie",
+    "genesys",
+    "happyrobot",
+    "khoros-ai",
+    "line",
+    "lithium",
+    "nextiva",
+    "sendpulse"
+   ],
+   "per_page": [
+    "anam",
+    "anamai",
+    "appsmax-rest-api-v1",
+    "circle-community",
+    "cometchat",
+    "intercom",
+    "khoros-ai",
+    "lithium",
+    "talkpush",
+    "zendesk"
+   ],
+   "page_token": [
+    "asapp",
+    "coval",
+    "drift-com",
+    "google-chat",
+    "google-dialogflow",
+    "happyrobot",
+    "inworld-ai",
+    "moveworks",
+    "signalwire"
+   ],
+   "count": [
+    "amigo",
+    "bluejay",
+    "genesys",
+    "moveworks",
+    "moveworks-servicenow",
+    "sendpulse",
+    "slack",
+    "wazo"
+   ],
+   "size": [
+    "chatbase",
+    "drift-com",
+    "line",
+    "observeai",
+    "regal-ai",
+    "sendpulse",
+    "vocode"
+   ],
+   "skip": [
+    "gleap",
+    "khoros-ai",
+    "lithium",
+    "moveworks",
+    "sendpulse",
+    "wazo"
+   ],
+   "starting_after": [
+    "intercom",
+    "moveworks",
+    "openai",
+    "outrival",
+    "talkjs"
+   ],
+   "next": [
+    "drift-com",
+    "getstream",
+    "stream-io"
+   ],
+   "max_results": [
+    "genesys",
+    "signalwire"
+   ],
+   "top": [
+    "microsoft-copilot",
+    "moveworks"
+   ]
+  },
+  "property": {
+   "lower": [
+    "ada",
+    "agmsg-world",
+    "amazon-lex",
+    "amigo",
+    "appsmax-rest-api-v1",
+    "asapp",
+    "beeper",
+    "beyond-presence",
+    "bluejay",
+    "brevo",
+    "chat",
+    "chatbase",
+    "chatwoot",
+    "clickup",
+    "coval",
+    "creed",
+    "crescendo",
+    "culture-sbs",
+    "discord",
+    "dixa",
+    "elevenlabs",
+    "flowise",
+    "forethought",
+    "frontline",
+    "genesys",
+    "getstream",
+    "gladly",
+    "google-cloud-dialogflow-cx",
+    "google-dialogflow",
+    "gridspace",
+    "happyrobot",
+    "highrise",
+    "hilos",
+    "hiver",
+    "hume-ai",
+    "intercom",
+    "khoros-ai",
+    "koreai",
+    "kustomer",
+    "lithium",
+    "maven-agi",
+    "microsoft-copilot",
+    "moonscale",
+    "moveworks",
+    "moveworks-servicenow",
+    "nextiva",
+    "ondemand",
+    "openai",
+    "outrival",
+    "papercups",
+    "paradox",
+    "phonic",
+    "polycode-co-uk",
+    "pypestream",
+    "rainbow",
+    "rasa",
+    "sarj-ai-developer-api",
+    "sendpulse",
+    "signalwire",
+    "stream-io",
+    "streamelements",
+    "syllable",
+    "synthflow",
+    "talkjs",
+    "tavus",
+    "vapi",
+    "vapi-ai",
+    "zoho-cliq"
+   ],
+   "snake_case": [
+    "ada",
+    "agmsg-world",
+    "amigo",
+    "appsmax-rest-api-v1",
+    "beyond-presence",
+    "bluejay",
+    "chatwoot",
+    "clickup",
+    "coval",
+    "creed",
+    "discord",
+    "elevenlabs",
+    "forethought",
+    "frontline",
+    "getstream",
+    "happyrobot",
+    "highrise",
+    "hilos",
+    "hiver",
+    "hume-ai",
+    "intercom",
+    "moveworks",
+    "openai",
+    "papercups",
+    "paradox",
+    "phonic",
+    "rasa",
+    "sarj-ai-developer-api",
+    "sendpulse",
+    "signalwire",
+    "stream-io",
+    "syllable",
+    "synthflow",
+    "tavus",
+    "zoho-cliq"
+   ],
+   "camelCase": [
+    "amazon-lex",
+    "asapp",
+    "beeper",
+    "brevo",
+    "chat",
+    "chatbase",
+    "cometchat",
+    "creed",
+    "crescendo",
+    "culture-sbs",
+    "dixa",
+    "flowise",
+    "frontline",
+    "genesys",
+    "gladly",
+    "google-cloud-dialogflow-cx",
+    "google-dialogflow",
+    "koreai",
+    "maven-agi",
+    "microsoft-copilot",
+    "nextiva",
+    "ondemand",
+    "outrival",
+    "polycode-co-uk",
+    "pypestream",
+    "rainbow",
+    "streamelements",
+    "talkjs",
+    "vapi",
+    "vapi-ai"
+   ],
+   "other": [
+    "ada",
+    "crescendo",
+    "moveworks-servicenow",
+    "nextiva",
+    "zoho-cliq"
+   ],
+   "PascalCase": [
+    "crescendo"
+   ]
+  }
+ }
+}

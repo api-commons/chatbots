@@ -1,0 +1,16 @@
+provider: forethought
+apis_io: https://apis.io/providers/forethought/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  conversation:
+    path_segment:
+    - conversation
+    properties:
+      id: conversation_id
+      user_id: user_id
+      channel: channel
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/forethought-solve-api-openapi.yml#POST /solve/api/v1/conversation
+    - openapi/_original/forethought-solve-api-openapi.yml#PUT /solve/api/v1/conversation/{conversation_id}

@@ -1,0 +1,41 @@
+provider: stream-io
+apis_io: https://apis.io/providers/stream-io/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  conversation:
+    path_segment:
+    - threads
+    properties:
+      created_at: created_at
+      name: title
+      updated_at: updated_at
+      user_id:
+      - user
+      - user_id
+      channel: channel
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/stream-io-chat-openapi.yml#GET /threads/{message_id}
+    - openapi/_original/stream-io-chat-openapi.yml#PATCH /threads/{message_id}
+    - openapi/_original/stream-io-chat-openapi.yml#POST /threads
+    - openapi/_original/stream-io-serverside-openapi.yml#GET /api/v2/chat/threads/{message_id}
+    - openapi/_original/stream-io-serverside-openapi.yml#PATCH /api/v2/chat/threads/{message_id}
+  conversation_message:
+    path_segment:
+    - messages
+    - message
+    properties:
+      id: id
+      content: text
+      created_at: created_at
+      role: type
+      attachments: attachments
+      updated_at: updated_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/stream-io-serverside-openapi.yml#DELETE /api/v2/chat/messages/{id}
+    - openapi/_original/stream-io-serverside-openapi.yml#GET /api/v2/chat/channels/{type}/{id}/messages
+    - openapi/_original/stream-io-serverside-openapi.yml#GET /api/v2/chat/messages/{id}
+    - openapi/_original/stream-io-serverside-openapi.yml#GET /api/v2/chat/moderation/flags/message
+    - openapi/_original/stream-io-serverside-openapi.yml#POST /api/v2/chat/channels/{type}/{id}/message

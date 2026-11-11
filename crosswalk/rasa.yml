@@ -1,0 +1,12 @@
+provider: rasa
+apis_io: https://apis.io/providers/rasa/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  intent:
+    path_segment:
+    - intents
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/rasa-http-api-openapi.yml#POST /model/test/intents

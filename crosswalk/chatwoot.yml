@@ -1,0 +1,51 @@
+provider: chatwoot
+apis_io: https://apis.io/providers/chatwoot/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  conversation:
+    path_segment:
+    - conversations
+    properties:
+      id:
+      - id
+      - uuid
+      created_at:
+      - created_at
+      - timestamp
+      status: status
+      name: name
+      updated_at: updated_at
+      user_id: contact_id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/chatwoot-application-api-openapi.yml#GET /api/v1/accounts/{account_id}/contacts/{id}/conversations
+    - openapi/_original/chatwoot-application-api-openapi.yml#GET /api/v1/accounts/{account_id}/conversations
+    - openapi/_original/chatwoot-application-api-openapi.yml#GET /api/v1/accounts/{account_id}/conversations/{conversation_id}
+    - openapi/_original/chatwoot-application-api-openapi.yml#GET /api/v2/accounts/{account_id}/reports/conversations
+    - openapi/_original/chatwoot-application-api-openapi.yml#GET /api/v2/accounts/{account_id}/reports/conversations/
+  conversation_message:
+    path_segment:
+    - messages
+    properties:
+      id:
+      - id
+      - conversation_id
+      content: content
+      created_at: created_at
+      role:
+      - sender
+      - sender_type
+      status: status
+      attachments: attachments
+      name:
+      - name
+      - title
+      updated_at: updated_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/chatwoot-application-api-openapi.yml#DELETE /api/v1/accounts/{account_id}/conversations/{conversation_id}/messages/{message_id}
+    - openapi/_original/chatwoot-application-api-openapi.yml#GET /accounts/{account_id}/conversations/{conversation_id}/messages
+    - openapi/_original/chatwoot-application-api-openapi.yml#GET /api/v1/accounts/{account_id}/conversations/{conversation_id}/messages
+    - openapi/_original/chatwoot-application-api-openapi.yml#GET /public/api/v1/inboxes/{inbox_identifier}/contacts/{contact_identifier}/conversations/{conversation_id}/messages
+    - openapi/_original/chatwoot-application-api-openapi.yml#PATCH /public/api/v1/inboxes/{inbox_identifier}/contacts/{contact_identifier}/conversations/{conversation_id}/messages/{message_id}

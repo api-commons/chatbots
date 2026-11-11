@@ -1,0 +1,21 @@
+provider: papercups
+apis_io: https://apis.io/providers/papercups/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  conversation:
+    path_segment:
+    - conversations
+    properties:
+      id: id
+      status: status
+      updated_at: updated_at
+      user_id: customer_id
+      channel: source
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/papercups-openapi.yml#DELETE /conversations/{id}
+    - openapi/_original/papercups-openapi.yml#GET /conversations
+    - openapi/_original/papercups-openapi.yml#GET /conversations/{id}
+    - openapi/_original/papercups-openapi.yml#POST /conversations
+    - openapi/_original/papercups-openapi.yml#PUT /conversations/{id}

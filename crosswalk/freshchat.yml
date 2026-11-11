@@ -1,0 +1,23 @@
+provider: freshchat
+apis_io: https://apis.io/providers/freshchat/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  conversation:
+    path_segment:
+    - conversations
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/freshchat-openapi.yml#GET /conversations/{conversation_id}
+    - openapi/_original/freshchat-openapi.yml#GET /users/{user_id}/conversations
+    - openapi/_original/freshchat-openapi.yml#POST /conversations
+    - openapi/_original/freshchat-openapi.yml#PUT /conversations/{conversation_id}
+  conversation_message:
+    path_segment:
+    - messages
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/freshchat-openapi.yml#GET /conversations/{conversation_id}/messages
+    - openapi/_original/freshchat-openapi.yml#POST /conversations/{conversation_id}/messages

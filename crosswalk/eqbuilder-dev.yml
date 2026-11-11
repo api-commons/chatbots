@@ -1,0 +1,13 @@
+provider: eqbuilder-dev
+apis_io: https://apis.io/providers/eqbuilder-dev/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  bot:
+    path_segment:
+    - bots
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/eqbuilder-dev-openapi.json#DELETE /api/admin/bots/{bot_id}
+    - openapi/_original/eqbuilder-dev-openapi.json#GET /api/bots

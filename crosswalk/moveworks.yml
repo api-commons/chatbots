@@ -1,0 +1,37 @@
+provider: moveworks
+apis_io: https://apis.io/providers/moveworks/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  conversation:
+    path_segment:
+    - conversations
+    properties:
+      id:
+      - conversation_id
+      - id
+      created_at: created_at
+      name: title
+      updated_at: updated_at
+      user_id: user_id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/moveworks-beta-conversations-api-openapi.yaml#GET /conversations
+    - openapi/_original/moveworks-beta-conversations-api-openapi.yaml#GET /conversations/{conversation_id}
+    - openapi/_original/moveworks-beta-conversations-api-openapi.yaml#PATCH /conversations/{conversation_id}
+    - openapi/_original/moveworks-beta-conversations-api-openapi.yaml#POST /conversations
+    - openapi/_original/moveworks-conversations-api-openapi.yaml#GET /conversations
+  conversation_message:
+    path_segment:
+    - messages
+    properties:
+      id: conversation_id
+      content: content
+      created_at: created_at
+      message_id: message_id
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/moveworks-beta-conversations-api-openapi.yaml#GET /conversations/{conversation_id}/messages
+    - openapi/_original/moveworks-beta-conversations-api-openapi.yaml#GET /conversations/{conversation_id}/responses/{response_id}/messages
+    - openapi/_original/moveworks-conversations-api-openapi.yaml#GET /conversations/{conversation_id}/messages
+    - openapi/_original/moveworks-conversations-api-openapi.yaml#GET /conversations/{conversation_id}/responses/{response_id}/messages

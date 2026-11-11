@@ -1,0 +1,41 @@
+provider: amigo
+apis_io: https://apis.io/providers/amigo/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  conversation:
+    path_segment:
+    - conversations
+    - conversation
+    properties:
+      id:
+      - id
+      - conversation_id
+      created_at:
+      - created_at
+      - created
+      status: status
+      updated_at:
+      - updated_at
+      - updated
+      user_id: user_id
+      channel:
+      - source
+      - channel
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/amigo-classic-openapi-original.json#GET /v1/{organization}/conversation/
+    - openapi/_original/amigo-classic-openapi-original.json#POST /v1/{organization}/conversation/
+    - openapi/_original/amigo-platform-openapi-original.json#DELETE /v1/{workspace_id}/conversations/{conversation_id}
+    - openapi/_original/amigo-platform-openapi-original.json#GET /v1/{workspace_id}/conversations/{conversation_id}
+    - openapi/_original/amigo-platform-openapi-original.json#POST /v1/{workspace_id}/conversations
+  conversation_message:
+    path_segment:
+    - messages
+    properties:
+      id: id
+      created_at: created_at
+      role: sender
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/amigo-classic-openapi-original.json#GET /v1/{organization}/conversation/{conversation_id}/messages/

@@ -1,0 +1,12 @@
+provider: moonscale
+apis_io: https://apis.io/providers/moonscale/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  conversation:
+    path_segment:
+    - conversations
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/moonscale-openapi-original.json#GET /api/v1/conversations/{conversationShortCode}

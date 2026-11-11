@@ -1,0 +1,21 @@
+provider: nextiva
+apis_io: https://apis.io/providers/nextiva/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  conversation:
+    path_segment:
+    - conversation
+    - conversations
+    properties:
+      id:
+      - _id
+      - conversationId
+      - id
+      created_at: createdAt
+      name: name
+      updated_at: modifiedAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/nextiva-conversation-openapi.yml#GET /analytics/api/tickets/{ticketId}/conversations
+    - openapi/_original/nextiva-conversation-openapi.yml#GET /data/api/types/conversation

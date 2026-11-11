@@ -1,0 +1,35 @@
+provider: dixa
+apis_io: https://apis.io/providers/dixa/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  conversation:
+    path_segment:
+    - conversations
+    properties:
+      id: id
+      created_at: createdAt
+      status: state
+      channel: channel
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/dixa-api.yaml#GET /beta/conversations/{conversationId}
+    - openapi/_original/dixa-api.yaml#GET /beta/endusers/{userId}/conversations
+    - openapi/_original/dixa-api.yaml#GET /beta/search/conversations
+    - openapi/_original/dixa-api.yaml#POST /beta/conversations
+    - openapi/_original/dixa-api.yaml#POST /beta/search/conversations
+  conversation_message:
+    path_segment:
+    - messages
+    properties:
+      id:
+      - id
+      - externalId
+      content: content
+      created_at: createdAt
+      attachments: attachments
+      message_id: messageId
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/dixa-api.yaml#GET /beta/conversations/{conversationId}/messages
+    - openapi/_original/dixa-api.yaml#POST /beta/conversations/{conversationId}/messages

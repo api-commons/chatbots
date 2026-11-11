@@ -1,0 +1,394 @@
+context: chatbots
+generated: '2026-11-11'
+adopters:
+- provider: ada
+  apis_io: https://apis.io/providers/ada/
+  crosswalk: crosswalk/ada.yml
+  concepts:
+  - conversation
+  - conversation_message
+- provider: amazon-lex
+  apis_io: https://apis.io/providers/amazon-lex/
+  crosswalk: crosswalk/amazon-lex.yml
+  concepts:
+  - bot
+  - conversation
+  - intent
+- provider: amigo
+  apis_io: https://apis.io/providers/amigo/
+  crosswalk: crosswalk/amigo.yml
+  concepts:
+  - conversation
+  - conversation_message
+- provider: appsmax-rest-api-v1
+  apis_io: https://apis.io/providers/appsmax-rest-api-v1/
+  crosswalk: crosswalk/appsmax-rest-api-v1.yml
+  concepts:
+  - bot
+- provider: asapp
+  apis_io: https://apis.io/providers/asapp/
+  crosswalk: crosswalk/asapp.yml
+  concepts:
+  - conversation
+  - conversation_message
+  - intent
+- provider: beeper
+  apis_io: https://apis.io/providers/beeper/
+  crosswalk: crosswalk/beeper.yml
+  concepts:
+  - conversation
+  - conversation_message
+- provider: beyond-presence
+  apis_io: https://apis.io/providers/beyond-presence/
+  crosswalk: crosswalk/beyond-presence.yml
+  concepts:
+  - conversation
+  - conversation_message
+- provider: bluejay
+  apis_io: https://apis.io/providers/bluejay/
+  crosswalk: crosswalk/bluejay.yml
+  concepts:
+  - conversation
+- provider: botpress
+  apis_io: https://apis.io/providers/botpress/
+  crosswalk: crosswalk/botpress.yml
+  concepts:
+  - bot
+  - conversation
+  - conversation_message
+- provider: chat
+  apis_io: https://apis.io/providers/chat/
+  crosswalk: crosswalk/chat.yml
+  concepts:
+  - conversation
+  - conversation_message
+- provider: chatbase
+  apis_io: https://apis.io/providers/chatbase/
+  crosswalk: crosswalk/chatbase.yml
+  concepts:
+  - conversation
+- provider: chatwoot
+  apis_io: https://apis.io/providers/chatwoot/
+  crosswalk: crosswalk/chatwoot.yml
+  concepts:
+  - conversation
+  - conversation_message
+- provider: cometchat
+  apis_io: https://apis.io/providers/cometchat/
+  crosswalk: crosswalk/cometchat.yml
+  concepts:
+  - conversation
+- provider: coval
+  apis_io: https://apis.io/providers/coval/
+  crosswalk: crosswalk/coval.yml
+  concepts:
+  - conversation
+- provider: creed
+  apis_io: https://apis.io/providers/creed/
+  crosswalk: crosswalk/creed.yml
+  concepts:
+  - bot
+  - conversation
+  - conversation_message
+- provider: crescendo
+  apis_io: https://apis.io/providers/crescendo/
+  crosswalk: crosswalk/crescendo.yml
+  concepts:
+  - bot
+  - conversation
+- provider: crisp
+  apis_io: https://apis.io/providers/crisp/
+  crosswalk: crosswalk/crisp.yml
+  concepts:
+  - conversation
+  - conversation_message
+- provider: discord
+  apis_io: https://apis.io/providers/discord/
+  crosswalk: crosswalk/discord.yml
+  concepts:
+  - bot
+  - conversation
+- provider: dixa
+  apis_io: https://apis.io/providers/dixa/
+  crosswalk: crosswalk/dixa.yml
+  concepts:
+  - conversation
+  - conversation_message
+- provider: drift-com
+  apis_io: https://apis.io/providers/drift-com/
+  crosswalk: crosswalk/drift-com.yml
+  concepts:
+  - conversation
+  - conversation_message
+- provider: elevenlabs
+  apis_io: https://apis.io/providers/elevenlabs/
+  crosswalk: crosswalk/elevenlabs.yml
+  concepts:
+  - conversation
+- provider: eqbuilder-dev
+  apis_io: https://apis.io/providers/eqbuilder-dev/
+  crosswalk: crosswalk/eqbuilder-dev.yml
+  concepts:
+  - bot
+- provider: flowise
+  apis_io: https://apis.io/providers/flowise/
+  crosswalk: crosswalk/flowise.yml
+  concepts:
+  - bot
+- provider: forethought
+  apis_io: https://apis.io/providers/forethought/
+  crosswalk: crosswalk/forethought.yml
+  concepts:
+  - conversation
+- provider: freshchat
+  apis_io: https://apis.io/providers/freshchat/
+  crosswalk: crosswalk/freshchat.yml
+  concepts:
+  - conversation
+  - conversation_message
+- provider: frontline
+  apis_io: https://apis.io/providers/frontline/
+  crosswalk: crosswalk/frontline.yml
+  concepts:
+  - conversation
+  - intent
+- provider: genesys
+  apis_io: https://apis.io/providers/genesys/
+  crosswalk: crosswalk/genesys.yml
+  concepts:
+  - bot
+  - conversation
+  - conversation_message
+  - intent
+- provider: getstream
+  apis_io: https://apis.io/providers/getstream/
+  crosswalk: crosswalk/getstream.yml
+  concepts:
+  - conversation
+  - conversation_message
+- provider: gladly
+  apis_io: https://apis.io/providers/gladly/
+  crosswalk: crosswalk/gladly.yml
+  concepts:
+  - conversation
+- provider: google-cloud-dialogflow-cx
+  apis_io: https://apis.io/providers/google-cloud-dialogflow-cx/
+  crosswalk: crosswalk/google-cloud-dialogflow-cx.yml
+  concepts:
+  - intent
+- provider: google-dialogflow
+  apis_io: https://apis.io/providers/google-dialogflow/
+  crosswalk: crosswalk/google-dialogflow.yml
+  concepts:
+  - conversation
+  - conversation_message
+  - intent
+- provider: gridspace
+  apis_io: https://apis.io/providers/gridspace/
+  crosswalk: crosswalk/gridspace.yml
+  concepts:
+  - conversation
+- provider: happyrobot
+  apis_io: https://apis.io/providers/happyrobot/
+  crosswalk: crosswalk/happyrobot.yml
+  concepts:
+  - conversation
+  - conversation_message
+- provider: highrise
+  apis_io: https://apis.io/providers/highrise/
+  crosswalk: crosswalk/highrise.yml
+  concepts:
+  - bot
+- provider: hilos
+  apis_io: https://apis.io/providers/hilos/
+  crosswalk: crosswalk/hilos.yml
+  concepts:
+  - conversation
+- provider: hiver
+  apis_io: https://apis.io/providers/hiver/
+  crosswalk: crosswalk/hiver.yml
+  concepts:
+  - conversation
+- provider: hume-ai
+  apis_io: https://apis.io/providers/hume-ai/
+  crosswalk: crosswalk/hume-ai.yml
+  concepts:
+  - conversation
+- provider: intercom
+  apis_io: https://apis.io/providers/intercom/
+  crosswalk: crosswalk/intercom.yml
+  concepts:
+  - conversation
+- provider: khoros-ai
+  apis_io: https://apis.io/providers/khoros-ai/
+  crosswalk: crosswalk/khoros-ai.yml
+  concepts:
+  - conversation
+  - conversation_message
+- provider: koreai
+  apis_io: https://apis.io/providers/koreai/
+  crosswalk: crosswalk/koreai.yml
+  concepts:
+  - conversation
+- provider: kustomer
+  apis_io: https://apis.io/providers/kustomer/
+  crosswalk: crosswalk/kustomer.yml
+  concepts:
+  - conversation
+- provider: lithium
+  apis_io: https://apis.io/providers/lithium/
+  crosswalk: crosswalk/lithium.yml
+  concepts:
+  - conversation
+  - conversation_message
+- provider: maven-agi
+  apis_io: https://apis.io/providers/maven-agi/
+  crosswalk: crosswalk/maven-agi.yml
+  concepts:
+  - conversation
+  - conversation_message
+- provider: microsoft-copilot
+  apis_io: https://apis.io/providers/microsoft-copilot/
+  crosswalk: crosswalk/microsoft-copilot.yml
+  concepts:
+  - conversation
+- provider: moonscale
+  apis_io: https://apis.io/providers/moonscale/
+  crosswalk: crosswalk/moonscale.yml
+  concepts:
+  - conversation
+- provider: moveworks
+  apis_io: https://apis.io/providers/moveworks/
+  crosswalk: crosswalk/moveworks.yml
+  concepts:
+  - conversation
+  - conversation_message
+- provider: moveworks-servicenow
+  apis_io: https://apis.io/providers/moveworks-servicenow/
+  crosswalk: crosswalk/moveworks-servicenow.yml
+  concepts:
+  - conversation
+- provider: nextiva
+  apis_io: https://apis.io/providers/nextiva/
+  crosswalk: crosswalk/nextiva.yml
+  concepts:
+  - conversation
+- provider: ondemand
+  apis_io: https://apis.io/providers/ondemand/
+  crosswalk: crosswalk/ondemand.yml
+  concepts:
+  - conversation
+  - conversation_message
+- provider: openai
+  apis_io: https://apis.io/providers/openai/
+  crosswalk: crosswalk/openai.yml
+  concepts:
+  - bot
+  - conversation
+  - conversation_message
+- provider: outrival
+  apis_io: https://apis.io/providers/outrival/
+  crosswalk: crosswalk/outrival.yml
+  concepts:
+  - bot
+  - conversation
+- provider: papercups
+  apis_io: https://apis.io/providers/papercups/
+  crosswalk: crosswalk/papercups.yml
+  concepts:
+  - conversation
+- provider: paradox
+  apis_io: https://apis.io/providers/paradox/
+  crosswalk: crosswalk/paradox.yml
+  concepts:
+  - conversation
+- provider: phonic
+  apis_io: https://apis.io/providers/phonic/
+  crosswalk: crosswalk/phonic.yml
+  concepts:
+  - conversation
+- provider: polycode-co-uk
+  apis_io: https://apis.io/providers/polycode-co-uk/
+  crosswalk: crosswalk/polycode-co-uk.yml
+  concepts:
+  - conversation
+- provider: rainbow
+  apis_io: https://apis.io/providers/rainbow/
+  crosswalk: crosswalk/rainbow.yml
+  concepts:
+  - conversation
+  - conversation_message
+- provider: rasa
+  apis_io: https://apis.io/providers/rasa/
+  crosswalk: crosswalk/rasa.yml
+  concepts:
+  - intent
+- provider: sarj-ai-developer-api
+  apis_io: https://apis.io/providers/sarj-ai-developer-api/
+  crosswalk: crosswalk/sarj-ai-developer-api.yml
+  concepts:
+  - conversation
+  - conversation_message
+- provider: sendpulse
+  apis_io: https://apis.io/providers/sendpulse/
+  crosswalk: crosswalk/sendpulse.yml
+  concepts:
+  - bot
+  - conversation
+  - conversation_message
+- provider: signalwire
+  apis_io: https://apis.io/providers/signalwire/
+  crosswalk: crosswalk/signalwire.yml
+  concepts:
+  - conversation
+- provider: stream-io
+  apis_io: https://apis.io/providers/stream-io/
+  crosswalk: crosswalk/stream-io.yml
+  concepts:
+  - conversation
+  - conversation_message
+- provider: streamelements
+  apis_io: https://apis.io/providers/streamelements/
+  crosswalk: crosswalk/streamelements.yml
+  concepts:
+  - bot
+- provider: syllable
+  apis_io: https://apis.io/providers/syllable/
+  crosswalk: crosswalk/syllable.yml
+  concepts:
+  - conversation
+- provider: synthflow
+  apis_io: https://apis.io/providers/synthflow/
+  crosswalk: crosswalk/synthflow.yml
+  concepts:
+  - bot
+  - conversation
+  - conversation_message
+- provider: talkjs
+  apis_io: https://apis.io/providers/talkjs/
+  crosswalk: crosswalk/talkjs.yml
+  concepts:
+  - conversation
+  - conversation_message
+- provider: tavus
+  apis_io: https://apis.io/providers/tavus/
+  crosswalk: crosswalk/tavus.yml
+  concepts:
+  - conversation
+- provider: vapi
+  apis_io: https://apis.io/providers/vapi/
+  crosswalk: crosswalk/vapi.yml
+  concepts:
+  - conversation
+- provider: vapi-ai
+  apis_io: https://apis.io/providers/vapi-ai/
+  crosswalk: crosswalk/vapi-ai.yml
+  concepts:
+  - conversation
+- provider: zoho-cliq
+  apis_io: https://apis.io/providers/zoho-cliq/
+  crosswalk: crosswalk/zoho-cliq.yml
+  concepts:
+  - bot
+  - conversation
+  - conversation_message

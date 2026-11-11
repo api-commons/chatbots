@@ -1,0 +1,30 @@
+provider: happyrobot
+apis_io: https://apis.io/providers/happyrobot/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  conversation:
+    path_segment:
+    - sessions
+    properties:
+      status: status
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/happyrobot-public-api-openapi.json#POST /chat/sessions/
+  conversation_message:
+    path_segment:
+    - messages
+    properties:
+      id: id
+      content: content
+      created_at:
+      - timestamp
+      - created_at
+      role:
+      - role
+      - type
+      status: status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/happyrobot-public-api-openapi.json#GET /sessions/{session_id}/messages
+    - openapi/_original/happyrobot-public-api-openapi.json#POST /chat/sessions/{id}/messages

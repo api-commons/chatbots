@@ -1,0 +1,14 @@
+provider: paradox
+apis_io: https://apis.io/providers/paradox/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  conversation:
+    path_segment:
+    - conversations
+    properties:
+      created_at: created_at
+      updated_at: updated_at
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/paradox-api-openapi.yml#GET /company/conversations

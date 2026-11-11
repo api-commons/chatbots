@@ -1,0 +1,13 @@
+provider: polycode-co-uk
+apis_io: https://apis.io/providers/polycode-co-uk/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  conversation:
+    path_segment:
+    - chat
+    properties:
+      user_id: visitorId
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/polycode-co-uk-marginalia-openapi.json#POST /api/chat

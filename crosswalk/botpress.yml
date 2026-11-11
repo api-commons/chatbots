@@ -1,0 +1,36 @@
+provider: botpress
+apis_io: https://apis.io/providers/botpress/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  bot:
+    path_segment:
+    - bots
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/botpress-openapi.yml#DELETE /admin/bots/{id}
+    - openapi/_original/botpress-openapi.yml#GET /admin/bots
+    - openapi/_original/botpress-openapi.yml#POST /admin/bots
+    - openapi/_original/botpress-openapi.yml#PUT /admin/bots/{id}
+  conversation:
+    path_segment:
+    - conversations
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/botpress-openapi.yml#DELETE /chat/conversations/{id}
+    - openapi/_original/botpress-openapi.yml#GET /chat/conversations
+    - openapi/_original/botpress-openapi.yml#GET /chat/conversations/{id}
+    - openapi/_original/botpress-openapi.yml#POST /chat/conversations
+  conversation_message:
+    path_segment:
+    - messages
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/botpress-openapi.yml#DELETE /chat/messages/{id}
+    - openapi/_original/botpress-openapi.yml#GET /chat/messages
+    - openapi/_original/botpress-openapi.yml#GET /chat/messages/{id}
+    - openapi/_original/botpress-openapi.yml#POST /chat/messages
+    - openapi/_original/botpress-openapi.yml#PUT /chat/messages

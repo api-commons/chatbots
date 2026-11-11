@@ -1,0 +1,15 @@
+provider: bluejay
+apis_io: https://apis.io/providers/bluejay/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  conversation:
+    path_segment:
+    - conversations
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/bluejay-openapi.json#DELETE /v1/metrics-lab/lab/{lab_id}/conversations
+    - openapi/_original/bluejay-openapi.json#GET /v1/observability/conversations
+    - openapi/_original/bluejay-openapi.json#GET /v1/observability/conversations/{conversation_id}
+    - openapi/_original/bluejay-openapi.json#POST /v1/metrics-lab/lab/{lab_id}/conversations

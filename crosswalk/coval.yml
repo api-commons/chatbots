@@ -1,0 +1,20 @@
+provider: coval
+apis_io: https://apis.io/providers/coval/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  conversation:
+    path_segment:
+    - conversations
+    properties:
+      id: conversation_id
+      created_at: create_time
+      status: status
+      name: name
+      channel: source
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/coval-conversations-openapi.yml#DELETE /conversations/{conversation_id}
+    - openapi/_original/coval-conversations-openapi.yml#GET /conversations
+    - openapi/_original/coval-conversations-openapi.yml#GET /conversations/{conversation_id}
+    - openapi/_original/coval-conversations-openapi.yml#PATCH /conversations/{conversation_id}

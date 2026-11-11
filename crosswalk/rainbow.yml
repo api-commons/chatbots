@@ -1,0 +1,27 @@
+provider: rainbow
+apis_io: https://apis.io/providers/rainbow/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  conversation:
+    path_segment:
+    - conversations
+    properties:
+      id: id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/rainbow-messaging-openapi.yml#GET /enduser/v1.0/conversations
+  conversation_message:
+    path_segment:
+    - messages
+    properties:
+      id: id
+      content: content
+      created_at: timestamp
+      role:
+      - from
+      - type
+      status: status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/rainbow-messaging-openapi.yml#GET /enduser/v1.0/conversations/{conversationId}/messages

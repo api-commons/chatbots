@@ -1,0 +1,40 @@
+provider: beeper
+apis_io: https://apis.io/providers/beeper/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  conversation:
+    path_segment:
+    - chats
+    properties:
+      id:
+      - id
+      - chatID
+      created_at: timestamp
+      status: status
+      name: title
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/beeper-desktop-api-openapi-original.yml#GET /v1/chats
+    - openapi/_original/beeper-desktop-api-openapi-original.yml#GET /v1/chats/{chatID}
+    - openapi/_original/beeper-desktop-api-openapi-original.yml#PATCH /v1/chats/{chatID}
+    - openapi/_original/beeper-desktop-api-openapi-original.yml#POST /v1/chats
+  conversation_message:
+    path_segment:
+    - messages
+    properties:
+      id:
+      - id
+      - chatID
+      content: text
+      created_at: timestamp
+      role: type
+      attachments: attachments
+      message_id: messageID
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/beeper-desktop-api-openapi-original.yml#DELETE /v1/chats/{chatID}/messages/{messageID}
+    - openapi/_original/beeper-desktop-api-openapi-original.yml#GET /v1/chats/{chatID}/messages
+    - openapi/_original/beeper-desktop-api-openapi-original.yml#GET /v1/chats/{chatID}/messages/{messageID}
+    - openapi/_original/beeper-desktop-api-openapi-original.yml#POST /v1/chats/{chatID}/messages
+    - openapi/_original/beeper-desktop-api-openapi-original.yml#PUT /v1/chats/{chatID}/messages/{messageID}

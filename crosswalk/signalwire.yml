@@ -1,0 +1,15 @@
+provider: signalwire
+apis_io: https://apis.io/providers/signalwire/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  conversation:
+    path_segment:
+    - chat
+    properties:
+      id: id
+      status: status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/signalwire-rest-openapi.yaml#POST /api/ai/chat
+    - openapi/_original/signalwire-rest-openapi.yml#POST /api/ai/chat

@@ -1,0 +1,22 @@
+provider: crisp
+apis_io: https://apis.io/providers/crisp/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  conversation:
+    path_segment:
+    - conversation
+    - conversations
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/crisp-openapi.yml#GET /website/{website_id}/conversation/{session_id}
+    - openapi/_original/crisp-openapi.yml#GET /website/{website_id}/conversations/{page_number}
+    - openapi/_original/crisp-openapi.yml#POST /website/{website_id}/conversation
+  conversation_message:
+    path_segment:
+    - messages
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/crisp-openapi.yml#GET /website/{website_id}/conversation/{session_id}/messages

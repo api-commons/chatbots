@@ -1,0 +1,20 @@
+provider: elevenlabs
+apis_io: https://apis.io/providers/elevenlabs/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  conversation:
+    path_segment:
+    - conversations
+    properties:
+      id: conversation_id
+      created_at: timestamp
+      status: status
+      user_id: user_id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/elevenlabs-conversational-ai-openapi.yml#DELETE /v1/convai/conversations/{conversation_id}
+    - openapi/_original/elevenlabs-conversational-ai-openapi.yml#GET /v1/convai/conversations
+    - openapi/_original/elevenlabs-conversational-ai-openapi.yml#GET /v1/convai/conversations/{conversation_id}
+    - openapi/_original/elevenlabs-openapi.json#DELETE /v1/convai/conversations/{conversation_id}
+    - openapi/_original/elevenlabs-openapi.json#GET /v1/convai/conversations

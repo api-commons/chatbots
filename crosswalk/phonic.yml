@@ -1,0 +1,17 @@
+provider: phonic
+apis_io: https://apis.io/providers/phonic/
+context: chatbots
+generated: '2026-11-11'
+concepts:
+  conversation:
+    path_segment:
+    - conversations
+    properties:
+      id:
+      - id
+      - external_id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/phonic-openapi-original.yaml#DELETE /conversations/{id}
+    - openapi/_original/phonic-openapi-original.yaml#GET /conversations
+    - openapi/_original/phonic-openapi-original.yaml#GET /conversations/{id}

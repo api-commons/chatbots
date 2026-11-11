@@ -1,0 +1,55 @@
+context: chatbots
+name: Chatbots and Conversational AI
+intro: >-
+  The common chatbot-platform vocabulary -- the bots, the conversations they hold, the messages in
+  them and the intents they are trained on -- distilled from the APIs that already exist.
+tags: [Chatbots, Chatbot, Conversational AI, Chat, Virtual Assistants, Live Chat]
+
+envelope: [_links, _pagination, _results, data, success, errors, count, total, page, meta, links, result, results,
+           value, next, previous, has_more, message, page_info, cursor, total_count, per_page, total_pages, object]
+
+common_fields:
+  id: [uuid, guid, external_id, bot_id, conversation_id, chat_id]
+  created_at: [created, created_date, create_time, timestamp, date_created]
+  updated_at: [updated, modified_at, last_modified, update_time]
+  status: [state]
+  name: [title, display_name]
+
+concepts:
+  bot:
+    segments: [bots, bot, chatbots, chatbot, assistants, agents@chatbot|bots|ai]
+    aliases:
+      description: [desc]
+      model: [model_id, llm]
+      instructions: [system_prompt, prompt, persona]
+  conversation:
+    segments: [conversations, conversation, chats, chat, threads, sessions@bots|bot|chatbots|assistants|chat]
+    aliases:
+      user_id: [user, visitor_id, contact_id, customer_id, end_user_id]
+      channel: [source, platform]
+  conversation_message:
+    path: /conversation-messages
+    requires_any: [conversation, bot]
+    segments: [messages@conversations|conversation|chats|chat|threads|sessions|bots|bot, message@chat|bots|bot]
+    aliases:
+      content: [text, body, message]
+      role: [sender, sender_type, author, from, type]
+  intent:
+    segments: [intents, intent]
+    aliases:
+      training_phrases: [examples, utterances, phrases, training_examples]
+
+findings:
+  - >-
+    The message is the shared shape: conversation messages agree on id, content, created_at and role,
+    the same four fields an LLM chat turn carries, whether the platform is a support chatbot or an assistant.
+  - >-
+    Conversations agree only on id; created_at reaches 42% and status 40%, because a conversation is a
+    thread at one platform, a session at another and a ticket-like case at a third.
+  - >-
+    Intents agree on name, description, id and training_phrases at the platforms that still train on
+    them; LLM-first platforms replace intents with instructions on the bot.
+decisions:
+  - >-
+    The message is conversation_message, because messaging owns message; role is kept as the
+    canonical name for the sender's kind (user, bot, agent).
